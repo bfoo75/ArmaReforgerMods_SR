@@ -1,0 +1,8 @@
+GameProject {
+ ID "SRCommunicationFilters"
+ GUID "68852D81BF535FBA"
+ TITLE "SR_CommunicationFilters"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
