@@ -9,8 +9,15 @@ modded class SCR_VonDisplay
 	//! \return false if the transmission is filtered out to not be visible
 	override bool UpdateTransmission(TransmissionData data, BaseTransceiver radioTransceiver, int frequency, bool IsReceiving)
 	{
-		//TODO WG 2/2/2026: Add optional admin settings.
-		if (IsReceiving && !radioTransceiver)
+		bool isAdmin = false;
+		PlayerController playerController = GetGame().GetPlayerController();
+		if (playerController != null)	
+		{
+			int playerId = playerController.GetPlayerId();
+			isAdmin = SCR_CharacterHelper.GetPlayerControlType(playerId) == SCR_ECharacterControlType.UNLIMITED_EDITOR;
+		}
+		
+		if (!isAdmin && IsReceiving && !radioTransceiver)
 		{
 			return false;
 		}
