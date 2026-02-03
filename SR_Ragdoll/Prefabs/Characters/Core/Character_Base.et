@@ -1,0 +1,17 @@
+SCR_ChimeraCharacter {
+ ID "520EC961A090B1EE"
+ components {
+  RagdollTriggersComponent "{68872BBD6E74C95C}" {
+   RagdollTriggers {
+    RagdollTrigger "{68872BB2DFB63F33}" {
+     OddsToTrigger 0.7
+     ForceMultiplier 0.5
+    }
+    RagdollTrigger "{68872BB1C125B969}" {
+     OddsToTrigger 0.7
+     HitZoneGroup RIGHTLEG
+    }
+   }
+  }
+ }
+}

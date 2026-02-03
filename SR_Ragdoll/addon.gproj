@@ -1,0 +1,8 @@
+GameProject {
+ ID "SRRagdoll"
+ GUID "68866890A47B5AC3"
+ TITLE "SR_Ragdoll"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
