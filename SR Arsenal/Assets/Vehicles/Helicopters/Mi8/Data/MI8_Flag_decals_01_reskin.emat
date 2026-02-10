@@ -1,0 +1,5 @@
+MatPBRDecal {
+ Color 0.332 0.332 0.332 1
+ BCRMap "{70D0339BF9E745C5}Assets/Vehicles/Helicopters/Mi8/Data/tailart_mi24.edds"
+ OpacityMap "{67DC0D40A32EA219}Assets/Vehicles/Helicopters/Mi8/Data/opacitymask.edds"
+}

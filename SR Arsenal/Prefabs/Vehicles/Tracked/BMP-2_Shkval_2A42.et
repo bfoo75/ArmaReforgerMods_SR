@@ -1,0 +1,14 @@
+Tank : "{F03E2B72FBD294E7}Prefabs/Vehicles/Tracked/BMP-2_Shkval.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{60F08A849E9A4EBF}" {
+      m_BudgetType RANK_CAPTAIN
+     }
+    }
+   }
+  }
+ }
+}

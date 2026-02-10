@@ -1,0 +1,161 @@
+$grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMilitaryBase.et" {
+ ConflictMilitaryBase {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    Enabled 0
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    Transceivers {
+     RelayTransceiver "{5C669673E8C94083}" {
+      "Transmitting Range" 1800
+     }
+    }
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bCanBeHQ 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "MOB"
+    m_sBaseNameUpper "MOB"
+    m_aWhiteList {
+     "Power Station"
+    }
+   }
+  }
+  coords 304.689 156.449 9179.383
+  angles 0.894 -0.028 -1.79
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   WCS_SpawnProtection_MOBPresenceZone : "{0F85BD33AC62CCB7}Prefabs/SpawnProtectionZones/MOB_BasePresenceZone_Base.et" {
+    coords 0 0 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+   WCS_SpawnProtection_MOBRestrictionWarningZone : "{B6B8709DAA4452C1}Prefabs/SpawnProtectionZones/MOB_RestrictionZone_Base.et" {
+    coords 0 0 0
+    {
+     WCS_SpawnProtection_MOBRestrictionKillZone {
+      ID "6854156E5CF65ED5"
+      SphereRadius 1000
+      DrawShape 1
+     }
+    }
+   }
+  }
+ }
+ ConflictMilitaryBase2 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    Enabled 0
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_iRadius 100
+    m_bCanBeHQ 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "MOB East"
+    m_sBaseNameUpper "MOB East"
+    m_aWhiteList {
+     "Lumber Mill"
+    }
+   }
+  }
+  coords 9855.333 199 6074.748
+  angles 0.894 -0.028 -1.79
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   WCS_SpawnProtection_MOBPresenceZone : "{0F85BD33AC62CCB7}Prefabs/SpawnProtectionZones/MOB_BasePresenceZone_Base.et" {
+    coords 0 0 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+   WCS_SpawnProtection_MOBRestrictionWarningZone : "{B6B8709DAA4452C1}Prefabs/SpawnProtectionZones/MOB_RestrictionZone_Base.et" {
+    coords 0 0 0
+    {
+     WCS_SpawnProtection_MOBRestrictionKillZone {
+      ID "6854156E5CF65ED5"
+      SphereRadius 1000
+     }
+    }
+   }
+  }
+ }
+}

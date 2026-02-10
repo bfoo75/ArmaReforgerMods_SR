@@ -1,0 +1,8 @@
+GameProject {
+ ID "SteelRainSerhiivka"
+ GUID "68824C36410911B7"
+ TITLE "Steel Rain Serhiivka"
+ Dependencies {
+  "61557578724DBE60" "6882471A3F21C5C2" "64610AFB74AA9842" "58D0FB3206B6F859"
+ }
+}

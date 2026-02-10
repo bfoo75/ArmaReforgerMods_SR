@@ -1,0 +1,4 @@
+MatPBRBasic {
+ RoughnessScale 0.28
+ BCRMap "{739D3D6E3596BC0D}Assets/Vehicles/Helicopters/Mi24V/Data/altbcr_mi24.edds"
+}

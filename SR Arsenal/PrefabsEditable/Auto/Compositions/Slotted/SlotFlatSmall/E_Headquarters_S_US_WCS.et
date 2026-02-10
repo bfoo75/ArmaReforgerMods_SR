@@ -1,0 +1,15 @@
+GenericEntity : "{CC29966116ACF443}Prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_US_WCS.et" {
+ ID "5282DCB5DFC8538F"
+ {
+  GenericEntity : "{2F17BFBCDB329CCA}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Weapons.et" {
+   ID "688F73C4630B5E8E"
+   coords -4.935 0.056 2.163
+   angles 0 -105 0
+  }
+  GenericEntity : "{A28E5D231A74D95D}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Equipment.et" {
+   ID "688F73C47C1D9F8A"
+   coords -5.291 0.138 -1.482
+   angles 0 -90 0
+  }
+ }
+}

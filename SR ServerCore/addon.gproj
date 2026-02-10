@@ -1,0 +1,8 @@
+GameProject {
+ ID "SRServerCore"
+ GUID "6882471A3F21C5C2"
+ TITLE "SR ServerCore"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
