@@ -1,0 +1,10 @@
+GenericEntity : "{AD59EDEAA26CE792}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR.et" {
+ ID "56F2C6D6F7C6DAFA"
+ components {
+  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+   m_eSupportedArsenalItemTypes 9043136
+  }
+ }
+ coords -5.461 0.165 1.203
+ angles 0 -90 0
+}

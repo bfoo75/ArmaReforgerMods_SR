@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{FE07B51347BEC2CE}Assets/Props/Fabric/Flags/Data/RU_Flag_BCR.edds"
+ NMOMap "{C6DF0E819EC99050}Assets/Props/Fabric/Flags/Data/RU_Flag_NMO.edds"
+}

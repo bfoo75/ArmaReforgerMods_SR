@@ -1,0 +1,878 @@
+RadioManagerEntity {
+ coords 7292.112 180.058 3334.049
+}
+ScriptedChatEntity {
+ coords 7296.426 178.094 3374.336
+ "Base style" BaseChatChannelStyle "{6886641D60D83980}" {
+ }
+ Channels {
+  FactionChatChannel "{6886641D75A6418E}" {
+   "Channel name" "Faction"
+   Style BaseChatChannelStyle "{6886641D7193DEC9}" {
+   }
+  }
+  LocalChatChannel "{6886641D7C5BB7AF}" {
+   "Channel name" "Local"
+   Style BaseChatChannelStyle "{6886641D7B6DBC71}" {
+   }
+   m_fMaxDistance 25
+  }
+  BaseChatChannel "{6886642222ED70E5}" {
+   "Channel name" "Global"
+   Style BaseChatChannelStyle "{688664222CEBE2D5}" {
+   }
+  }
+ }
+}
+$grp GenericEntity {
+ Sign_01 {
+  components {
+   MeshObject "{6887595E86E8D69E}" {
+    Object "{54D8230AABCED5BC}Signs/sign_base.xob"
+   }
+   RigidBody "{6887595EB0D7FA2C}" {
+    LayerPreset "Prop"
+    Active Active
+    SimState Collision
+    ModelGeometry 1
+    Static 1
+   }
+  }
+  coords 284.308 160.406 9185.503
+  angles 0 -5.069 0
+ }
+ Sign_2 {
+  components {
+   MeshObject "{6887595E86E8D69E}" {
+    Object "{54D8230AABCED5BC}Signs/sign_base.xob"
+   }
+   RigidBody "{6887595EB0D7FA2C}" {
+    LayerPreset "Prop"
+    Active Active
+    SimState Collision
+    ModelGeometry 1
+    Static 1
+   }
+  }
+  coords 283.949 160.406 9189.546
+  angles 0 -5.069 0
+ }
+ Sign_3 {
+  components {
+   MeshObject "{6887595E86E8D69E}" {
+    Object "{54D8230AABCED5BC}Signs/sign_base.xob"
+   }
+   RigidBody "{6887595EB0D7FA2C}" {
+    LayerPreset "Prop"
+    Active Active
+    SimState Collision
+    ModelGeometry 1
+    Static 1
+   }
+  }
+  coords 291.289 160.406 9147.922
+  angles 0 -50.069 0
+ }
+ Sign_4 {
+  components {
+   MeshObject "{6887595E86E8D69E}" {
+    Object "{54D8230AABCED5BC}Signs/sign_base.xob"
+   }
+   RigidBody "{6887595EB0D7FA2C}" {
+    LayerPreset "Prop"
+    Active Active
+    SimState Collision
+    ModelGeometry 1
+    Static 1
+   }
+  }
+  coords 382.971 160.447 9234.38
+  angles 0 -5.069 0
+ }
+ Sign_5 {
+  components {
+   MeshObject "{6887595E86E8D69E}" {
+    Object "{54D8230AABCED5BC}Signs/sign_base.xob"
+   }
+   RigidBody "{6887595EB0D7FA2C}" {
+    LayerPreset "Prop"
+    Active Active
+    SimState Collision
+    ModelGeometry 1
+    Static 1
+   }
+  }
+  coords 385.547 160.5 9216.813
+  angles 0 -5.069 0
+ }
+ Sign_6 {
+  components {
+   MeshObject "{6887595E86E8D69E}" {
+    Object "{54D8230AABCED5BC}Signs/sign_base.xob"
+   }
+   RigidBody "{6887595EB0D7FA2C}" {
+    LayerPreset "Prop"
+    Active Active
+    SimState Collision
+    ModelGeometry 1
+    Static 1
+   }
+  }
+  coords 9896.383 199 6086.448
+  angles 0 -5.069 0
+ }
+ Sign_7 {
+  components {
+   MeshObject "{6887595E86E8D69E}" {
+    Object "{54D8230AABCED5BC}Signs/sign_base.xob"
+   }
+   RigidBody "{6887595EB0D7FA2C}" {
+    LayerPreset "Prop"
+    Active Active
+    SimState Collision
+    ModelGeometry 1
+    Static 1
+   }
+  }
+  coords 9897.337 199 6082.831
+  angles 0 11.854 0
+ }
+ Sign_8 {
+  components {
+   MeshObject "{6887595E86E8D69E}" {
+    Object "{54D8230AABCED5BC}Signs/sign_base.xob"
+   }
+   RigidBody "{6887595EB0D7FA2C}" {
+    LayerPreset "Prop"
+    Active Active
+    SimState Collision
+    ModelGeometry 1
+    Static 1
+   }
+  }
+  coords 9875.609 199 6135.046
+  angles 0 -95.069 0
+ }
+ Sign_9 {
+  components {
+   MeshObject "{6887595E86E8D69E}" {
+    Object "{54D8230AABCED5BC}Signs/sign_base.xob"
+   }
+   RigidBody "{6887595EB0D7FA2C}" {
+    LayerPreset "Prop"
+    Active Active
+    SimState Collision
+    ModelGeometry 1
+    Static 1
+   }
+  }
+  coords 9799.417 199.031 6045.483
+  angles 0 -20.069 0
+ }
+ Sign_10 {
+  components {
+   MeshObject "{6887595E86E8D69E}" {
+    Object "{54D8230AABCED5BC}Signs/sign_base.xob"
+   }
+   RigidBody "{6887595EB0D7FA2C}" {
+    LayerPreset "Prop"
+    Active Active
+    SimState Collision
+    ModelGeometry 1
+    Static 1
+   }
+  }
+  coords 9797.412 199.031 6054.92
+  angles 0 13.195 0
+ }
+}
+$grp GenericEntity : "{1391CE8C0E255636}Prefabs/Systems/MilitaryBase/ConflictMilitaryBase.et" {
+ ConflictMilitaryBase3 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bIsControlPoint 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "Apartments"
+    m_sBaseNameUpper "Apartments"
+    m_aWhiteList {
+     "Estates"
+     "Almara Factory"
+    }
+   }
+  }
+  coords 5436.098 159.406 4608.829
+  angles -0.52 -41.617 -1.932
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+  }
+ }
+ ConflictMilitaryBase4 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bIsControlPoint 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "Airbase"
+    m_sBaseNameUpper "Airbase"
+    m_aWhiteList {
+     "Convenience Store"
+     "River Crossing"
+    }
+   }
+  }
+  coords 2745.696 157.781 4548.434
+  angles 0 -0.028 0
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+  }
+ }
+ ConflictMilitaryBase5 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bIsControlPoint 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "Northside Ruins"
+    m_sBaseNameUpper "Northside Ruins"
+    m_aWhiteList {
+     "Military Base"
+     "Convenience Store"
+    }
+   }
+  }
+  coords 5621.314 150.847 5345.565
+  angles -0.779 -49.468 -1.843
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+  }
+ }
+ ConflictMilitaryBase6 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bIsControlPoint 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "River Crossing"
+    m_sBaseNameUpper "River Crossing"
+    m_aWhiteList {
+     "Airbase"
+     "Power Station"
+    }
+   }
+  }
+  coords 3735.349 130.565 5110.274
+  angles -1.789 -0.07 0.897
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+  }
+ }
+ ConflictMilitaryBase7 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bIsControlPoint 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "Power Station"
+    m_sBaseNameUpper "Power Station"
+    m_aWhiteList {
+     "River Crossing"
+    }
+   }
+  }
+  coords 2360.352 153.094 6409.284
+  angles 0 14.972 0
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+  }
+ }
+ ConflictMilitaryBase8 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bIsControlPoint 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "Military Base"
+    m_sBaseNameUpper "Military Base"
+    m_aWhiteList {
+     "Almara Factory"
+     "Northside Ruins"
+    }
+   }
+  }
+  coords 5354.498 180.375 8314.384
+  angles 0 -0.028 0
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+  }
+ }
+ ConflictMilitaryBase9 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bIsControlPoint 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "Lumber Mill"
+    m_sBaseNameUpper "Lumber Mill"
+    m_aWhiteList {
+     "Estates"
+    }
+   }
+  }
+  coords 8296.176 165.618 5294.484
+  angles -0.895 -0.028 0
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+  }
+ }
+ ConflictMilitaryBase10 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bIsControlPoint 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "Almara Factory"
+    m_sBaseNameUpper "Almara Factory"
+    m_aWhiteList {
+     "Apartments"
+     "Military Base"
+    }
+   }
+  }
+  coords 6522.285 184.714 6621.667
+  angles 0.001 -0.042 0.895
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+  }
+ }
+ ConflictMilitaryBase11 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bIsControlPoint 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "Estates"
+    m_sBaseNameUpper "Estates"
+    m_aWhiteList {
+     "Lumber Mill"
+     "Apartments"
+    }
+   }
+  }
+  coords 8249.556 186.031 3665.765
+  angles 0 -0.028 0
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+  }
+ }
+ ConflictMilitaryBase12 {
+  components {
+   SCR_CampaignSeizingComponent "{5C66967235FBEEA3}" {
+    m_iRadius 100
+   }
+   SCR_CoverageRadioComponent "{5C669673C2A82A2B}" {
+    m_bIsSource 1
+   }
+   SCR_CampaignMilitaryBaseComponent "{5AFC974A70234D1C}" {
+    m_bIsControlPoint 1
+    m_bDisableWhenUnusedAsHQ 0
+    m_sBaseName "Convenience Store"
+    m_sBaseNameUpper "Convenience Store"
+    m_aWhiteList {
+     "Northside Ruins"
+     "Airbase"
+    }
+   }
+  }
+  coords 4648.52 149.156 5232.843
+  angles 0 48.875 0
+  {
+   CommentEntity {
+    coords 0 1 0
+    m_Comment "ConflictMilitaryBase: "\
+    "At least two bases need \"Can be HQ\" param checked. Place bases and control points wherever you wish."
+    m_Color 0 0 0
+    m_FaceCamera 1
+    m_TextBackground 1
+    m_BackgroundColor 1 0.6 0
+    m_BackgroundTransparency 0
+   }
+   GenericEntity {
+    ID "5CCED514A5908822"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   GenericEntity {
+    ID "606078EE23DE48AC"
+    components {
+     Persistence "{65EE81B2F85C473C}" {
+      Enabled 0
+     }
+     SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+      Enabled 0
+     }
+     SCR_FactionAffiliationComponent "{5CCEC6039525B984}" {
+      Enabled 0
+     }
+    }
+   }
+   SCR_CampaignSpawnPointGroup {
+    ID "5C6696731466AF36"
+    m_bSpawnPointEnabled 0
+   }
+   GenericEntity : "{811ECBE58F51D9A2}Prefabs/MP/Campaign/Assets/CampaignHQRadioBase.et" {
+    coords 0 0 0
+   }
+  }
+ }
+}

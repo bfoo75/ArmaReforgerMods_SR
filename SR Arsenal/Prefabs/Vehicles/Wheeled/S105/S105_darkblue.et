@@ -1,0 +1,13 @@
+Vehicle : "{DA79E34823120087}Prefabs/Vehicles/Wheeled/S105/S105_base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "US"
+    m_aAuthoredLabels {
+     ENTITYTYPE_VEHICLE FACTION_US TRAIT_PASSENGERS_SMALL VEHICLE_CAR TRAIT_SUPPLYSTORAGE_SMALL
+    }
+   }
+  }
+ }
+}

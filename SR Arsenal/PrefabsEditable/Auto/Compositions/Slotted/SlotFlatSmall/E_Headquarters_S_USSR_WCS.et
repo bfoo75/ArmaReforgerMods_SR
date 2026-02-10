@@ -1,0 +1,15 @@
+GenericEntity : "{F2A5C542C98C06D7}Prefabs/Compositions/Slotted/SlotFlatSmall/Headquarters_S_USSR_WCS.et" {
+ ID "5282DCB5DFC8538F"
+ {
+  GenericEntity : "{372DCA487884C4E8}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR_Weapons.et" {
+   ID "68912E8F285102C6"
+   coords -5.462 0.107 -1.413
+   angles 0 -90 0
+  }
+  GenericEntity : "{FE8505D4F04785F8}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR_Equipment.et" {
+   ID "68912E8F285102E0"
+   coords -5.461 0.165 1.203
+   angles 0 -90 0
+  }
+ }
+}

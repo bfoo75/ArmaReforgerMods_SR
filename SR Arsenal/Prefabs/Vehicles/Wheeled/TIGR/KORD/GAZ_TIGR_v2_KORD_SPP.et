@@ -1,0 +1,14 @@
+Vehicle : "{34C6F46F067729EB}Prefabs/Vehicles/Wheeled/TIGR/KORD/GAZ_TIGR_v2_KORD.et" {
+ ID "66AD1CB1B00F70C4"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{61B3396B66A62BA8}" {
+      m_BudgetType RANK_SERGEANT
+     }
+    }
+   }
+  }
+ }
+}
