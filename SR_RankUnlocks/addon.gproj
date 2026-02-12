@@ -1,0 +1,8 @@
+GameProject {
+ ID "SRRankUnlocks"
+ GUID "6897684EA56FFDF1"
+ TITLE "SR_RankUnlocks"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
