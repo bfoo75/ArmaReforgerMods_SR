@@ -1,0 +1,8 @@
+GenericEntity : "{7DEB239FC8516D7F}Prefabs/Weapons/Launchers/M2CG/Launcher_M2CG_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   WeaponSlotType "launcher"
+  }
+ }
+}

@@ -1,0 +1,8 @@
+GenericEntity : "{4BC11F0C58D86101}Prefabs/Weapons/Launchers/RPG18/Launcher_RPG18_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   WeaponSlotType "launcher"
+  }
+ }
+}

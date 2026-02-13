@@ -1,0 +1,8 @@
+GenericEntity : "{698B650CA555FF25}Prefabs/Weapons/Launchers/RPG22/Launcher_RPG22_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   WeaponSlotType "launcher"
+  }
+ }
+}
