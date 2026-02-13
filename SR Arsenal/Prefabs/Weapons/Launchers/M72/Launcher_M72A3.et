@@ -1,0 +1,8 @@
+GenericEntity : "{37F022D0CDC84C11}Prefabs/Weapons/Launchers/M72/Launcher_M72A3_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   WeaponSlotType "launcher"
+  }
+ }
+}

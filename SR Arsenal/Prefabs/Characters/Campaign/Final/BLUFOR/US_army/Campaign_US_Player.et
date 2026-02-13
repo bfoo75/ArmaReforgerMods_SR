@@ -14,10 +14,6 @@ SCR_ChimeraCharacter : "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
    WeaponTemplate "{7E9CD221A58D3ECB}Prefabs/Weapons/Rifles/M16/Rifle_M16A4.et"
   }
-  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
-   WeaponType RocketLauncher
-   WeaponSlotType "launcher"
-  }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Hat {
@@ -36,7 +32,7 @@ SCR_ChimeraCharacter : "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_
      Prefab "{040C22CE18096C5C}Prefabs/Characters/Footwear/Lowa_Boots/Lowa_Boots_olive.et"
     }
     LoadoutSlotInfo Vest {
-     Prefab "{7BF7C702071E7B45}Prefabs/Characters/Vests/Vest_JPC/variants/Vest_JPC_okinawa_MC3.et"
+     Prefab "{31F74414C617CAB2}Prefabs/Characters/Vests/Vest_JPC/variants/Vest_JPC_okinawa_Coy.et"
     }
     LoadoutSlotInfo Ears {
      Prefab "{6D6ADA201AD4E09B}Prefabs/Characters/HeadGear/Headphones_Peltor/Headphones_Peltor_olive.et"

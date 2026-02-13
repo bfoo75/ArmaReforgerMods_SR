@@ -1,0 +1,29 @@
+SCR_CampaignFactionManager : "{A242612865F2A48E}Prefabs/MP/Managers/Factions/FactionManager_Base.et" {
+ ID "50A6CDA4F7C1474A"
+ m_aRanks {
+  SCR_RankID "{5CB0777E83631136}" {
+   m_iRequiredXP -200
+  }
+  SCR_RankIDCampaign "{5CB0777E803B7EA2}" {
+   m_iRequiredXP 1500
+  }
+  SCR_RankIDCampaign "{5CB0777E8F0E82AF}" {
+   m_iRequiredXP 2500
+  }
+  SCR_RankIDCampaign "{5CB0777E8BE66EC2}" {
+   m_iRequiredXP 3500
+  }
+  SCR_RankIDCampaign "{5CB0777E8AD658D6}" {
+   m_iRequiredXP 4500
+  }
+  SCR_RankIDCampaign "{5CB0777E88380770}" {
+   m_iRequiredXP 5500
+  }
+  SCR_RankIDCampaign "{62D22AB1ADE1DAD2}" {
+   m_iRequiredXP 7000
+  }
+  SCR_RankIDCampaign "{62D22AB191D7D99C}" {
+   m_iRequiredXP 10000
+  }
+ }
+}
