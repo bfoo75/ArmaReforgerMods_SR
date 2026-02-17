@@ -1,0 +1,134 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 1
+ $node "w_cartridge" {
+  $keys t q {
+   $frame 0 1 {
+    #t 0.0013193 0.0817418 0.1166037
+   }
+  }
+  $node "w_eye_control" {
+   $keys t q {
+    $frame 0 1 {
+     #t 0 0.1476348 -0.1512118
+    }
+   }
+  }
+  $node "w_second_mag_control" {
+   $keys t q {
+    $frame 0 1 {
+     #t 0.0000474 0.0123101 0.1053338
+    }
+   }
+  }
+  $node "w_scope" {
+   $keys t q {
+    $frame 0 1 {
+     #t -0 0.113244 0.0411937
+    }
+   }
+   $node "w_scope02" {
+    $keys q {
+     $frame 0 1 {
+     }
+    }
+   }
+  }
+  $node "w_stock" {
+   $keys t {
+    $frame 0 1 {
+     #t -0.0000001 0.0825227 -0.1646083
+    }
+   }
+   $node "w_stock_lock01" {
+    $keys q {
+     $frame 0 1 {
+     }
+    }
+   }
+   $node "w_stock_lock02" {
+    $keys t {
+     $frame 0 1 {
+      #t 0.0000001 -0.0627619 -0.000815
+     }
+    }
+   }
+  }
+  $node "w_suppressor" {
+   $keys t q {
+    $frame 0 1 {
+     #t -0 0.0820921 0.3764077
+    }
+   }
+  }
+  $node "w_foregrip" {
+   $keys t q {
+    $frame 0 1 {
+     #t -0.0000121 0.0510458 0.2508078
+    }
+   }
+  }
+  $node "w_bolt_release" {
+   $keys q {
+    $frame 0 1 {
+    }
+   }
+  }
+  $node "w_charging_handle" {
+   $keys t {
+    $frame 0 1 {
+     #t -0.0000009 0.1048755 -0.0684262
+    }
+   }
+  }
+  $node "w_bolt" {
+   $keys t {
+    $frame 0 1 {
+     #t 0.001225 0.0828402 0.0646298
+    }
+   }
+  }
+  $node "w_dust_cover" {
+   $keys q {
+    $frame 0 1 {
+    }
+   }
+  }
+  $node "w_mag_release" {
+   $keys t {
+    $frame 0 1 {
+     #t 0.0154751 0.0462257 0.0349078
+    }
+   }
+  }
+  $node "w_fire_mode" {
+   $keys q {
+    $frame 0 1 {
+    }
+   }
+  }
+  $node "w_sight_front" {
+   $keys q {
+    $frame 0 1 {
+    }
+   }
+  }
+  $node "w_sight_rear" {
+   $keys q {
+    $frame 0 1 {
+    }
+   }
+  }
+  $node "w_trigger" {
+   $keys q {
+    $frame 0 1 {
+    }
+   }
+  }
+ }
+ $custProps {
+  #custProp "profile" "MK18"
+  #custProp "sourceFile" "p_SN_MK18_Base.blend1"
+ }
+}

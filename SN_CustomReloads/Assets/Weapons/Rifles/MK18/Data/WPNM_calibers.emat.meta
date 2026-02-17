@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{EEABD717AE33D07A}Assets/Weapons/Rifles/MK18/Data/WPNM_calibers.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

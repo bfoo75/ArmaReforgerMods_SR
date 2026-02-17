@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{C1BF107CBD0FBD72}Assets/Weapons/Rifles/MK18/Data/WPNT_MK182_BCR.edds"
+ NMOMap "{B5C9176990ED5FD6}Assets/Weapons/Rifles/MK18/Data/WPNT_MK18_NMO.edds"
+}

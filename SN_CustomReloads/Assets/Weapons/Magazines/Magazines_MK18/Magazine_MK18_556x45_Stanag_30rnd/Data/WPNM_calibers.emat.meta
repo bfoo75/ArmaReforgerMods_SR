@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A16B63DB2D96068D}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/Data/WPNM_calibers.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

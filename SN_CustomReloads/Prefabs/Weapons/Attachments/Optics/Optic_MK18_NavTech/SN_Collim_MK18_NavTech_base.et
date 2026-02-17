@@ -1,0 +1,79 @@
+GameEntity : "{78689FF321194268}Prefabs/Weapons/Attachments/Optics/WeaponCollimator_Base.et" {
+ ID "4BA426CBAED42A14"
+ components {
+  InventoryItemComponent "{52627A1F45CD4EB6}" {
+   Attributes SCR_ItemAttributeCollection "{52627A1EBB0698FD}" {
+    ItemDisplayName UIInfo "{5D369D0F663A1227}" {
+     Name "#AR-Item_AP2k_Name"
+     Description "#AR-Item_AP2k_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5D369D0F663A123F}" {
+     Weight 0.168
+     ItemVolume 200
+    }
+    CustomAttributes {
+     WeaponAttachmentAttributes "{5284D858FFF9BE66}" {
+      AttachmentType AttachmentOpticsCarryHandle "{689CE0DE9C9BCEFC}" {
+      }
+     }
+    }
+   }
+  }
+  MeshObject "{5D369D0F663A1234}" {
+   Object "{EC40B149A69BF4D8}Assets/Weapons/Attachments/Optics/Optic_MK18_NavTech/optic_MK18_NavTech.xob"
+  }
+  ParametricMaterialInstanceComponent "{689CE0DE9C9BCE81}" {
+   UserParamAlpha 0
+  }
+  SCR_CollimatorSightsComponent "{5D0CC83435B55855}" {
+   SightsPosition PointInfo "{5D369D0BB9E9A7C9}" {
+    PivotID "w_eye_control"
+   }
+   SightsPointFront PointInfo "{689CE0DE9C9BCE8E}" {
+    PivotID "optic_front"
+    Offset 0 0 0
+   }
+   SightsPointRear PointInfo "{689CE0DE9C9BCE89}" {
+    PivotID "optic_rear"
+    Offset 0 0 0
+   }
+   ADSTime 0.35
+   SightsPriority 0
+   SoundInt 10003
+   SightsPartialHideADS 1
+   SightsPartialFreelookFactor 0.708
+   CollimatorTopLeft PointInfo "{689CE0DE9C9BCE8B}" {
+    PivotID "ref_tl"
+    Offset 0 0 0
+   }
+   CollimatorBottomRight PointInfo "{689CE0DE9C9BCE94}" {
+    PivotID "ref_br"
+    Offset 0 0 0
+   }
+   ReticleDefaultAngularSize 1.4
+   ReticleDefaultTexturePortion 0.5
+   ADSDeactivationPercentage 0.25
+   ReticleColors {
+    BaseCollimatorReticleColor "{689CE0DE9C9BCE97}" {
+     ReticleColor 1 0 0 1
+     GlowColor 1 0 0 1
+    }
+   }
+   ReticleAutoBright 1
+   ReticleAutoUpper 1
+   ReticleAutoLower 0
+   ReticleAutoClampDayNight 1
+   m_fDaylightBrightness 12
+  }
+  ActionsManagerComponent "{5284E0EFF569AD07}" {
+   additionalActions {
+    SCR_AttachItemFromInventoryAction "{5D369D0F663A1219}" {
+     ParentContextList {
+      "optic"
+     }
+     CanAggregate 1
+    }
+   }
+  }
+ }
+}

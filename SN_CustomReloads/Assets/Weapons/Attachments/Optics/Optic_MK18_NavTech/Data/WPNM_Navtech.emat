@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{2E866AD5BED85095}Assets/Weapons/Attachments/Optics/Optic_MK18_NavTech/Data/WPNT_navtech_BCR.edds"
+ NMOMap "{165ED14767AF020B}Assets/Weapons/Attachments/Optics/Optic_MK18_NavTech/Data/WPNT_navtech_NMO.edds"
+}

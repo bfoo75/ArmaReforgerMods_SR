@@ -1,0 +1,57 @@
+MetaFileClass {
+ Name "{657C05C2A5831270}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/magazine_MK18_556x45_Stanag_30rnd.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSceneHierarchy 1
+   MaterialAssigns {
+    MaterialAssignClass "{689B2AD502E8C75A}" {
+     SourceMaterial "WPNM_MK18"
+     AssignedMaterial "{060F344658AFEA91}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/Data/WPNM_MK18.emat"
+    }
+    MaterialAssignClass "{689B2AD502E8C4B3}" {
+     SourceMaterial "WPNM_calibers"
+     AssignedMaterial "{A16B63DB2D96068D}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/Data/WPNM_calibers.emat"
+    }
+   }
+   MeshParams {
+    MeshParam Magazine_MK18_556x45_Stanag_30rnd {
+    }
+    MeshParam Cartridge_MK18_556x45 {
+     NoMerge 1
+    }
+   }
+   GeometryParams {
+    GeometryParam UCX_Magazine_MK18_556x45_Stanag_30rnd {
+     LayerPreset "ItemFireView"
+     SurfaceProperties {
+      "{BC12BF6AC97F2458}Common/Materials/Game/Metal/metal_2mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{689B2AD502C32BB8}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{689B2AD502C32B78}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{689B2AD502C328AA}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{689B2AD502C3288D}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{689B2AD502C328ED}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{689B2AD502C328D1}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

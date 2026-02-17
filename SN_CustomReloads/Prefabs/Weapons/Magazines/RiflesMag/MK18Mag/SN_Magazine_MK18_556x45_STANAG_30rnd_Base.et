@@ -1,0 +1,44 @@
+GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
+ ID "CA6BE4D6BB2D1077"
+ components {
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "#AR-Magazine_STANAG_Name"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{689CE0DD053C1E15}" {
+     Weight 0.12
+     SizeSetupStrategy Manual
+     ItemVolume 200
+     RestingUP Right
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{689CE0DD053C1E19}" {
+      CameraPreset Left
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 1
+      FOV 12
+     }
+    }
+   }
+   WeightPerAmmo 0.012
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell MagazineWellStanag556 "{689CE0DD053C1E26}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    m_sAmmoCaliber "#AR-AmmunitionID_556x45mm"
+    m_MagIndicator SCR_MagazineIndicatorConfiguration "{5866951DE2665916}" : "{1AA788302FE3C53A}Configs/WeaponInfo/MagazineIndicators/ak74_30.conf" {
+    }
+   }
+   MaxAmmo 30
+   AmmoConfig "{2689915ED0E00994}Configs/Weapons/Ammo/Ammo_556x45.conf"
+   AmmoMapping {
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+   }
+  }
+  MeshObject "{CA6BE4D6A23F8EF0}" {
+   Object "{657C05C2A5831270}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/magazine_MK18_556x45_Stanag_30rnd.xob"
+  }
+ }
+}

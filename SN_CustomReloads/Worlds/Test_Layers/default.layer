@@ -1,0 +1,39 @@
+$grp GenericEntity : "{3D5E468898FCC4F4}Prefabs/Weapons/Magazines/RiflesMag/MK18Mag/SN_Magazine_MK18_556x45_STANAG_30rnd_Base.et" {
+ {
+  coords 122.916 1.732 129.62
+ }
+ {
+  coords 122.926 1.711 129.589
+ }
+ {
+  coords 122.926 1.677 129.556
+ }
+ {
+  coords 122.923 1.695 129.519
+ }
+ {
+  coords 122.903 1.716 129.602
+ }
+ {
+  coords 122.9 1.687 129.568
+ }
+ {
+  coords 122.882 1.75 129.668
+ }
+}
+GenericEntity : "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et" {
+ coords 124.206 1 129.332
+}
+GenericEntity : "{4B03B87ACCFA0936}Prefabs/Weapons/Rifles/MK18/SNW_Rifle_MK18_base.et" {
+ components {
+  SN_WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentMainMagCopy "{68A108115455CD08}" {
+     AttachmentSlot InventoryStorageSlot SlotMainMagCopy {
+     }
+    }
+   }
+  }
+ }
+ coords 123.422 1.376 129.735
+}

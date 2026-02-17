@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{AF9C04507984EFB8}Assets/Weapons/Rifles/MK18/Data/WPNT_Folding_Sights_BCR.edds"
+ NMOMap "{9744BFC2A0F3BD26}Assets/Weapons/Rifles/MK18/Data/WPNT_Folding_Sights_NMO.edds"
+}
