@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{44F2D8402B49AC72}Assets/Weapons/Attachments/Optics/Optic_MK18_NavTech/Data/WPNM_Navtech_reticle.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

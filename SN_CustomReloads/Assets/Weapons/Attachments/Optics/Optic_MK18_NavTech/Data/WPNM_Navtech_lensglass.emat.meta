@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{B8B731AEE4A80758}Assets/Weapons/Attachments/Optics/Optic_MK18_NavTech/Data/WPNM_Navtech_lensglass.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{27532ED24D0D451E}Prefabs/Weapons/Attachments/Optics/Optic_AP2k/SN_Collim_MK18_NavTech_base.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

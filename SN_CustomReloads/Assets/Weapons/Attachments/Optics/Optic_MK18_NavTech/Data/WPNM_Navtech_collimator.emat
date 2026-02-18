@@ -1,0 +1,10 @@
+MatPBRBasic {
+ Emissive 0.871 0 0 0
+ EmissiveLV 9
+ Sort translucent
+ CastShadow 0
+ ReceiveShadow 0
+ NoDecals 1
+ BlendMode AlphaBlend
+ OpacityMap "{D4E04A40461D0031}Assets/Weapons/Attachments/Optics/Optic_MK18_NavTech/Data/WPNT_collimator_A.edds" clampu clampv
+}

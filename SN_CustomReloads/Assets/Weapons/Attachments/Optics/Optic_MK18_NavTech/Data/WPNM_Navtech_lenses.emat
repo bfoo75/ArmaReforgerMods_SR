@@ -1,0 +1,6 @@
+MatPBRBasic {
+ BlendMode AlphaBlend
+ BCRMap "{BDF27D4856546456}Assets/Weapons/Attachments/Optics/Optic_MK18_NavTech/Data/WPNT_Scope_lenses_BCR.edds"
+ OpacityMap "{9741F9ED5D0853DD}Assets/Weapons/Attachments/Optics/Optic_MK18_NavTech/Data/WPNT_Scope_lenses_A.edds"
+ NMOMap "{852AC6DA8F2336C8}Assets/Weapons/Attachments/Optics/Optic_MK18_NavTech/Data/WPNT_Scope_lenses_NMO.edds"
+}

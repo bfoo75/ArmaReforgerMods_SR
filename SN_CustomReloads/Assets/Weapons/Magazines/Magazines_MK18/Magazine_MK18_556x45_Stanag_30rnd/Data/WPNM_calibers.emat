@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{542967B17358AB89}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/Data/WPNT_Ammunition_BCR.edds"
+ NMOMap "{6CF1DC23AA2FF917}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/Data/WPNT_Ammunition_NMO.edds"
+}
