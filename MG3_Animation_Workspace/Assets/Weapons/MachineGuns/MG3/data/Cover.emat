@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Emissive 0 0 0 1
+ BCRMap "{7661F6B140C73BCD}Assets/Weapons/MachineGuns/MG3/data/Cover_BCR.edds"
+ NMOMap "{4EB94D2399B06953}Assets/Weapons/MachineGuns/MG3/data/Cover_NMO.edds"
+}

@@ -1,0 +1,8 @@
+GameProject {
+ ID "MG3AnimationWorkspace"
+ GUID "68A4D0D739483E66"
+ TITLE "MG3_Animation_Workspace"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}

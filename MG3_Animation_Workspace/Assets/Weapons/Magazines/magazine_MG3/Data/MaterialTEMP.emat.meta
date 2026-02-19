@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{9AE7F42D84D1B0B4}Assets/Weapons/Magazines/magazine_MG3/Data/MaterialTEMP.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,73 @@
+AnimSetInstanceSource {
+ Template "{76423CD74C3E088C}Assets/Weapons/Magazines/magazine_MG3/workspace/SR_MG3_Magazine.ast"
+ Lines {
+  AnimSetInstanceSource_Line "Reload.Erc.Bipod" {
+   Resource "{BD162E64E6C14789}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_bipod.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Bipod" {
+   Resource "{BD162E64E6C14789}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_bipod.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Fire" {
+   Resource "{A1D88EA6A3690F4D}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Fire" {
+   Resource "{A1D88EA6A3690F4D}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Idle" {
+   Resource "{7F9A0ED12C2113C3}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Idle" {
+   Resource "{7F9A0ED12C2113C3}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_InsertMag" {
+   Resource "{C399EBDCB92A8F64}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_insert_box.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_InsertMag" {
+   Resource "{C399EBDCB92A8F64}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_insert_box.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_removeMag" {
+   Resource "{08FD94287F5CBD0E}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_remove_box.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_removeMag" {
+   Resource "{08FD94287F5CBD0E}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_remove_box.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.ReloadActionBolt" {
+   Resource "{370114CA7BB05075}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_rack_bolt.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.ReloadActionBolt" {
+   Resource "{370114CA7BB05075}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_rack_bolt.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Sight" {
+   Resource "{25F99B22AAFC83FC}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_sight.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Sight" {
+   Resource "{25F99B22AAFC83FC}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_sight.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Trigger" {
+   Resource "{08D4313DA536F1C5}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_trigger.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Trigger" {
+   Resource "{08D4313DA536F1C5}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_trigger.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_RemoveMagSweep" {
+   Resource "{6E3036C0A856D66B}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_remove_box_sweep.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_RemoveMagSweep" {
+   Resource "{6E3036C0A856D66B}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_remove_box_sweep.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_RemoveMagClose" {
+   Resource "{D75A7D4ED7A5F0CE}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_remove_box_close.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_RemoveMagClose" {
+   Resource "{D75A7D4ED7A5F0CE}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_remove_box_close.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_RemoveMagOpen" {
+   Resource "{A52246A8116E05E2}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_remove_box_open.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_RemoveMagOpen" {
+   Resource "{A52246A8116E05E2}Assets/Weapons/MachineGuns/M60/anims/anm/m_lmg_M60_erc_remove_box_open.anm"
+  }
+ }
+ RBF AnimSetInstanceSourceRBFArray "{68A76B783585FAC1}" {
+ }
+}

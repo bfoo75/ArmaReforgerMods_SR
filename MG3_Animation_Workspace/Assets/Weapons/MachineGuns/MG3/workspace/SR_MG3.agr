@@ -1,0 +1,91 @@
+AnimSrcGraph {
+ AnimSetTemplate "{8311F84FD14FEB28}Assets/Weapons/MachineGuns/MG3/workspace/SR_MG3.ast"
+ ControlTemplate AnimSrcGCT "{68A76B79C0FA5D84}" {
+  Variables {
+   AnimSrcGCTVarBool TriggerPulled {
+   }
+   AnimSrcGCTVarInt Stance {
+    MaxValue 2
+   }
+   AnimSrcGCTVarBool Firing {
+   }
+   AnimSrcGCTVarBool LastBullet {
+   }
+   AnimSrcGCTVarBool Empty {
+   }
+   AnimSrcGCTVarBool Cocked {
+   }
+   AnimSrcGCTVarFloat AimY {
+    MinValue -90
+    MaxValue 90
+   }
+   AnimSrcGCTVarFloat SightElevation {
+    DefaultValue 0.1
+    MinValue 0
+    MaxValue 1
+   }
+   AnimSrcGCTVarBool Bipod {
+   }
+   AnimSrcGCTVarBool Low {
+   }
+   AnimSrcGCTVarInt State {
+    MinValue -1
+    MaxValue 1
+   }
+   AnimSrcGCTVarInt WeaponInspectionState {
+    MinValue -2
+    MaxValue 2
+   }
+   AnimSrcGCTVarBool WeaponDeployed {
+   }
+   AnimSrcGCTVarFloat ADSAdjust {
+    DefaultValue 1
+    MaxValue 1
+   }
+  }
+  Commands {
+   AnimSrcGCTCmd CMD_Weapon_Action_Interrupt {
+   }
+   AnimSrcGCTCmd CMD_Weapon_Reload {
+   }
+   AnimSrcGCTCmd CMD_Weapon_Change_Hide {
+   }
+  }
+  IkChains {
+   AnimSrcGCTIkChain RightArmProp {
+    Joints {
+     "rightarm"
+     "rightarmtwist"
+     "rightforearm"
+     "rightforearmtwist"
+     "righthand"
+     "righthandprop"
+    }
+    MiddleJoint "rightforearm"
+    ChainAxis "-y"
+   }
+   AnimSrcGCTIkChain LeftArm {
+    Joints {
+     "leftarm"
+     "leftarmtwist"
+     "leftforearm"
+     "leftforearmtwist"
+     "lefthand"
+    }
+    MiddleJoint "leftforearm"
+    ChainAxis "+y"
+   }
+  }
+  GlobalTags {
+   "WEAPON"
+   "MACHINEGUN"
+   "M60"
+  }
+ }
+ Debug AnimSrcGD "{68A76B79C0FA5DF5}" {
+ }
+ GraphFilesResourceNames {
+  "{BEED80F5782956EB}Assets/Weapons/MachineGuns/MG3/workspace/SR_MG3.agf"
+ }
+ DefaultRunNode "MasterControl"
+}

@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{BE23F98161B59F73}Assets/Weapons/Magazines/magazine_MG3/Data/MAG_OUT_BCR.edds"
+ NMOMap "{86FB4213B8C2CDED}Assets/Weapons/Magazines/magazine_MG3/Data/MAG_OUT_NMO.edds"
+}

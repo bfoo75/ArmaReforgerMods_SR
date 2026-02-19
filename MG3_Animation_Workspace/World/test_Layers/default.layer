@@ -1,0 +1,6 @@
+GenericEntity : "{4D2C1E8F3A81F894}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4Ball_1Tracer.et" {
+ coords 126.323 1 127.59
+}
+GenericEntity : "{D182DCDD72BF7E34}Prefabs/Weapons/MachineGuns/M60/MG_M60.et" {
+ coords 126.572 1 127.361
+}

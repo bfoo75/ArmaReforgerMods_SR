@@ -1,0 +1,24 @@
+AnimSetTemplateSource {
+ Groups {
+  AnimSetTemplateSource_AnimationGroup "{68A76B783584D1FC}" {
+   Name "Reload"
+   Animations {
+    "Bipod"
+    "Fire"
+    "Idle"
+    "Reload_InsertMag"
+    "Reload_removeMag"
+    "Reload_RemoveMagClose"
+    "Reload_RemoveMagOpen"
+    "Reload_RemoveMagSweep"
+    "ReloadActionBolt"
+    "Sight"
+    "Trigger"
+   }
+   Columns {
+    "Erc"
+    "Pne"
+   }
+  }
+ }
+}
