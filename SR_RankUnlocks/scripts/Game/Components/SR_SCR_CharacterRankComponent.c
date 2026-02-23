@@ -5,7 +5,7 @@ modded class SCR_CharacterRank
 	//protected ResourceName m_sEntityPrefab;
 	
 	[Attribute(desc: "Prefab of items unlocked by this rank.")]
-	protected ref array<ResourceName> m_aUnlockedItems = {};
+	protected ref array<ResourceName> m_aUnlockedItems;
 	
 	void GetUnlockedItems(out array<ResourceName> RankUnlockedItems)
 	{
