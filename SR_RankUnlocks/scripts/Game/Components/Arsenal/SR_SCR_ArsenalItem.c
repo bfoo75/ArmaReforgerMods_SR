@@ -6,4 +6,3 @@ modded class SCR_ArsenalItem
 		m_eRequiredRank = Rank;
 	}
 }
-
