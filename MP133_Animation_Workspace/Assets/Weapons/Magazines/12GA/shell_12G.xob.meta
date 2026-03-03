@@ -1,0 +1,50 @@
+MetaFileClass {
+ Name "{7E8AF4473BD7A55B}Assets/Weapons/Magazines/12GA/shell_12G.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSceneHierarchy 1
+   MaterialAssigns {
+    MaterialAssignClass "{68C76BCD6C713A94}" {
+     SourceMaterial "WPNM_Ammunition"
+     AssignedMaterial "{BB91153074CCD41B}Assets/Weapons/Magazines/12GA/data/WPNM_Ammunition.emat"
+    }
+   }
+   MeshParams {
+    MeshParam WPN_cal_12G_flare {
+    }
+   }
+   GeometryParams {
+    GeometryParam UCX_cal_12G {
+     LayerPreset "ItemFireView"
+     SurfaceProperties {
+      "{7F153655D1F9ECD8}Common/Materials/Game/WeaponParts/weapon_plastic.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{68C76BCD6C787C90}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{68C76BCD6C781BF8}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{68C76BCD6C781A3A}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{68C76BCD6C78195F}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{68C76BCD6C7819F1}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{68C76BCD6C781869}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

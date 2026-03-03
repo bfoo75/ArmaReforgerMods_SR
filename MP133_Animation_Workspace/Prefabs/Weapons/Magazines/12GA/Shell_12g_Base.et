@@ -1,0 +1,47 @@
+GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
+ ID "CA6BE4D6BB2D1077"
+ components {
+  AICombatPropertiesComponent "{59CE86D96C332DDF}" {
+   Priority 33
+   UsedAgainst 0x17 0
+  }
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "#AR-Magazine_M14_Name"
+     Description "#AR-Magazine_M14_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{68C76BCE09E3E384}" {
+     Weight 0.25
+     SizeSetupStrategy Manual
+     ItemVolume 200
+     RestingUP Right
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{68C76BCE09E3E396}" {
+      CameraPreset Left
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 0.9
+      FOV 10
+     }
+    }
+   }
+   WeightPerAmmo 0.025
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell MagazineWellM14 "{68C76BCE09E3E392}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "#AR-Magazine_M14_Name"
+    Description "#AR-Magazine_M14_Description"
+    m_sAmmoCaliber "#AR-AmmunitionID_762x51mm"
+   }
+   ItemModel "{7E8AF4473BD7A55B}Assets/Weapons/Magazines/12GA/shell_12G.xob"
+   MaxAmmo 1
+   AmmoConfig "{533A763E304771D9}Configs/Weapons/Ammo/Ammo_762x51.conf"
+  }
+  MeshObject "{CA6BE4D6A23F8EF0}" {
+   Object "{7E8AF4473BD7A55B}Assets/Weapons/Magazines/12GA/shell_12G.xob"
+  }
+ }
+}

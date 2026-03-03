@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Emissive 0 0 0 1
+ BCRMap "{CA9C59DF87237487}Assets/Weapons/Magazines/12GA/data/WPNT_Ammunition_BCR.edds"
+ NMOMap "{F244E24D5E542619}Assets/Weapons/Magazines/12GA/data/WPNT_Ammunition_NMO.edds"
+}

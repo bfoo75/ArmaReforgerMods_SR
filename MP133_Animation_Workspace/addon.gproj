@@ -1,0 +1,8 @@
+GameProject {
+ ID "MP133AnimationWorkspace"
+ GUID "68C715E0025F8DA2"
+ TITLE "MP133_Animation_Workspace"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
