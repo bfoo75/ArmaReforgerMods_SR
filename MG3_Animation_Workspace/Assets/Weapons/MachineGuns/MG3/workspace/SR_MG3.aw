@@ -12,6 +12,9 @@ BaseSource {
   AnimSrcWorkspacePreviewModel "{68A76B79C0C58020}" {
    Model "{7C7F521634ADBF9A}Assets/Weapons/MachineGuns/M60/M60_Body.xob"
   }
+  AnimSrcWorkspacePreviewModel "{68B1287D3669029A}" {
+   Model "{0B0BA18E528D2CB8}Assets/Weapons/MachineGuns/MG3/weapon_MG3.xob"
+  }
  }
  AudioTesting AnimSrcWorkspaceAudioTesting "{68A76B79C0C58022}" {
  }

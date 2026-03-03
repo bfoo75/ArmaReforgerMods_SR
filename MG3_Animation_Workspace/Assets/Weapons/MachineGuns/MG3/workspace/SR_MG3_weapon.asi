@@ -1,29 +1,29 @@
-AnimSetInstanceSource {
+AnimSetInstanceSource "{68AAD25561E2B3F9}" {
  Template "{8311F84FD14FEB28}Assets/Weapons/MachineGuns/MG3/workspace/SR_MG3.ast"
  Lines {
   AnimSetInstanceSource_Line "Reload.Erc.Bipod" {
-   Resource "{58F29DC5E2BD1E6D}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_bipod.anm"
+   Resource "{7F4E06FF79A03096}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/w_MG3_bipod.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Bipod" {
-   Resource "{58F29DC5E2BD1E6D}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_bipod.anm"
+   Resource "{7F4E06FF79A03096}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/w_MG3_bipod.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Fire" {
-   Resource "{BA0E20834B1B2913}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_fire.anm"
+   Resource "{9D5230C9CE4D5D75}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_fire.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Fire" {
-   Resource "{BA0E20834B1B2913}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_fire.anm"
+   Resource "{9D5230C9CE4D5D75}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_fire.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Reload_InsertMag" {
-   Resource "{34AE089E9341D217}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_insert_box.anm"
+   Resource "{1C3B7743CF753F29}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_reload_insert_mag.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Reload_InsertMag" {
-   Resource "{34AE089E9341D217}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_insert_box.anm"
+   Resource "{1C3B7743CF753F29}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_reload_insert_mag.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Reload_RemoveMag" {
-   Resource "{FFCA776A5537E07D}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_remove_box.anm"
+   Resource "{BFCAD58BE59231E4}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_reload_remove_mag.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Reload_RemoveMag" {
-   Resource "{FFCA776A5537E07D}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_remove_box.anm"
+   Resource "{BFCAD58BE59231E4}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_reload_remove_mag.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.ReloadActionBolt" {
    Resource "{BF92BF0073FB8C85}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_rack_bolt.anm"
@@ -32,16 +32,16 @@ AnimSetInstanceSource {
    Resource "{BF92BF0073FB8C85}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_rack_bolt.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Sight" {
-   Resource "{C01D2883AE80DA18}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_sight.anm"
+   Resource "{DE55D7802D4B00AC}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_sight.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Sight" {
-   Resource "{C01D2883AE80DA18}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_sight.anm"
+   Resource "{DE55D7802D4B00AC}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_sight.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Trigger" {
-   Resource "{E1A039A321AFEF11}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_trigger.anm"
+   Resource "{E7F0D6AC5288E80F}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_trigger.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Trigger" {
-   Resource "{E1A039A321AFEF11}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_trigger.anm"
+   Resource "{E7F0D6AC5288E80F}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_trigger.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Finger_trigger_in" {
    Resource "{C129D5123ABD783A}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_finger_trigger_in.anm"
@@ -62,10 +62,10 @@ AnimSetInstanceSource {
    Resource "{644CA0F4C453359D}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_idle.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Safety" {
-   Resource "{B6AEB0C587C0F45E}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_safety.anm"
+   Resource "{C6D8A2A19DE89DF5}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_safety.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Safety" {
-   Resource "{B6AEB0C587C0F45E}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_safety.anm"
+   Resource "{C6D8A2A19DE89DF5}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_safety.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_Off" {
    Resource "{E5DB9C7636353AFB}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_switch_mode_empty.anm"
@@ -96,6 +96,12 @@ AnimSetInstanceSource {
   }
   AnimSetInstanceSource_Line "Reload.Pne.Reload_RemoveMagSweep" {
    Resource "{40C2CFC168EF1EBE}Assets/Weapons/MachineGuns/M60/anims/anm/w_lmg_M60_erc_remove_box_sweep.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_MagNoBullet" {
+   Resource "{64C1B133F2E144C1}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_reload_mag_no_bullet.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_MagNoBullet" {
+   Resource "{54411AADB8D0689C}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/p_MG3_pne_MagNoBullet.anm"
   }
  }
  RBF AnimSetInstanceSourceRBFArray "{68A76B79C0F8199B}" {

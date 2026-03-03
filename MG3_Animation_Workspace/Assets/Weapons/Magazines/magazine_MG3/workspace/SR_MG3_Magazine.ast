@@ -7,6 +7,7 @@ AnimSetTemplateSource {
     "Fire"
     "Idle"
     "Reload_InsertMag"
+    "Reload_MagNoBullet"
     "Reload_removeMag"
     "Reload_RemoveMagClose"
     "Reload_RemoveMagOpen"

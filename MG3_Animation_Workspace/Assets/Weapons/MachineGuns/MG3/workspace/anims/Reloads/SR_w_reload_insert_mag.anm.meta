@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{1C3B7743CF753F29}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_reload_insert_mag.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "anims_SR_MG3_Reload_RemoveMag_Blocking.blend"
+   SourceProfile "weapon_MG3"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

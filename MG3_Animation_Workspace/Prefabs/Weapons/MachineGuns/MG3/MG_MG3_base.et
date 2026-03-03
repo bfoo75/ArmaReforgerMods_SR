@@ -33,8 +33,7 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
     }
     ItemAnimationAttributes ItemAnimationAttributes "{5284960E60421307}" {
      AnimationInstance "{60945F10BF15FC09}anims/workspaces/player/player_main_machinegun.asi"
-     AnimationIKPose "{BA25DD5CEFEE4198}Assets/Weapons/MachineGuns/M60/anims/anm/p_M60_ik.anm"
-     AnimIKPoseProneOverride "{9059C37B92DFAB99}Assets/Weapons/MachineGuns/M60/anims/anm/p_pne_M60_ik.anm"
+     AnimationIKPose "{1093BF917ECB3167}Assets/Weapons/MachineGuns/MG3/workspace/anims/Base/SR_p_MG3_ik.anm"
     }
     CustomAttributes {
      AimingModifierAttributes "{566C7D15A071B88E}" {
@@ -47,7 +46,7 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
        }
        PivotPointInfoItem "{68A76B78BF12A9FA}" {
         "Point info" DeploymentPointInfo ppii1 {
-         Offset 0 0.049 0.6251
+         Offset 0 -0.1768 0.6251
         }
         SystemIdentifier 2
         StabilizationPoints {
@@ -253,9 +252,10 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
       Offset 0 0.0592 -0.3852
      }
      MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      ChildPivotID "snap_weapon"
       InspectionWidgetOffset -0.1111 0.0503 -0.0111
      }
-     MagazineTemplate "{4D2C1E8F3A81F894}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4Ball_1Tracer.et"
+     MagazineTemplate "{39D4F8C9969B9B08}Prefabs/Weapons/Magazines/Box_762x51_MG3_100rnd_Base.et"
     }
     WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
      AnimGraph "{91E39E4FE68A3FDB}Assets/Weapons/MachineGuns/MG3/workspace/SR_MG3.agr"

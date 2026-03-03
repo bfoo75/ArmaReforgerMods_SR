@@ -40,6 +40,7 @@ AnimSetTemplateSource {
     "Idle_finger"
     "IKOffset"
     "Reload_InsertMag"
+    "Reload_MagNoBullet"
     "Reload_RemoveMag"
     "Reload_RemoveMagClose"
     "Reload_RemoveMagOpen"

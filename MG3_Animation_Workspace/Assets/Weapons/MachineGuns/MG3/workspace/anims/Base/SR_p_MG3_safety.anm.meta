@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{183580660ED0BEE0}Assets/Weapons/MachineGuns/MG3/workspace/anims/Base/SR_p_MG3_safety.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "anims_SR_MG3_base.blend"
+   SourceProfile "502_IK_RightHand"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

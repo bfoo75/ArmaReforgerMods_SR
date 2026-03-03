@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{7F4E06FF79A03096}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/w_MG3_bipod.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "anims_SR_MG3_Reload_RemoveMag_Blocking.blend"
+   SourceProfile "weapon_MG3 - bipod"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

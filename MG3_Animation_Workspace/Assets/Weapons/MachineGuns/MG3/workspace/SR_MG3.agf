@@ -2,10 +2,6 @@ AnimSrcGraphFile {
  Sheets {
   AnimSrcGraphSheet master {
    Nodes {
-    AnimSrcNodeSource RemoveOpenSrc {
-     EditorPos 557.4 655.1
-     Source "Reload.Reload_RemoveMagOpen"
-    }
     AnimSrcNodeSource InsertMagAnim {
      EditorPos 548.3 652.8
      Source "Reload.Reload_InsertMag"
@@ -17,12 +13,6 @@ AnimSrcGraphFile {
     AnimSrcNodeStateMachine MagReloadSTM {
      EditorPos 555 649.7
      states {
-      AnimSrcNodeState RemoveEmptyMag {
-       EditorPos 557.4 652.2
-       Child "RemoveOpenSrc"
-       StartCondition "GetCommandI(CMD_Weapon_Reload) == 5 && GetCommandF(CMD_Weapon_Reload) == 0.0"
-       TimeStorage "Real Time"
-      }
       AnimSrcNodeState InsertMag {
        EditorPos 553.5 650.5
        Child "InsertMagAnim"
@@ -37,19 +27,10 @@ AnimSrcGraphFile {
       }
      }
      transitions {
-      AnimSrcNodeTransition "{68A76B79C0FA7016}" {
-       FromState "RemoveEmptyMag"
-       ToState "InsertMag"
-       Duration "0.3"
-       StartTime "GetEventTime(anim.Reload.Erc.Reload_InsertMag, \"BlendIn\")"
-       Condition "IsEvent(\"BlendOut\")"
-       BlendFn "S"
-       PostEval 1
-      }
       AnimSrcNodeTransition "{68A76B79C0FA701C}" {
        FromState "RemoveMag"
        ToState "InsertMag"
-       Duration "0.2"
+       Duration "0.3"
        StartTime "GetEventTime(anim.Reload.Erc.Reload_InsertMag, \"BlendIn\")"
        Condition "IsEvent(\"BlendOut\")"
        BlendFn "S"
@@ -88,8 +69,8 @@ AnimSrcGraphFile {
       }
       AnimSrcNodeState MagNoBulletReload {
        EditorPos 556.2 645.3
-       Child "MagReloadSTM"
-       StartCondition "false"
+       Child "Source 21156"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 5 && GetCommandF(CMD_Weapon_Reload) == 0.0"
        IsExit 1
       }
       AnimSrcNodeState MagReload {
@@ -105,16 +86,10 @@ AnimSrcGraphFile {
        IsExit 1
       }
       AnimSrcNodeState RemoveEmptyMag {
-       EditorPos 564.6 645
-       Child "RemoveMagCloseSrc"
+       EditorPos 564.632 645.053
+       Child "RemoveMagSweepSrc"
        StartCondition "GetCommandI(CMD_Weapon_Reload) == 6 && ( Empty || LastBullet )"
        IsExit 1
-      }
-      AnimSrcNodeState ReloadActionBoltInsert {
-       EditorPos 557.1 644.2
-       Child "Event Bolt Open"
-       StartCondition "GetCommandI(CMD_Weapon_Reload) == 3 && GetCommandF(CMD_Weapon_Reload) == 0.0"
-       TimeStorage "Real Time"
       }
       AnimSrcNodeState ReloadActionBolt {
        EditorPos 558.4 643
@@ -124,34 +99,18 @@ AnimSrcGraphFile {
        IsExit 1
       }
      }
-     transitions {
-      AnimSrcNodeTransition "{68A76B79C0FA701B}" {
-       FromState "ReloadActionBoltFull"
-       ToState "MagNoBulletReload"
-       Duration "0.35"
-       Condition "RemainingTimeLess(0.6)"
-       PostEval 1
-      }
-      AnimSrcNodeTransition "{68A76B79C0FA7004}" {
-       FromState "ReloadActionBoltInsert"
-       ToState "NoMagNoBulletReload"
-       Duration "0.35"
-       Condition "RemainingTimeLess(0.6)"
-       PostEval 1
-      }
-     }
     }
     AnimSrcNodeStateMachine WeaponReloadStanceSTM {
-     EditorPos 547.9 635.2
+     EditorPos 548 635.158
      states {
       AnimSrcNodeState Erc_Cro {
-       EditorPos 547.1 637.1
+       EditorPos 547.2 637.058
        Child "ReloadErcCroG"
        StartCondition "Stance == 0 || Stance == 1"
        IsExit 1
       }
       AnimSrcNodeState PNE {
-       EditorPos 551.2 637.1
+       EditorPos 551.3 637.058
        Child "ReloadPneG"
        StartCondition "Stance == 2"
        IsExit 1
@@ -200,6 +159,9 @@ AnimSrcGraphFile {
        StartCondition "Bipod == false"
       }
       AnimSrcNodeState BipodDeployed {
+       Tags {
+        "TagFPCamera"
+       }
        EditorPos 518.6 642.1
        Child "BipodDeploedPose"
        StartCondition "Bipod == true"
@@ -294,7 +256,7 @@ AnimSrcGraphFile {
        TimeStorage Inherit
       }
       AnimSrcNodeState "State 3" {
-       EditorPos 538.4 645.2
+       EditorPos 538.316 645.263
        Child "Finger_in"
        StartCondition "false"
        TimeStorage "Real Time"
@@ -336,7 +298,7 @@ AnimSrcGraphFile {
      }
     }
     AnimSrcNodePose Idle {
-     EditorPos 534.9 647
+     EditorPos 534.737 648
      Source "Reload.Idle_finger"
      Time "1"
     }
@@ -415,7 +377,7 @@ AnimSrcGraphFile {
      }
     }
     AnimSrcNodeBlend "Blend 3" {
-     EditorPos 526.6 638.4
+     EditorPos 526.526 638.316
      BlendWeight "1"
      Child0 "SOUND_BIPOD"
      Child1 "SafetySTM"
@@ -498,8 +460,8 @@ AnimSrcGraphFile {
      Source "Reload.Reload_RemoveMagClose"
     }
     AnimSrcNodeSource RemoveMagSweepSrc {
-     EditorPos 561.8 653.2
-     Source "Reload.Reload_RemoveMagSweep"
+     EditorPos 561.895 653.263
+     Source "Reload.Reload_RemoveMag"
     }
     AnimSrcNodeBlend "Blend 4" {
      EditorPos 534.7 633.4
@@ -585,8 +547,7 @@ AnimSrcGraphFile {
      states {
       AnimSrcNodeState InspectionInLeft {
        Tags {
-        "TagTransitionADSIn"
-        "TagInspectionTransition"
+        "TagTransitionADSIn" "TagInspectionTransition"
        }
        EditorPos 519.4 631.6
        Child "Sound_Inspect_In"
@@ -595,8 +556,7 @@ AnimSrcGraphFile {
       }
       AnimSrcNodeState InspectionLoopLeft {
        Tags {
-        "TagInspectionPose"
-        "TagTransitionADS"
+        "TagInspectionPose" "TagTransitionADS"
        }
        EditorPos 521.8 632.8
        Child "InspectionInS 28548"
@@ -606,8 +566,7 @@ AnimSrcGraphFile {
       }
       AnimSrcNodeState InspectionOutLeft {
        Tags {
-        "TagTransitionADSOut"
-        "TagInspectionTransition"
+        "TagTransitionADSOut" "TagInspectionTransition"
        }
        EditorPos 523.9 631.5
        Child "InspectionOut"
@@ -905,7 +864,7 @@ AnimSrcGraphFile {
        PassThrough 1
       }
       AnimSrcNodeState BufferPass3 {
-       EditorPos 537.7 628.9
+       EditorPos 537.684 628.842
        Child "Buffer Use 17157"
        StartCondition "false"
        PassThrough 1
@@ -1229,6 +1188,13 @@ AnimSrcGraphFile {
        Once 1
       }
      }
+    }
+    AnimSrcNodeSource "Source 21156" {
+     Tags {
+      "SR_CameraBone1stPerson"
+     }
+     EditorPos 551.368 649.263
+     Source "Reload.Reload_MagNoBullet"
     }
    }
   }

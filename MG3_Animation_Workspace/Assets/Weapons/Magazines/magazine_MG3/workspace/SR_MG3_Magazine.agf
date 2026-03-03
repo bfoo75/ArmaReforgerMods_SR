@@ -66,7 +66,7 @@ AnimSrcGraphFile {
     }
     AnimSrcNodeQueue "Queue 1" {
      EditorPos -6.9 -26.6
-     Child "State Machine 1"
+     Child "BipodFoldedPose"
      QueueItems {
       AnimSrcNodeQueueItem "{68A76B78358631BA}" {
        Child "FireAnim"
@@ -93,65 +93,17 @@ AnimSrcGraphFile {
      EditorPos -4.4 -24.2
      Source "Reload.Trigger"
     }
-    AnimSrcNodeStateMachine "State Machine 1" {
-     EditorPos -12.1 -22.5
-     states {
-      AnimSrcNodeState BipodFolded {
-       EditorPos -14.3 -21.3
-       Child "BipodFoldedPose"
-       StartCondition "Bipod == false"
-      }
-      AnimSrcNodeState BipodDeployed {
-       EditorPos -9 -21.3
-       Child "BipodDeploedPose"
-       StartCondition "Bipod == true"
-      }
-     }
-     transitions {
-      AnimSrcNodeTransition "{68A76B78358631A7}" {
-       ToState "BipodFolded"
-       Duration "0.2"
-       Condition "Bipod == false  && HasVariableChanged(Bipod)"
-       PostEval 1
-      }
-      AnimSrcNodeTransition "{68A76B78358631A1}" {
-       ToState "BipodDeployed"
-       Duration "0.2"
-       Condition "Bipod == true  && HasVariableChanged(Bipod)"
-       PostEval 1
-      }
-     }
-    }
     AnimSrcNodePose BipodFoldedPose {
-     EditorPos -14.2 -18.6
-     Source "Reload.Bipod"
-    }
-    AnimSrcNodePose BipodDeploedPose {
-     EditorPos -9 -18.4
-     Source "Reload.Bipod"
-     Time "1.0"
-    }
-    AnimSrcNodeSource RemoveMagOpenSrc {
-     EditorPos 4.3 -6.6
-     Source "Reload.Reload_RemoveMagOpen"
+     EditorPos -9.895 -24.632
+     Source "Reload.Idle"
     }
     AnimSrcNodeSource InsertMagAnim {
      EditorPos -4.4 -7.1
      Source "Reload.Reload_InsertMag"
     }
-    AnimSrcNodeSource RemoveMagCloseSrc {
-     EditorPos 12.8 -11
-     Source "Reload.Reload_RemoveMagClose"
-    }
     AnimSrcNodeStateMachine MagReloadSTM {
      EditorPos 1.5 -10.6
      states {
-      AnimSrcNodeState RemovetEmptyMag {
-       EditorPos 4.3 -8.2
-       Child "RemoveMagOpenSrc"
-       StartCondition "GetCommandI(CMD_Weapon_Reload) == 5"
-       TimeStorage "Real Time"
-      }
       AnimSrcNodeState InsertMag {
        EditorPos 0.8 -9.5
        Child "InsertMagAnim"
@@ -166,19 +118,10 @@ AnimSrcGraphFile {
       }
      }
      transitions {
-      AnimSrcNodeTransition "{68A76B78358631AE}" {
-       FromState "RemovetEmptyMag"
-       ToState "InsertMag"
-       Duration "0.3"
-       StartTime "GetEventTime(anim.Reload.Erc.Reload_InsertMag, \"BlendIn\")"
-       Condition "IsEvent(\"BlendOut\")"
-       BlendFn "S"
-       PostEval 1
-      }
       AnimSrcNodeTransition "{68A76B78358631AF}" {
        FromState "RemoveMag"
        ToState "InsertMag"
-       Duration "0.2"
+       Duration "0.3"
        StartTime "GetEventTime(anim.Reload.Erc.Reload_InsertMag, \"BlendIn\")"
        Condition "IsEvent(\"BlendOut\")"
        BlendFn "S"
@@ -192,7 +135,7 @@ AnimSrcGraphFile {
     }
     AnimSrcNodeSource RemoveMagSweepSrc {
      EditorPos 8.5 -7.4
-     Source "Reload.Reload_RemoveMagSweep"
+     Source "Reload.Reload_removeMag"
     }
     AnimSrcNodeStateMachine WeaponReloadSTM {
      Tags {
@@ -214,19 +157,10 @@ AnimSrcGraphFile {
        TimeStorage "Real Time"
        IsExit 1
       }
-      AnimSrcNodeState ReloadActionBoltFull {
-       Tags {
-        "TagRackBolt"
-       }
-       EditorPos 6.5 -14.7
-       Child "RackBoltAnim_1"
-       StartCondition "GetCommandI(CMD_Weapon_Reload) == 5 && GetCommandF(CMD_Weapon_Reload) == 0.0"
-       TimeStorage "Real Time"
-      }
       AnimSrcNodeState MagNoBulletReload {
        EditorPos 3.1 -13.6
-       Child "MagReloadSTM"
-       StartCondition "false"
+       Child "Source 22793"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 5 && GetCommandF(CMD_Weapon_Reload) == 0.0"
        IsExit 1
       }
       AnimSrcNodeState MagReload {
@@ -243,7 +177,7 @@ AnimSrcGraphFile {
       }
       AnimSrcNodeState RemoveEmptyMag {
        EditorPos 11.5 -13.9
-       Child "RemoveMagCloseSrc"
+       Child "RemoveMagSweepSrc"
        StartCondition "GetCommandI(CMD_Weapon_Reload) == 6 && ( Empty || LastBullet )"
        IsExit 1
       }
@@ -262,13 +196,6 @@ AnimSrcGraphFile {
       }
      }
      transitions {
-      AnimSrcNodeTransition "{68A76B7835863195}" {
-       FromState "ReloadActionBoltFull"
-       ToState "MagNoBulletReload"
-       Duration "0.35"
-       Condition "RemainingTimeLess(0.6)"
-       PostEval 1
-      }
       AnimSrcNodeTransition "{68A76B7835863196}" {
        FromState "ReloadActionBoltInsert"
        ToState "NoMagNoBulletReload"
@@ -277,6 +204,10 @@ AnimSrcGraphFile {
        PostEval 1
       }
      }
+    }
+    AnimSrcNodeSource "Source 22793" {
+     EditorPos -9.053 -8.632
+     Source "Reload.Reload_MagNoBullet"
     }
    }
   }

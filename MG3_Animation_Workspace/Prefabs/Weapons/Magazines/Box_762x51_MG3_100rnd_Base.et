@@ -37,10 +37,10 @@ GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
     m_sAmmoCaliber "#AR-AmmunitionID_762x51mm"
    }
    ItemModel "{8FEAFE13C74D0E5B}Assets/Weapons/Magazines/M60/Magazine_100rnd_M60_item.xob"
-   MaxAmmo 100
+   MaxAmmo 17
    AmmoConfig "{533A763E304771D9}Configs/Weapons/Ammo/Ammo_762x51.conf"
    AmmoMapping {
-    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    0 0 0 0
    }
   }
   MeshObject "{CA6BE4D6A23F8EF0}" {
@@ -75,9 +75,12 @@ GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
    AnimGraph "{64B05AD77BFBDC7F}Assets/Weapons/Magazines/magazine_MG3/workspace/SR_MG3_magazine.agr"
    AnimInstance "{89DA0F0C67F28E91}Assets/Weapons/Magazines/magazine_MG3/workspace/SR_MG3_Magazine.asi"
    AutoVariablesBind 1
-   AnimatedMesh "{80CB5B8C2B044B1B}Assets/Weapons/Magazines/M60/Magazine_100rnd_M60.xob"
+   AnimatedMesh "{CF35A7FFF2FD5166}Assets/Weapons/Magazines/magazine_MG3/magazine_MG3_736x51.xob"
    BulletMeshesToHide {
-    "bullet_low_01" "bullet_low_02" "bullet_low_03" "bullet_low_04" "bullet_low_05" "bullet_low_06" "bullet_low_07" "bullet_low_08" "bullet_low_09" "bullet_low_10" "bullet_low_11"
+    "bullet_low_01" "bullet_low_02" "bullet_low_03" "bullet_low_04" "bullet_low_05" "bullet_low_06" "bullet_low_07" "bullet_low_08" "bullet_low_09" "bullet_low_08" "bullet_low_10" "bullet_low_11" "bullet_low_12" "bullet_low_13" "bullet_low_14" "bullet_low_15" "bullet_low_16" "bullet_low_17"
+   }
+   EmptyStateMeshesToHide {
+    "bullet_link_17"
    }
   }
  }

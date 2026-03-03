@@ -1,6 +1,29 @@
+GenericEntity : "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et" {
+ coords 128.774 1 127.944
+}
+$grp GenericEntity : "{39D4F8C9969B9B08}Prefabs/Weapons/Magazines/Box_762x51_MG3_100rnd_Base.et" {
+ {
+  coords 127.474 1 127.191
+ }
+ {
+  coords 131.353 1 129.827
+ }
+ {
+  coords 131.36 1 129.947
+ }
+ {
+  coords 131.04 1 129.96
+ }
+}
 GenericEntity : "{4D2C1E8F3A81F894}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4Ball_1Tracer.et" {
  coords 126.323 1 127.59
 }
+GenericEntity : "{6CD34D6526429EEC}Prefabs/Props/Furniture/BarTable_01.et" {
+ coords 130.039 1 128.664
+}
 GenericEntity : "{D182DCDD72BF7E34}Prefabs/Weapons/MachineGuns/M60/MG_M60.et" {
  coords 126.572 1 127.361
+}
+GenericEntity : "{EE7EA8C035AF9281}Prefabs/Weapons/MachineGuns/MG3/MG_MG3_base.et" {
+ coords 127.457 1 127.759
 }
