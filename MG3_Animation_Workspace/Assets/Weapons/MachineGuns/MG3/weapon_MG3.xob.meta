@@ -1,0 +1,93 @@
+MetaFileClass {
+ Name "{0B0BA18E528D2CB8}Assets/Weapons/MachineGuns/MG3/weapon_MG3.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   GenerateDefaultProfile 1
+   MaterialAssigns {
+    MaterialAssignClass "{68A74CBBFB2E1F56}" {
+     SourceMaterial "Barrel"
+     AssignedMaterial "{2D3FA18CB85DB458}Assets/Weapons/MachineGuns/MG3/data/Barrel.emat"
+    }
+    MaterialAssignClass "{68A74CBBFB2E1CF5}" {
+     SourceMaterial "Bipod"
+     AssignedMaterial "{AA92D4F03F703088}Assets/Weapons/MachineGuns/MG3/data/Bipod.emat"
+    }
+    MaterialAssignClass "{68A74CBBFB2E1CD5}" {
+     SourceMaterial "Cover"
+     AssignedMaterial "{B13F3A415934CE4B}Assets/Weapons/MachineGuns/MG3/data/Cover.emat"
+    }
+    MaterialAssignClass "{68A74CBBFB2E1C36}" {
+     SourceMaterial "Lower"
+     AssignedMaterial "{DEB24040ABD19D0B}Assets/Weapons/MachineGuns/MG3/data/Lower.emat"
+    }
+    MaterialAssignClass "{68A74CBBFB2E1C10}" {
+     SourceMaterial "RACK"
+     AssignedMaterial "{558A090C8851A378}Assets/Weapons/MachineGuns/MG3/data/RACK.emat"
+    }
+    MaterialAssignClass "{68A74CBBFB2E1C75}" {
+     SourceMaterial "REAR_SIGHT"
+     AssignedMaterial "{9FDB7B04FB100131}Assets/Weapons/MachineGuns/MG3/data/REAR_SIGHT.emat"
+    }
+    MaterialAssignClass "{68A74CBBFB2E1C5A}" {
+     SourceMaterial "TRIGGER"
+     AssignedMaterial "{FFEA16C4E3FC1E2F}Assets/Weapons/MachineGuns/MG3/data/TRIGGER.emat"
+    }
+    MaterialAssignClass "{68A74CBBFB2E1DB9}" {
+     SourceMaterial "Guard_Front"
+     AssignedMaterial "{624F355B6EBB8446}Assets/Weapons/MachineGuns/MG3/data/Guard_Front.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BARREL {
+    }
+    MeshParam BIPOD {
+    }
+    MeshParam COVER {
+    }
+    MeshParam GUARD_FRONT {
+    }
+    MeshParam LOWER {
+    }
+    MeshParam RACK {
+    }
+    MeshParam SIGHT_BACK {
+    }
+    MeshParam TRIGGER {
+    }
+   }
+   GeometryParams {
+    GeometryParam UCX_MG3_body {
+     LayerPreset "Weapon"
+     SurfaceProperties {
+      "{3B2D2687F56BB4EF}Common/Materials/Game/WeaponParts/weapon_metal.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{68A74CBBFB2B29CC}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{68A74CBBFB2B2E7F}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{68A74CBBFB2B2FD4}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{68A74CBBFB2B2F4E}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{68A74CBBFB2B2CF8}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{68A74CBBFB2B2C65}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

@@ -1,0 +1,259 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 158
+ $node "w_chamber_hatch" {
+  $keys q s {
+   $frame 0 158 {
+    #q -0.00000005 0.00000006 0.85483617 0.51889807
+   }
+  }
+  $node "w_belt_lock" {
+   $keys q s {
+    $frame 0 158 {
+    }
+   }
+  }
+  $node "w_bolt" {
+   $keys t s {
+    $frame 0 158 {
+     #t 0 0.0846938 0
+    }
+   }
+   $node "w_spring" {
+    $keys t s {
+     $frame 0 158 {
+      #t 0.0001769 0.0088868 -0.110553
+     }
+    }
+   }
+  }
+  $node "w_spring_main" {
+   $keys t s {
+    $frame 0 158 {
+     #t 0.0001769 0.0935806 -0.2532554
+    }
+   }
+  }
+  $node "w_sight_slider" {
+   $keys t q s {
+    $frame 0 158 {
+     #t 0 0.1466986 0.2220186
+    }
+   }
+  }
+  $node "w_barrel" {
+   $keys t q s {
+    $frame 0 158 {
+     #t 0.0189897 0.0857822 0.6977602
+    }
+   }
+  }
+  $node "w_safety" {
+   $keys q s {
+    $frame 0 158 {
+    }
+   }
+  }
+  $node "w_bipod_main" {
+   $keys t q s {
+    $frame 0 158 {
+     #t -0.0011937 0.0336609 0.6436871
+    }
+   }
+   $node "w_bipodleg_left" {
+    $keys t q s {
+     $frame 0 158 {
+      #t -0.0000336 0.0091085 -0.0265034
+      #q 0 -0.23676637 0 0.97156668
+     }
+    }
+   }
+   $node "w_bipodleg_right" {
+    $keys t q s {
+     $frame 0 158 {
+      #t -0.0000336 0.0091085 -0.0265034
+      #q 0 0.27044132 0 0.96273649
+     }
+    }
+   }
+  }
+  $node "w_charging_handle" {
+   $keys t s {
+    $frame 0 158 {
+     #t 0.0249128 0.0560755 -0.0433951
+    }
+   }
+   $node "w_charging_handle_lock02" {
+    $keys q s {
+     $frame 0 158 {
+     }
+    }
+   }
+   $node "w_charging_handle_handle" {
+    $keys q s {
+     $frame 0 158 {
+      #q 0 0.18456461 0 0.98282039
+     }
+    }
+    $node "w_charging_handle_lock01" {
+     $keys q s {
+      $frame 0 158 {
+       #q 0 0.04047242 0 0.99918079
+      }
+     }
+    }
+   }
+  }
+  $node "w_trigger" {
+   $keys q s {
+    $frame 0 158 {
+    }
+   }
+  }
+  $node "w_sight" {
+   $keys t q s {
+    $frame 0 158 {
+     #t 0.0004092 0.1398721 0.2819229
+    }
+   }
+  }
+  $node "w_topcover" {
+   $keys q s {
+    $frame 0 39 {
+    }
+    $frame 40 {
+     #q 0.0187543 0 0 0.99982417
+    }
+    $frame 41 {
+     #q 0.07012384 0 0 0.99753833
+    }
+    $frame 42 {
+     #q 0.14648893 0 0 0.98921239
+    }
+    $frame 43 {
+     #q 0.23964955 0 0 0.97085947
+    }
+    $frame 44 {
+     #q 0.34090748 0 0 0.94009686
+    }
+    $frame 45 {
+     #q 0.4416073 0 0 0.89720851
+    }
+    $frame 46 {
+     #q 0.53395087 0 0 0.84551555
+    }
+    $frame 47 {
+     #q 0.61173612 0 0 0.791062
+    }
+    $frame 48 {
+     #q 0.67065382 0 0 0.74177051
+    }
+    $frame 49 {
+     #q 0.70789671 0 0 0.70631593
+    }
+    $frame 50 108 {
+     #q 0.72101867 0 0 0.69291568
+    }
+    $frame 109 {
+     #q 0.71287888 0 0 0.70128715
+    }
+    $frame 110 {
+     #q 0.68904912 0 0 0.7247147
+    }
+    $frame 111 {
+     #q 0.64988333 0 0 0.76003408
+    }
+    $frame 112 {
+     #q 0.59540933 0 0 0.80342263
+    }
+    $frame 113 {
+     #q 0.52577347 0 0 0.85062474
+    }
+    $frame 114 {
+     #q 0.44161165 0 0 0.89720637
+    }
+    $frame 115 {
+     #q 0.34430739 0 0 0.93885702
+    }
+    $frame 116 {
+     #q 0.23610958 0 0 0.97172648
+    }
+    $frame 117 {
+     #q 0.12009747 0 0 0.99276221
+    }
+    $frame 118 158 {
+    }
+   }
+   $node "w_belt_slider01_T" {
+    $keys t s {
+     $frame 0 158 {
+      #t -0.0096773 0.0030742 -0.0889471
+     }
+    }
+    $node "w_belt_slider01_TR" {
+     $keys t q s {
+      $frame 0 158 {
+       #t -0.0127472 -0.0057053 0.016281
+      }
+     }
+    }
+   }
+   $node "w_belt_slider02" {
+    $keys t q s {
+     $frame 0 158 {
+      #t -0.0376056 -0.0033423 -0.0883357
+     }
+    }
+   }
+   $node "w_coulisseau03" {
+    $keys t q s {
+     $frame 0 158 {
+      #t 0.0168451 -0.0074749 -0.1292886
+      #q 0 -0.19966662 0 0.97986388
+     }
+    }
+   }
+   $node "w_coulisseau02" {
+    $keys t q s {
+     $frame 0 158 {
+      #t -0.0064191 -0.0133443 -0.1658748
+      #q 0 0.29719892 0 0.95481557
+     }
+    }
+   }
+   $node "w_coulisseau" {
+    $keys t q s {
+     $frame 0 158 {
+      #t 0.0003523 -0.0100628 -0.3135592
+      #q 0 -0.02624333 0 0.99965566
+     }
+    }
+   }
+   $node "w_topcover_lock" {
+    $keys t s {
+     $frame 0 158 {
+      #t 0.0003587 -0.0057792 -0.3360085
+     }
+    }
+   }
+  }
+ }
+ $events {
+  #event 1 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"SOUND_RELOAD_HANDLING_START\"  UserInt 0 }" 0 0 "" 0
+  #event 20 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 20  FrameCount 0  UserString \"SOUND_RELOAD_DUST_COVER_OPEN\"  UserInt 1 }" 1 0 "" 0
+  #event 24 "Weapon_OpenCover" "AnimSrcEventGeneric {  Name \"Weapon_OpenCover\"  MainPathOnly 0  Frame 24  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 55 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 55  FrameCount 0  UserString \"SOUND_RELOAD_MAG_INSERT\"  UserInt 4 }" 4 0 "" 0
+  #event 62 "BlendIn" "AnimSrcEventGeneric {  Name \"BlendIn\"  MainPathOnly 0  Frame 62  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 62 "Weapon_SpawnMagazine" "AnimSrcEventGeneric {  Name \"Weapon_SpawnMagazine\"  MainPathOnly 0  Frame 62  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 101 "Weapon_AttachMagazine" "AnimSrcEventGeneric {  Name \"Weapon_AttachMagazine\"  MainPathOnly 0  Frame 101  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 114 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 114  FrameCount 0  UserString \"SOUND_RELOAD_DUST_COVER_CLOSE\"  UserInt 5 }" 5 0 "" 0
+  #event 136 "Weapon_EnableFire" "AnimSrcEventGeneric {  Name \"Weapon_EnableFire\"  MainPathOnly 0  Frame 136  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 136 "Weapon_Rack_Bolt" "AnimSrcEventGeneric {  Name \"Weapon_Rack_Bolt\"  MainPathOnly 0  Frame 136  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 138 "BlendOut2" "AnimSrcEventGeneric {  Name \"BlendOut2\"  MainPathOnly 0  Frame 138  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+ }
+ $custProps {
+  #custProp "profile" "weapon_MG3"
+  #custProp "sourceFile" "anims_SR_MG3_Reload_RemoveMag_Blocking.blend"
+ }
+}

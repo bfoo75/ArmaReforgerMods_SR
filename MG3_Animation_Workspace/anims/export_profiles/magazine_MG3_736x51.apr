@@ -1,0 +1,29 @@
+$animExportProfile {
+ $tracks {
+   "Scene_Root"     ""               ""
+   "Armature"       "Scene_Root"     ""
+   "w_root_MG3_mag" "Armature"       ""
+   "w_mag_lock"     "w_root_MG3_mag" "TRA"
+   "w_lid"          "w_root_MG3_mag" "TRA"
+   "w_mag_handle"   "w_root_MG3_mag" "TRA"
+   "w_bullet_17"    "w_root_MG3_mag" "TRA"
+   "w_bullet_16"    "w_root_MG3_mag" "TRA"
+   "w_bullet_15"    "w_root_MG3_mag" "TRA"
+   "w_bullet_14"    "w_root_MG3_mag" "TRA"
+   "w_bullet_13"    "w_root_MG3_mag" "TRA"
+   "w_bullet_12"    "w_root_MG3_mag" "TRA"
+   "w_bullet_11"    "w_root_MG3_mag" "TRA"
+   "w_bullet_10"    "w_root_MG3_mag" "TRA"
+   "w_bullet_09"    "w_root_MG3_mag" "TRA"
+   "w_bullet_08"    "w_root_MG3_mag" "TRA"
+   "w_bullet_07"    "w_root_MG3_mag" "TRA"
+   "w_bullet_06"    "w_root_MG3_mag" "TRA"
+   "w_bullet_05"    "w_root_MG3_mag" "TRA"
+   "w_bullet_04"    "w_root_MG3_mag" "TRA"
+   "w_bullet_03"    "w_root_MG3_mag" "TRA"
+   "w_bullet_02"    "w_root_MG3_mag" "TRA"
+   "w_bullet_01"    "w_root_MG3_mag" "TRA"
+   "snap_weapon"    "w_root_MG3_mag" ""
+  
+ }
+}

@@ -1,0 +1,63 @@
+AnimSetTemplateSource {
+ Groups {
+  AnimSetTemplateSource_AnimationGroup "{68A76B79C0C586AA}" {
+   Name "Deployment"
+   Animations {
+    "Low"
+   }
+   Columns {
+    "Pne"
+   }
+  }
+  AnimSetTemplateSource_AnimationGroup "{68A76B79C0C58697}" {
+   Name "Inspection"
+   Animations {
+    "Left2Right"
+    "LeftInspectionIn"
+    "LeftInspectionLoop"
+    "LeftInspectionOut"
+    "Right2Left"
+    "RightInspectionIn"
+    "RightInspectionLoop"
+    "RightInspectionOut"
+   }
+   Columns {
+    "Cro"
+    "CroRas"
+    "Erc"
+    "ErcRas"
+    "Pne"
+    "PneRas"
+   }
+  }
+  AnimSetTemplateSource_AnimationGroup "{68A76B79C0C58690}" {
+   Name "Reload"
+   Animations {
+    "Bipod"
+    "Finger_trigger_in"
+    "Finger_trigger_out"
+    "Fire"
+    "Idle_finger"
+    "IKOffset"
+    "Reload_InsertMag"
+    "Reload_MagNoBullet"
+    "Reload_RemoveMag"
+    "Reload_RemoveMagClose"
+    "Reload_RemoveMagOpen"
+    "Reload_RemoveMagSweep"
+    "ReloadActionBolt"
+    "Safety"
+    "Sight"
+    "Switch_Mode_Dep_Off"
+    "Switch_Mode_Dep_On"
+    "Switch_Mode_Off"
+    "Switch_Mode_On"
+    "Trigger"
+   }
+   Columns {
+    "Erc"
+    "Pne"
+   }
+  }
+ }
+}

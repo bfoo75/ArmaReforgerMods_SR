@@ -1,0 +1,46 @@
+AnimSrcGraph {
+ AnimSetTemplate "{76423CD74C3E088C}Assets/Weapons/Magazines/magazine_MG3/workspace/SR_MG3_Magazine.ast"
+ ControlTemplate AnimSrcGCT "{68A76B78358606C5}" {
+  Variables {
+   AnimSrcGCTVarBool TriggerPulled {
+   }
+   AnimSrcGCTVarBool Empty {
+   }
+   AnimSrcGCTVarBool Cocked {
+   }
+   AnimSrcGCTVarInt Stance {
+    MaxValue 2
+   }
+   AnimSrcGCTVarBool Firing {
+   }
+   AnimSrcGCTVarBool LastBullet {
+   }
+   AnimSrcGCTVarFloat AimX {
+    MinValue -180
+    MaxValue 180
+   }
+   AnimSrcGCTVarBool Bipod {
+   }
+   AnimSrcGCTVarFloat AimY {
+    MinValue -90
+    MaxValue 90
+   }
+   AnimSrcGCTVarFloat SightElevation {
+    DefaultValue 0.1
+    MaxValue 1
+   }
+  }
+  Commands {
+   AnimSrcGCTCmd CMD_Weapon_Action_Interrupt {
+   }
+   AnimSrcGCTCmd CMD_Weapon_Reload {
+   }
+  }
+ }
+ Debug AnimSrcGD "{68A76B78358606C8}" {
+ }
+ GraphFilesResourceNames {
+  "{4BBE446DE558B54F}Assets/Weapons/Magazines/magazine_MG3/workspace/SR_MG3_Magazine.agf"
+ }
+ DefaultRunNode "MasterControl"
+}

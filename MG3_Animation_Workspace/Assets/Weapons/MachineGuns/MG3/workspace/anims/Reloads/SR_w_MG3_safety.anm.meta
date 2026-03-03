@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{C6D8A2A19DE89DF5}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_w_MG3_safety.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "anims_SR_MG3_Reload_MagNoBullet_baked.blend"
+   SourceProfile "weapon_MG3 - safety"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

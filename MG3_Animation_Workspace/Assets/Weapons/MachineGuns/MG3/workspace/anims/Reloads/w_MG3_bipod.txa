@@ -1,0 +1,38 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 1
+ $node "w_bipod_main" {
+  $keys q {
+   $frame 0 {
+   }
+   $frame 1 {
+    #q -0.71401113 -0.00010621 0.00022764 0.70013434
+   }
+  }
+  $node "w_bipodleg_left" {
+   $keys q {
+    $frame 0 {
+     #q 0 -0.23676637 0 0.97156668
+    }
+    $frame 1 {
+     #q 0.00144743 -0.00165018 0.00442908 0.99998784
+    }
+   }
+  }
+  $node "w_bipodleg_right" {
+   $keys q {
+    $frame 0 {
+     #q 0 0.27044132 0 0.96273649
+    }
+    $frame 1 {
+     #q 0.00129234 0.03645691 -0.00447676 0.99932438
+    }
+   }
+  }
+ }
+ $custProps {
+  #custProp "profile" "weapon_MG3 - bipod"
+  #custProp "sourceFile" "anims_SR_MG3_Reload_RemoveMag_Blocking.blend"
+ }
+}

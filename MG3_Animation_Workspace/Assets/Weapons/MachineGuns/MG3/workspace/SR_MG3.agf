@@ -1,0 +1,1202 @@
+AnimSrcGraphFile {
+ Sheets {
+  AnimSrcGraphSheet master {
+   Nodes {
+    AnimSrcNodeSource InsertMagAnim {
+     EditorPos 548.3 652.8
+     Source "Reload.Reload_InsertMag"
+    }
+    AnimSrcNodeSource RackBoltAnim {
+     EditorPos 559.6 648.2
+     Source "Reload.ReloadActionBolt"
+    }
+    AnimSrcNodeStateMachine MagReloadSTM {
+     EditorPos 555 649.7
+     states {
+      AnimSrcNodeState InsertMag {
+       EditorPos 553.5 650.5
+       Child "InsertMagAnim"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState RemoveMag {
+       EditorPos 559 650.5
+       Child "RemoveMagSweepSrc"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 4"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{68A76B79C0FA701C}" {
+       FromState "RemoveMag"
+       ToState "InsertMag"
+       Duration "0.3"
+       StartTime "GetEventTime(anim.Reload.Erc.Reload_InsertMag, \"BlendIn\")"
+       Condition "IsEvent(\"BlendOut\")"
+       BlendFn "S"
+       PostEval 1
+      }
+     }
+    }
+    AnimSrcNodeStateMachine WeaponReloadSTM {
+     Tags {
+      "TagWeaponReload"
+     }
+     EditorPos 549.5 642.3
+     states {
+      AnimSrcNodeState NoMagReload {
+       EditorPos 546.6 644.3
+       Child "InsertMagAnim"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 2"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState NoMagNoBulletReload {
+       EditorPos 549.8 644.3
+       Child "InsertMagAnim"
+       StartCondition "false"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState ReloadActionBoltFull {
+       Tags {
+        "TagRackBolt"
+       }
+       EditorPos 559.6 644.2
+       Child "Event Bolt Open"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 5 && GetCommandF(CMD_Weapon_Reload) == 0.0"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState MagNoBulletReload {
+       EditorPos 556.2 645.3
+       Child "Source 21156"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 5 && GetCommandF(CMD_Weapon_Reload) == 0.0"
+       IsExit 1
+      }
+      AnimSrcNodeState MagReload {
+       EditorPos 553.7 645.4
+       Child "MagReloadSTM"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 4"
+       IsExit 1
+      }
+      AnimSrcNodeState RemoveMag {
+       EditorPos 561.9 645
+       Child "RemoveMagSweepSrc"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 6 && !Empty"
+       IsExit 1
+      }
+      AnimSrcNodeState RemoveEmptyMag {
+       EditorPos 564.632 645.053
+       Child "RemoveMagSweepSrc"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 6 && ( Empty || LastBullet )"
+       IsExit 1
+      }
+      AnimSrcNodeState ReloadActionBolt {
+       EditorPos 558.4 643
+       Child "Event Bolt Open"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 1 && GetCommandF(CMD_Weapon_Reload) == 0.0"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeStateMachine WeaponReloadStanceSTM {
+     EditorPos 548 635.158
+     states {
+      AnimSrcNodeState Erc_Cro {
+       EditorPos 547.2 637.058
+       Child "ReloadErcCroG"
+       StartCondition "Stance == 0 || Stance == 1"
+       IsExit 1
+      }
+      AnimSrcNodeState PNE {
+       EditorPos 551.3 637.058
+       Child "ReloadPneG"
+       StartCondition "Stance == 2"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeGroupSelect ReloadErcCroG {
+     EditorPos 547.1 639.5
+     Child "WeaponReloadSTM"
+     Group "Reload"
+     Column "Erc"
+    }
+    AnimSrcNodeGroupSelect ReloadPneG {
+     EditorPos 551.2 639.5
+     Child "WeaponReloadSTM"
+     Group "Reload"
+     Column "Pne"
+    }
+    AnimSrcNodeQueue "Queue 1" {
+     EditorPos 541.2 635.1
+     Child "Blend 1"
+     QueueItems {
+      AnimSrcNodeQueueItem "{68A76B79C0FA7007}" {
+       Child "Event Bolt Close on Auto (No Catch)"
+       StartExpr "Firing && HasVariableChanged(Firing) && !Empty"
+       EnqueueMethod InterruptAll
+      }
+      AnimSrcNodeQueueItem "{68A76B79C0FA7001}" {
+       Child "Event Bolt Closed"
+       StartExpr "Firing && HasVariableChanged(Firing) && Empty"
+       EnqueueMethod InterruptAll
+      }
+      AnimSrcNodeQueueItem "{68A76B79C0FA7002}" {
+       Child "ModeIK 2"
+       StartExpr "HasVariableChanged(State)"
+       EnqueueMethod InterruptAll
+      }
+     }
+    }
+    AnimSrcNodeStateMachine "State Machine 1" {
+     EditorPos 518.2 640.5
+     states {
+      AnimSrcNodeState BipodFolded {
+       EditorPos 515.8 642.1
+       Child "BipodFoldedPose"
+       StartCondition "Bipod == false"
+      }
+      AnimSrcNodeState BipodDeployed {
+       Tags {
+        "TagFPCamera"
+       }
+       EditorPos 518.6 642.1
+       Child "BipodDeploedPose"
+       StartCondition "Bipod == true"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{68A76B79C0FA700D}" {
+       FromState ""
+       ToState "BipodFolded"
+       Duration "0.2"
+       Condition "Bipod == false  && HasVariableChanged(Bipod)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA700E}" {
+       FromState ""
+       ToState "BipodDeployed"
+       Duration "0.2"
+       Condition "Bipod == true  && HasVariableChanged(Bipod)"
+       PostEval 1
+      }
+     }
+    }
+    AnimSrcNodeSource FireAnim {
+     EditorPos 540.9 637.7
+     Source "Reload.Erc.Fire"
+    }
+    AnimSrcNodeSource FireEmptyAnim {
+     EditorPos 543.7 637.2
+     Source "Reload.Erc.Trigger"
+    }
+    AnimSrcNodePose BipodFoldedPose {
+     EditorPos 515.8 643.8
+     Source "Reload.Bipod"
+     Time "0.0"
+    }
+    AnimSrcNodePose BipodDeploedPose {
+     EditorPos 518.6 643.8
+     Source "Reload.Bipod"
+     Time "1.0"
+    }
+    AnimSrcNodeBlend MasterControl {
+     EditorPos 545.1 616.3
+     BlendWeight "1.0"
+     Child0 "IK2 Deployment"
+     Child1 "Pose 1"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodePose "Pose 1" {
+     EditorPos 547.4 617.7
+     Source "Reload.Sight"
+     Time "SightElevation"
+    }
+    AnimSrcNodeBufferUse "Buffer Use 1" {
+     EditorPos 553.3 633.5
+     BufferName "FullBody"
+    }
+    AnimSrcNodeSource Finger_out {
+     EditorPos 538.1 640.7
+     Source "Reload.Erc.Finger_trigger_out"
+    }
+    AnimSrcNodeBlend "Blend 1" {
+     EditorPos 531.2 637.1
+     BlendWeight "1"
+     Child0 "Blend 3"
+     Child1 "FingerOnTrigger"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodePose IdleFinger_1 {
+     EditorPos 550.2 634.6
+     Source "Reload.Erc.Idle_finger"
+     Time "0"
+    }
+    AnimSrcNodeStateMachine FingerOnTrigger {
+     EditorPos 537.7 642.5
+     states {
+      AnimSrcNodeState Idle {
+       EditorPos 535.1 644.2
+       Child "Idle"
+       StartCondition "!Low"
+       TimeStorage Inherit
+      }
+      AnimSrcNodeState "State 1" {
+       EditorPos 538.4 643.6
+       Child "Finger_out"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState idleFinger {
+       EditorPos 541.9 644.3
+       Child "IdleFinger"
+       StartCondition "Low"
+       TimeStorage Inherit
+      }
+      AnimSrcNodeState "State 3" {
+       EditorPos 538.316 645.263
+       Child "Finger_in"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{68A76B79C0FA7074}" {
+       FromState "Idle"
+       ToState "State 1"
+       Duration "0.1"
+       StartTime ""
+       Condition " HasVariableChangedTo(Low, true)"
+       BlendFn "S"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA7076}" {
+       FromState "State 1"
+       ToState "idleFinger"
+       Duration "0.1"
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn "S"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA7077}" {
+       FromState "idleFinger"
+       ToState "State 3"
+       Duration "0.1"
+       StartTime ""
+       Condition " HasVariableChangedTo(Low, false)"
+       BlendFn "S"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA7071}" {
+       FromState "State 3"
+       ToState "Idle"
+       Duration "0.1"
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn "S"
+       PostEval 1
+      }
+     }
+    }
+    AnimSrcNodePose Idle {
+     EditorPos 534.737 648
+     Source "Reload.Idle_finger"
+     Time "1"
+    }
+    AnimSrcNodePose IdleFinger {
+     EditorPos 542 647
+     Source "Reload.Idle_finger"
+     Time "0"
+    }
+    AnimSrcNodeSource Finger_in {
+     EditorPos 538.4 648
+     Source "Reload.Erc.Finger_trigger_in"
+    }
+    AnimSrcNodeBlendT "Blend T 1" {
+     EditorPos 548.1 633.9
+     BlendTime "0.2"
+     Condition "Low && !IsTag(\"TagRackBolt\")"
+     Child0 "WeaponReloadStanceSTM"
+     Child1 "IdleFinger_1"
+     Optimization "Always eval left"
+     PostEval 1
+     IkTargets "Keep Singular From All"
+    }
+    AnimSrcNodePose "Pose 2" {
+     EditorPos 528.1 646.6
+     Source "Reload.Safety"
+     Time "0.0"
+    }
+    AnimSrcNodeStateMachine SafetySTM {
+     EditorPos 526.9 642
+     states {
+      AnimSrcNodeState Safety {
+       EditorPos 525.4 644.5
+       Child "Pose 1_1"
+       StartCondition "State == -1"
+      }
+      AnimSrcNodeState Semi {
+       EditorPos 528.1 644.5
+       Child "Pose 2"
+       StartCondition "State == 1"
+      }
+      AnimSrcNodeState SafetyTimer {
+       EditorPos 525.4 643.1
+       Child "Pose 1_1"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState SemiTimer {
+       EditorPos 528 643.1
+       Child "Pose 2"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{68A76B79C0FA7066}" {
+       FromState ""
+       ToState "SafetyTimer"
+       Condition "HasVariableChanged(State, -1)"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA7060}" {
+       FromState "SafetyTimer"
+       ToState "Semi"
+       Duration "0.166"
+       Condition "State == 1  && GetStateTime() > 0.166"
+       PostEval 0
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA7061}" {
+       FromState "SemiTimer"
+       ToState "Safety"
+       Duration "0.166"
+       Condition "State == -1  && GetStateTime() > 0.166"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA7062}" {
+       FromState ""
+       ToState "SemiTimer"
+       Condition "HasVariableChanged(State, 1)"
+      }
+     }
+    }
+    AnimSrcNodeBlend "Blend 3" {
+     EditorPos 526.526 638.316
+     BlendWeight "1"
+     Child0 "SOUND_BIPOD"
+     Child1 "SafetySTM"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodePose "Pose 1_1" {
+     EditorPos 525.4 646.6
+     Source "Reload.Safety"
+     Time "1.0"
+    }
+    AnimSrcNodeIK2 "ModeIK 2" {
+     EditorPos 557.3 631.3
+     Child "ModesIKTarget"
+     Chains {
+      AnimSrcIkBinding "{68A76B79C0FA706D}" {
+       IkTarget "RPropTarget"
+       IkChain "LeftArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{68A76B79C0FA7068}" {
+      SnapRotation 1
+      AllowStretching 1
+     }
+     Version 1
+    }
+    AnimSrcNodeBlendT ModesBufferB {
+     EditorPos 557.1 633.3
+     BlendTime "0"
+     Condition "true"
+     Child0 "Buffer Use 1"
+     Child1 "ModesSTM"
+     Optimization "Always eval both"
+     SelectMainPath 1
+     PostEval 1
+    }
+    AnimSrcNodeIK2Target ModesIKTarget {
+     EditorPos 557.3 632.3
+     Child "ModesBufferB"
+     Chains {
+      AnimSrcIkTargetBinding "{68A76B79C0FA706B}" {
+       IkTarget "RPropTarget"
+       IkChain "RightArmProp"
+       LocalSpaceOffset AnimSrcTransformOffset "{68A76B79C0FA7054}" {
+        Position 0 0 0
+        Rotation 0 0 0
+        Pose "Reload.IKOffset"
+        FromBone "righthandprop"
+        ToBone "lefthand"
+        FromFrame 0
+        ToFrame 0
+        BonesAreInModelSpace 0
+       }
+      }
+     }
+    }
+    AnimSrcNodeStateMachine ModesSTM {
+     Tags {
+      "TagFireModeChange"
+     }
+     EditorPos 558.1 634.6
+     states {
+      AnimSrcNodeState ModeOn {
+       EditorPos 556.2 635.8
+       Child "Blend 22457"
+       StartCondition "HasVariableChangedTo(State, -1) "
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState ModeOff {
+       EditorPos 559.8 635.8
+       Child "Blend 13147"
+       StartCondition "HasVariableChangedTo(State, 1) "
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeSource RemoveMagCloseSrc {
+     EditorPos 564.6 648.3
+     Source "Reload.Reload_RemoveMagClose"
+    }
+    AnimSrcNodeSource RemoveMagSweepSrc {
+     EditorPos 561.895 653.263
+     Source "Reload.Reload_RemoveMag"
+    }
+    AnimSrcNodeBlend "Blend 4" {
+     EditorPos 534.7 633.4
+     Child0 "IK2 24038"
+     Child1 "Queue 1"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeEvent SOUND_BIPOD {
+     EditorPos 522.1 639.1
+     Child "State Machine 1"
+     Events {
+      AnimSrcEventGeneric "{5A18AB858A27A78C}" {
+       Name "Sound"
+       InitOnly 0
+       Condition "HasVariableChangedTo(Bipod,true)"
+       UserString "SOUND_BIPOD_UNFOLD"
+      }
+      AnimSrcEventGeneric "{5A18AB85F1E14CF4}" {
+       Name "Sound"
+       InitOnly 0
+       Condition "HasVariableChangedTo(Bipod,false)"
+       UserString "SOUND_BIPOD_FOLD"
+      }
+     }
+    }
+    AnimSrcNodeSource InspectionOut {
+     EditorPos 523.8 635.6
+     Source "Inspection.LeftInspectionOut"
+    }
+    AnimSrcNodeEvent Sound_Inspect_In {
+     EditorPos 519.4 634.7
+     Child "InspectionInS"
+     Events {
+      AnimSrcEventGeneric "{5A44BEDEE5260B4C}" {
+       Name "Sound"
+       UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_IN.RightHand"
+      }
+     }
+    }
+    AnimSrcNodeSource "InspectionInS 17380" {
+     EditorPos 506.4 636.7
+     Source "Inspection.RightInspectionIn"
+    }
+    AnimSrcNodeGroupSelect ErcRasInspectG {
+     EditorPos 512.1 627.2
+     Child "WeaponInspectionSTM"
+     Group "Inspection"
+     Column "ErcRas"
+    }
+    AnimSrcNodeEvent "Sound_Inspect_In 13048" {
+     EditorPos 506.4 635.6
+     Child "InspectionInS 17380"
+     Events {
+      AnimSrcEventGeneric "{5A44BEDEE5260B4C}" {
+       Name "Sound"
+       UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_IN.RightHand"
+      }
+     }
+    }
+    AnimSrcNodeGroupSelect ErcInspectG {
+     EditorPos 512.6 626.1
+     Child "WeaponInspectionSTM"
+     Group "Inspection"
+     Column "Erc"
+    }
+    AnimSrcNodeSource InspectionInS {
+     EditorPos 519.4 635.9
+     Source "Inspection.LeftInspectionIn"
+    }
+    AnimSrcNodeSource "InspectionInS 20930" {
+     EditorPos 508.6 635.6
+     Source "Inspection.RightInspectionLoop"
+     Looptype Loop
+    }
+    AnimSrcNodeGroupSelect PneInspectG {
+     EditorPos 517.8 626.1
+     Child "WeaponInspectionSTM"
+     Group "Inspection"
+     Column "Pne"
+    }
+    AnimSrcNodeStateMachine WeaponInspectionSTM {
+     EditorPos 515 630.1
+     states {
+      AnimSrcNodeState InspectionInLeft {
+       Tags {
+        "TagTransitionADSIn" "TagInspectionTransition"
+       }
+       EditorPos 519.4 631.6
+       Child "Sound_Inspect_In"
+       StartCondition "WeaponInspectionState == 1"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState InspectionLoopLeft {
+       Tags {
+        "TagInspectionPose" "TagTransitionADS"
+       }
+       EditorPos 521.8 632.8
+       Child "InspectionInS 28548"
+       StartCondition "WeaponInspectionState == -1"
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState InspectionOutLeft {
+       Tags {
+        "TagTransitionADSOut" "TagInspectionTransition"
+       }
+       EditorPos 523.9 631.5
+       Child "InspectionOut"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 1
+       PassThrough 0
+      }
+      AnimSrcNodeState InspectionInRighty {
+       Tags {
+        "TagInspectionTransition"
+       }
+       EditorPos 506.2 631.4
+       Child "Sound_Inspect_In 13048"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState InspectionOutRight {
+       Tags {
+        "TagInspectionTransition"
+       }
+       EditorPos 510.4 631.5
+       Child "InspectionOut 26449"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 1
+       PassThrough 0
+      }
+      AnimSrcNodeState InspectionLoopRight {
+       Tags {
+        "TagInspectionPose"
+       }
+       EditorPos 508.5 632.7
+       Child "InspectionInS 20930"
+       StartCondition "WeaponInspectionState == 2"
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState LeftToRight {
+       Tags {
+        "TagInspectionTransition"
+       }
+       EditorPos 514.6 631.3
+       Child "InspectionOut 15031"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState RightToLeft {
+       Tags {
+        "TagInspectionTransition"
+       }
+       EditorPos 514.6 633
+       Child "InspectionOut 38507"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{68A76B79C0FA705B}" {
+       FromState "InspectionInLeft"
+       ToState "InspectionLoopLeft"
+       Duration "0.3"
+       Condition "RemainingTimeLess(0.1)"
+       BlendFn "S"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA7045}" {
+       FromState "InspectionLoopLeft"
+       ToState "InspectionOutLeft"
+       Duration "0.3"
+       Condition "WeaponInspectionState == 0"
+       BlendFn "S"
+       Events {
+        AnimSrcEventGeneric "{5A44E711A3CE8E44}" {
+         Name "Sound"
+         UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_OUT.RightHand"
+        }
+       }
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA7047}" {
+       FromState "InspectionInLeft"
+       ToState "InspectionOutLeft"
+       Duration "0.3"
+       StartTime "1.0-GetLowerTime()"
+       Condition "WeaponInspectionState == 0"
+       BlendFn "S"
+       PostEval 1
+       Events {
+        AnimSrcEventGeneric "{5A44E711A6C0A2E5}" {
+         Name "Sound"
+         UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_OUT.RightHand"
+        }
+       }
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA7048}" {
+       FromState "InspectionOutLeft"
+       ToState "InspectionInLeft"
+       Duration "0.3"
+       StartTime "1.0-GetLowerTime()"
+       Condition "abs(WeaponInspectionState == 1)"
+       BlendFn "S"
+       PostEval 1
+       Events {
+        AnimSrcEventGeneric "{5A44E711AD388F52}" {
+         Name "Sound"
+         UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_IN.RightHand"
+        }
+       }
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA704A}" {
+       FromState "InspectionInRighty"
+       ToState "InspectionLoopRight"
+       Duration "0.3"
+       Condition "RemainingTimeLess(0.1)"
+       BlendFn "S"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA704B}" {
+       FromState "InspectionLoopRight"
+       ToState "InspectionOutRight"
+       Duration "0.3"
+       Condition "WeaponInspectionState == 0"
+       BlendFn "S"
+       Events {
+        AnimSrcEventGeneric "{5A44E711A3CE8E44}" {
+         Name "Sound"
+         UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_OUT.RightHand"
+        }
+       }
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77B4}" {
+       FromState "InspectionLoopLeft"
+       ToState "LeftToRight"
+       Duration "0.2"
+       Condition "abs(WeaponInspectionState == 2)"
+       Events {
+        AnimSrcEventGeneric "{65C2CE699733C50E}" {
+         Name "Sound"
+         UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_IN.RightHand"
+        }
+       }
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77B6}" {
+       FromState "InspectionLoopRight"
+       ToState "RightToLeft"
+       Duration "0.2"
+       Condition "abs(WeaponInspectionState == 1)"
+       Events {
+        AnimSrcEventGeneric "{65C2CE699A8E376E}" {
+         Name "Sound"
+         UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_IN.RightHand"
+        }
+       }
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77B7}" {
+       FromState "RightToLeft"
+       ToState "InspectionLoopLeft"
+       Duration "0.2"
+       Condition "RemainingTimeLess(0.02)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77B0}" {
+       FromState "LeftToRight"
+       ToState "InspectionLoopRight"
+       Duration "0.2"
+       Condition "RemainingTimeLess(0.02)"
+       PostEval 1
+      }
+     }
+    }
+    AnimSrcNodeSource "InspectionOut 26449" {
+     EditorPos 510.6 636.5
+     Source "Inspection.RightInspectionOut"
+    }
+    AnimSrcNodeSource "InspectionInS 28548" {
+     EditorPos 521.8 634.9
+     Source "Inspection.LeftInspectionLoop"
+     Looptype Loop
+    }
+    AnimSrcNodeGroupSelect CroRasInspectG {
+     EditorPos 514.5 627.2
+     Child "WeaponInspectionSTM"
+     Group "Inspection"
+     Column "CroRas"
+    }
+    AnimSrcNodeSource "InspectionOut 38507" {
+     EditorPos 513.9 636.5
+     Source "Inspection.Right2Left"
+    }
+    AnimSrcNodeGroupSelect PneRasInspectG {
+     EditorPos 517.3 627.2
+     Child "WeaponInspectionSTM"
+     Group "Inspection"
+     Column "PneRas"
+    }
+    AnimSrcNodeGroupSelect CroInspectG {
+     EditorPos 515.3 626.1
+     Child "WeaponInspectionSTM"
+     Group "Inspection"
+     Column "Cro"
+    }
+    AnimSrcNodeSource "InspectionOut 15031" {
+     EditorPos 516.4 635.6
+     Source "Inspection.Left2Right"
+    }
+    AnimSrcNodeStateMachine WeaponInspectionStance {
+     Tags {
+      "TagWeaponCannotFire"
+     }
+     EditorPos 515.4 623.1
+     states {
+      AnimSrcNodeState Erc {
+       EditorPos 512.6 624.8
+       Child "ErcInspectG"
+       StartCondition "Stance == 0 && Low"
+       IsExit 1
+      }
+      AnimSrcNodeState Cro {
+       EditorPos 515.2 624.8
+       Child "CroInspectG"
+       StartCondition "Stance == 1 && Low"
+       IsExit 1
+      }
+      AnimSrcNodeState Pne {
+       EditorPos 517.6 624.8
+       Child "PneInspectG"
+       StartCondition "Stance == 2 && Low"
+       IsExit 1
+      }
+      AnimSrcNodeState CroRas {
+       EditorPos 514.5 623.9
+       Child "CroRasInspectG"
+       StartCondition "Stance == 1 && !Low"
+       IsExit 1
+      }
+      AnimSrcNodeState ErcRas {
+       EditorPos 512.1 624
+       Child "ErcRasInspectG"
+       StartCondition "Stance == 0 && !Low"
+       IsExit 1
+      }
+      AnimSrcNodeState PneRas {
+       EditorPos 517.1 623.9
+       Child "PneRasInspectG"
+       StartCondition "Stance == 2 && !Low"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeBufferUse "Buffer Use 17157" {
+     EditorPos 540.8 627.1
+     BufferName "FullBody"
+    }
+    AnimSrcNodeStateMachine IdleReloadSTM {
+     EditorPos 544.5 627.9
+     states {
+      AnimSrcNodeState Idle {
+       EditorPos 540.5 630.2
+       Child "Queue 1"
+       StartCondition "true"
+       TimeStorage Inherit
+       IsExit 0
+      }
+      AnimSrcNodeState Reload {
+       Tags {
+        "TagWeaponReload"
+       }
+       EditorPos 547.5 630.6
+       Child "Blend 14272"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState BufferPass6 {
+       EditorPos 544.2 631.4
+       Child "Buffer Use 17157"
+       StartCondition "false"
+       PassThrough 1
+      }
+      AnimSrcNodeState BufferPass5 {
+       EditorPos 544.4 629
+       Child "Buffer Use 17157"
+       StartCondition "false"
+       PassThrough 1
+      }
+      AnimSrcNodeState WeaponInspection {
+       EditorPos 534.9 630.1
+       Child "Blend 4"
+       StartCondition "false"
+       TimeStorage "Real Time"
+       IsExit 1
+       PassThrough 0
+      }
+      AnimSrcNodeState BufferPass4 {
+       EditorPos 537.7 631.4
+       Child "Buffer Use 17157"
+       StartCondition "false"
+       PassThrough 1
+      }
+      AnimSrcNodeState BufferPass3 {
+       EditorPos 537.684 628.842
+       Child "Buffer Use 17157"
+       StartCondition "false"
+       PassThrough 1
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{68A76B79C0FA77BA}" {
+       FromState "BufferPass6"
+       ToState "Idle"
+       Duration "0.3"
+       Condition "WeaponInspectionState == 0"
+       BlendFn "S"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77BB}" {
+       FromState "BufferPass5"
+       ToState "Reload"
+       Duration "0.3"
+       Condition "true"
+       BlendFn "S"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77A4}" {
+       FromState "Idle"
+       ToState "BufferPass5"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Weapon_Reload) && GetCommandI(CMD_Weapon_Reload) != -2"
+       BlendFn "S"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77A5}" {
+       FromState "Reload"
+       ToState "BufferPass6"
+       Duration "0.3"
+       Condition "(RemainingTimeLess(0.01)|| GetCommandI(CMD_Weapon_Reload) == -2) && WeaponInspectionState == 0"
+       BlendFn "S"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77A7}" {
+       FromState "WeaponInspection"
+       ToState "BufferPass3"
+       Duration "0.8"
+       Condition "RemainingTimeLess(0.6) || WeaponInspectionState == -2"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77A0}" {
+       FromState "BufferPass3"
+       ToState "Idle"
+       Duration "0.5"
+       Condition "true"
+       BlendFn "S"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77A1}" {
+       FromState "Idle"
+       ToState "BufferPass4"
+       Duration "0.3"
+       Condition "WeaponInspectionState != 0 && WeaponInspectionState != -2"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77A2}" {
+       FromState "BufferPass4"
+       ToState "WeaponInspection"
+       Duration "0.5"
+       Condition "true"
+       BlendFn "S"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77A3}" {
+       FromState "WeaponInspection"
+       ToState "BufferPass5"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Weapon_Reload) && GetCommandI(CMD_Weapon_Reload) != -2"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77AC}" {
+       FromState "BufferPass6"
+       ToState "WeaponInspection"
+       Duration "0.5"
+       Condition "WeaponInspectionState != 0 && WeaponInspectionState != -2"
+       BlendFn "S"
+      }
+      AnimSrcNodeTransition "{68A76B79C0FA77AD}" {
+       FromState "Reload"
+       ToState "BufferPass6"
+       Duration "0.3"
+       Condition "(RemainingTimeLess(0.5) || GetCommandI(CMD_Weapon_Reload) == -2) && WeaponInspectionState != 0"
+       BlendFn "S"
+       PostEval 1
+      }
+     }
+    }
+    AnimSrcNodeSource ModeOnDepSrc {
+     EditorPos 557.4 640.1
+     Source "Reload.Erc.Switch_Mode_Dep_On"
+    }
+    AnimSrcNodeSource ModeOffSrc {
+     EditorPos 559.5 640.1
+     Source "Reload.Erc.Switch_Mode_Off"
+    }
+    AnimSrcNodeSource ModeOnSrc {
+     EditorPos 555 640
+     Source "Reload.Erc.Switch_Mode_On"
+    }
+    AnimSrcNodeSource ModeOffDepSrc {
+     EditorPos 561.7 640
+     Source "Reload.Erc.Switch_Mode_Dep_Off"
+    }
+    AnimSrcNodeBlend "Blend 22457" {
+     EditorPos 556 638.1
+     BlendWeight "WeaponDeployed"
+     Child0 "ModeOnSrc"
+     Child1 "ModeOnDepSrc"
+     Optimization "Skip blended out"
+    }
+    AnimSrcNodeBlend "Blend 13147" {
+     EditorPos 560.4 638
+     BlendWeight "WeaponDeployed"
+     Child0 "ModeOffSrc"
+     Child1 "ModeOffDepSrc"
+     Optimization "Skip blended out"
+    }
+    AnimSrcNodeBufferUse "Buffer Use 16140" {
+     EditorPos 527.667 627.742
+     BufferName "FullBody"
+    }
+    AnimSrcNodeBlendT "Blend T 28564" {
+     EditorPos 524.267 618.342
+     BlendTime "0.3"
+     BlendFn "S"
+     Condition "Stance == 1"
+     Child0 "Procedural 12138"
+     Child1 "Procedural 16614"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeIK2Target "IK2 Target 32355" {
+     EditorPos 524.567 623.342
+     Child "Blend 37113"
+     Chains {
+      AnimSrcIkTargetBinding "{68A76B79C0FA77AA}" {
+       IkTarget "LeftArmTarget"
+       IkChain "LeftArm"
+      }
+     }
+    }
+    AnimSrcNodeBlend "Blend 37113" {
+     EditorPos 524.667 624.642
+     BlendWeight "1"
+     Child0 "Buffer Use 16140"
+     Child1 "WeaponInspectionStance"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeProcTransform "Procedural 16614" {
+     EditorPos 525.967 620.442
+     Child "IK2 Target 32355"
+     Expression "lerp(-1, 1, ADSAdjust)"
+     Bones {
+      AnimSrcNodeProcTrBoneItem "{68A76B79C0FA7794}" {
+       Bone "RightArm"
+       Space Model
+       Op Rotate
+       Amount "-0.3"
+      }
+     }
+     IkTargets {
+      AnimSrcNodeProcTrIkTargetItem "{68A76B79C0FA7796}" {
+       IkTarget "LeftArmTarget"
+       Space Model
+       Op "Rotate Around"
+       Amount "-0.3"
+       PivotBone "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeIK2 "IK2 24038" {
+     EditorPos 524.367 617.042
+     Child "Blend T 28564"
+     Chains {
+      AnimSrcIkBinding "{68A76B79C0FA7797}" {
+       IkTarget "LeftArmTarget"
+       IkChain "LeftArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{68A76B79C0FA7787}" {
+     }
+     Version 1
+    }
+    AnimSrcNodeProcTransform "Procedural 12138" {
+     EditorPos 522.467 620.442
+     Child "IK2 Target 32355"
+     Expression "lerp(1,0,ADSAdjust)"
+     Bones {
+      AnimSrcNodeProcTrBoneItem "{68A76B79C0FA7781}" {
+       Bone "RightArm"
+       Space Model
+       Op Rotate
+       Amount "0.3"
+      }
+     }
+     IkTargets {
+      AnimSrcNodeProcTrIkTargetItem "{68A76B79C0FA7782}" {
+       IkTarget "LeftArmTarget"
+       Space Model
+       Op "Rotate Around"
+       Amount "0.3"
+       PivotBone "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeBlend "Blend 14272" {
+     EditorPos 547.4 632.6
+     BlendWeight "0"
+     Child0 "WeaponReloadStanceSTM"
+     Child1 "Queue 1"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeIK2 "IK2 Deployment" {
+     EditorPos 545.198 620.3
+     Child "Blend T 34066"
+     Weight "int(WeaponDeployed) * int(Stance == 2)"
+     Chains {
+      AnimSrcIkBinding "{68A76B79C0FA778C}" {
+       IkTarget "LeftHand"
+       IkChain "LeftArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{68A76B79C0FA778D}" {
+     }
+     Version 1
+    }
+    AnimSrcNodePose "Pose 41795" {
+     EditorPos 551.3 627.2
+     Source "Deployment.Pne.Low"
+    }
+    AnimSrcNodeIK2Target MujIkTarget {
+     EditorPos 549.1 623.2
+     Child "Procedural LeftHand"
+     Bones {
+      AnimSrcNodeIK2BoneTarget "{68A76B79C0FA778F}" {
+       IkTarget "LeftHand"
+       Bone "LeftHand_IK_Target"
+      }
+     }
+    }
+    AnimSrcNodeBlendT "Blend T 34066" {
+     EditorPos 545.098 622.3
+     TriggerOn "AimY > 0 && WeaponDeployed"
+     TriggerOff "AimY < -5 || !WeaponDeployed"
+     Condition "WeaponDeployed"
+     Child0 "IdleReloadSTM"
+     Child1 "MujIkTarget"
+     Optimization "Always eval left"
+     IkTargets "Keep Singular From All"
+    }
+    AnimSrcNodeBlend "Blend 38217" {
+     EditorPos 549.1 625.3
+     BlendWeight "1"
+     Child0 "Buffer Use 17157"
+     Child1 "Pose 41795"
+     IkTargets "Keep Singular From All"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeProcTransform "Procedural LeftHand" {
+     EditorPos 549.1 624.2
+     Child "Blend 38217"
+     Expression "1"
+     Bones {
+      AnimSrcNodeProcTrBoneItem "{68A76B79C0FA778A}" {
+       Bone "LeftHand_IK_Target"
+       Space Pivot
+       Amount "0"
+       PivotBone "LeftHand"
+      }
+      AnimSrcNodeProcTrBoneItem "{68A76B79C0FA778B}" {
+       Bone "LeftHand_IK_Target"
+       Space Pivot
+       Op "Reset Translation"
+       PivotIk "RHandIKTarget"
+      }
+      AnimSrcNodeProcTrBoneItem "{68A76B79C0FA77F5}" {
+       Bone "LeftHand_IK_Target"
+       Op Translate
+       Amount "-00.05"
+      }
+      AnimSrcNodeProcTrBoneItem "{68A76B79C0FA77F6}" {
+       Bone "LeftHand_IK_Target"
+       Axis Y
+       Op Translate
+       Amount "0"
+      }
+      AnimSrcNodeProcTrBoneItem "{68A76B79C0FA77F7}" {
+       Bone "LeftHand_IK_Target"
+       Axis Z
+       Op Translate
+       Amount "0.15"
+      }
+     }
+    }
+    AnimSrcNodeEvent "Event Bolt Open" {
+     EditorPos 559.5 647.2
+     Child "RackBoltAnim"
+     Events {
+      AnimSrcEventGeneric "{6204A3A8A660A24B}" {
+       Name "Weapon_Bolt_Open"
+      }
+     }
+    }
+    AnimSrcNodeEvent "Event Bolt Closed" {
+     EditorPos 543.7 636.2
+     Child "FireEmptyAnim"
+     Events {
+      AnimSrcEventGeneric "{6204A3A8A660A24B}" {
+       Name "Weapon_Bolt_Closed"
+       MainPathOnly 1
+       Condition "Empty && HasVariableChangedTo(Firing, 1)"
+       Once 1
+      }
+     }
+    }
+    AnimSrcNodeEvent "Event Bolt Close on Auto (No Catch)" {
+     EditorPos 540.9 636.8
+     Child "FireAnim"
+     Events {
+      AnimSrcEventGeneric "{6204A3A8A660A24B}" {
+       Name "Weapon_Bolt_Closed"
+       MainPathOnly 1
+       Condition "State==1 && LastBullet"
+       Once 1
+      }
+     }
+    }
+    AnimSrcNodeSource "Source 21156" {
+     Tags {
+      "SR_CameraBone1stPerson"
+     }
+     EditorPos 551.368 649.263
+     Source "Reload.Reload_MagNoBullet"
+    }
+   }
+  }
+ }
+}

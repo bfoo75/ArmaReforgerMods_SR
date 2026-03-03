@@ -1,0 +1,151 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 1
+ $node "w_chamber_hatch" {
+  $keys q {
+   $frame 0 1 {
+    #q -0.00000005 0.00000006 0.85483611 0.51889807
+   }
+  }
+  $node "w_belt_lock" {
+   $keys q {
+    $frame 0 1 {
+    }
+   }
+  }
+  $node "w_bolt" {
+   $keys t {
+    $frame 0 1 {
+     #t 0 0.0846938 0
+    }
+   }
+   $node "w_spring" {
+    $keys t {
+     $frame 0 1 {
+      #t 0.0001769 0.0088868 -0.110553
+     }
+    }
+   }
+  }
+  $node "w_spring_main" {
+   $keys t {
+    $frame 0 1 {
+     #t 0.0001769 0.0935806 -0.2532554
+    }
+   }
+  }
+  $node "w_barrel" {
+   $keys t q {
+    $frame 0 1 {
+     #t 0.0189897 0.0857822 0.6977602
+    }
+   }
+  }
+  $node "w_safety" {
+   $keys t {
+    $frame 0 {
+     #t -0.0134042 0.0462382 -0.059823
+    }
+    $frame 1 {
+     #t -0.0134042 0.0462382 -0.0564986
+    }
+   }
+  }
+  $node "w_charging_handle" {
+   $keys t {
+    $frame 0 1 {
+     #t 0.0249128 0.0560755 -0.0433951
+    }
+   }
+   $node "w_charging_handle_lock02" {
+    $keys q {
+     $frame 0 1 {
+     }
+    }
+   }
+   $node "w_charging_handle_handle" {
+    $keys q {
+     $frame 0 1 {
+      #q 0 0.18456459 0 0.98282045
+     }
+    }
+    $node "w_charging_handle_lock01" {
+     $keys q {
+      $frame 0 1 {
+       #q 0 0.0404724 0 0.99918079
+      }
+     }
+    }
+   }
+  }
+  $node "w_trigger" {
+   $keys q {
+    $frame 0 1 {
+    }
+   }
+  }
+  $node "w_topcover" {
+   $keys q {
+    $frame 0 1 {
+    }
+   }
+   $node "w_belt_slider01_T" {
+    $keys t {
+     $frame 0 1 {
+      #t -0.0096773 0.0030742 -0.0889471
+     }
+    }
+    $node "w_belt_slider01_TR" {
+     $keys t q {
+      $frame 0 1 {
+       #t -0.0127472 -0.0057053 0.016281
+      }
+     }
+    }
+   }
+   $node "w_belt_slider02" {
+    $keys t q {
+     $frame 0 1 {
+      #t -0.0376056 -0.0033423 -0.0883357
+     }
+    }
+   }
+   $node "w_coulisseau03" {
+    $keys t q {
+     $frame 0 1 {
+      #t 0.0168451 -0.0074749 -0.1292886
+      #q 0 -0.19966662 0 0.97986388
+     }
+    }
+   }
+   $node "w_coulisseau02" {
+    $keys t q {
+     $frame 0 1 {
+      #t -0.0064191 -0.0133443 -0.1658748
+      #q 0 0.29719892 0 0.95481557
+     }
+    }
+   }
+   $node "w_coulisseau" {
+    $keys t q {
+     $frame 0 1 {
+      #t 0.0003523 -0.0100628 -0.3135592
+      #q 0 -0.02624333 0 0.99965566
+     }
+    }
+   }
+   $node "w_topcover_lock" {
+    $keys t {
+     $frame 0 1 {
+      #t 0.0003587 -0.0057792 -0.3360085
+     }
+    }
+   }
+  }
+ }
+ $custProps {
+  #custProp "profile" "weapon_MG3 - safety"
+  #custProp "sourceFile" "anims_SR_MG3_Reload_MagNoBullet_baked.blend"
+ }
+}

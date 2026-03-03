@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Emissive 0 0 0 1
+ BCRMap "{E273B4752E192C41}Assets/Weapons/MachineGuns/MG3/data/Bipod_BCR.edds"
+ NMOMap "{DAAB0FE7F76E7EDF}Assets/Weapons/MachineGuns/MG3/data/Bipod_NMO.edds"
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{09E2E53E36E51204}Assets/Weapons/Magazines/magazine_MG3/Data/MAG_IN.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{CF32470B069A3C20}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_p_MG3_reload_mag_no_bullet.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "anims_SR_MG3_Reload_MagNoBullet_baked.blend"
+   SourceProfile "252_UpperbodyADD_ArmsABS_Camera"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

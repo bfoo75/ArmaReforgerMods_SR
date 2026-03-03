@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{0B667437ED2810FC}Assets/Weapons/MachineGuns/MG3/workspace/anims/Reloads/SR_m_MG3_idle.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "anims_SR_MG3_Reload_RemoveMag_Blocking.blend"
+   SourceProfile "magazine_MG3_736x51"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}
