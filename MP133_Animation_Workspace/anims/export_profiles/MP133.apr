@@ -1,0 +1,20 @@
+$animExportProfile {
+ $tracks {
+   "Scene_Root"      ""                "TRA"
+   "Armature"        "Scene_Root"      "RA"
+   "w_root"          "Armature"        "RA"
+   "w_chamber_cap"   "w_root"          "RA"
+   "w_fire_mode"     "w_root"          "RA"
+   "w_pump"          "w_root"          "RA"
+   "w_bolt"          "w_root"          "RA"
+   "w_trigger"       "w_root"          "RA"
+   "snap_hand_right" "w_root"          "RA"
+   "snap_hand_left"  "w_root"          "RA"
+   "slot_magazine"   "w_root"          "RA"
+   "eye"             "w_root"          "RA"
+   "barrel_muzzle"   "w_root"          "RA"
+   "barrel_chamber"  "w_root"          "RA"
+   "COM_MP133"       "w_root"          "RA"
+  
+ }
+}

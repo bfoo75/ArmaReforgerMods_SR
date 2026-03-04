@@ -1,0 +1,53 @@
+AnimSetTemplateSource {
+ Groups {
+  AnimSetTemplateSource_AnimationGroup "{68C76BCEAB101C35}" {
+   Name "Inspection"
+   Animations {
+    "Left2Right"
+    "LeftInspectionIn"
+    "LeftInspectionLoop"
+    "LeftInspectionOut"
+    "Right2Left"
+    "RightInspectionIn"
+    "RightInspectionLoop"
+    "RightInspectionOut"
+   }
+   Columns {
+    "Cro"
+    "CroRas"
+    "Erc"
+    "ErcRas"
+    "Pne"
+    "PneRas"
+   }
+  }
+  AnimSetTemplateSource_AnimationGroup "{68C76BCEAB101C31}" {
+   Name "Reload"
+   Animations {
+    "BoltPose"
+    "Finger_trigger_in"
+    "Finger_trigger_out"
+    "Fire"
+    "FireLast"
+    "Idle"
+    "Idle_finger"
+    "IKOffset"
+    "Reload_InsertMag"
+    "Reload_RemoveMag"
+    "ReloadActionBolt"
+    "ReloadActionBoltOpen"
+    "Safety"
+    "Sight"
+    "Switch_Mode_Dep_Off"
+    "Switch_Mode_Dep_On"
+    "Switch_Mode_Off"
+    "Switch_Mode_On"
+    "Trigger"
+   }
+   Columns {
+    "Erc"
+    "Pne"
+   }
+  }
+ }
+}
