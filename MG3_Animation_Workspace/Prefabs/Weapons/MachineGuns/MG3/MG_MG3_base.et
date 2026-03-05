@@ -52,11 +52,11 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
         StabilizationPoints {
          DeploymentPointInfo LeftLeg {
           PivotID "w_bipodleg_left"
-          Offset 0 -0.261 0
+          Offset -0.1 -0.01 -0.26
          }
          DeploymentPointInfo RightLeg {
           PivotID "w_bipodleg_right"
-          Offset 0 -0.261 0
+          Offset 0.11 -0.01 -0.26
          }
         }
        }
