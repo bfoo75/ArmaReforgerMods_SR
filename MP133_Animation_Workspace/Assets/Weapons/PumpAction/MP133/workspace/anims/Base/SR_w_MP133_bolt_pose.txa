@@ -1,0 +1,29 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 1
+ $node "w_chamber_cap" {
+  $keys q {
+   $frame 0 1 {
+   }
+  }
+  $node "w_pump" {
+   $keys t {
+    $frame 0 1 {
+     #t 0 0.0326058 0.41797
+    }
+   }
+  }
+  $node "w_bolt" {
+   $keys t {
+    $frame 0 1 {
+     #t 0 0.065942 0.1781126
+    }
+   }
+  }
+ }
+ $custProps {
+  #custProp "profile" "MP133_bolt_pump"
+  #custProp "sourceFile" "anims_SR_MP133_base.blend"
+ }
+}

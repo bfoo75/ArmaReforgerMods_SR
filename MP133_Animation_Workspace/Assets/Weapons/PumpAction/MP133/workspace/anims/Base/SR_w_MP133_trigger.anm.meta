@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{2BAB7AE618D94E0A}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_w_MP133_trigger.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "anims_SR_MP133_base.blend"
+   SourceProfile "MP133_trigger"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

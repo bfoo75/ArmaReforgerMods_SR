@@ -1,0 +1,22 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 1
+ $node "w_fire_mode" {
+  $keys t {
+   $frame 0 1 {
+    #t -0.0074871 0.0234034 0.0273252
+   }
+  }
+  $node "w_trigger" {
+   $keys q {
+    $frame 0 1 {
+    }
+   }
+  }
+ }
+ $custProps {
+  #custProp "profile" "MP133_trigger_safety"
+  #custProp "sourceFile" "anims_SR_MP133_base.blend"
+ }
+}

@@ -1,4 +1,4 @@
-AnimSetInstanceSource {
+AnimSetInstanceSource "{68C95D6ECCB1C02B}" {
  Template "{E92086D7806A86B7}Assets/Weapons/PumpAction/MP133/workspace/SR_MP133.ast"
  Lines {
   AnimSetInstanceSource_Line "Reload.Erc.Fire" {
@@ -26,16 +26,16 @@ AnimSetInstanceSource {
    Resource "{3DB1000C7FA404F6}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_pne_rack_bolt.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Idle" {
-   Resource "{54962C18C480702F}Assets/Weapons/Rifles/M14/anims/anm/p_M21_ik.anm"
+   Resource "{577AE59C3FFFBABA}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_p_MP133_ik.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Idle" {
-   Resource "{54962C18C480702F}Assets/Weapons/Rifles/M14/anims/anm/p_M21_ik.anm"
+   Resource "{577AE59C3FFFBABA}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_p_MP133_ik.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Safety" {
-   Resource "{66D638893B4EE5D5}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_safety.anm"
+   Resource "{C039F0DB71030E30}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_p_MP133_safety.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Safety" {
-   Resource "{66D638893B4EE5D5}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_safety.anm"
+   Resource "{C039F0DB71030E30}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_p_MP133_safety.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Trigger" {
    Resource "{93D5BEFAFE6F5A5B}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_fire.anm"
@@ -74,10 +74,10 @@ AnimSetInstanceSource {
    Resource "{D84E9E1AD7849722}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_finger_trigger_pose.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.IKOffset" {
-   Resource "{8B06E3DBECF117D7}Assets/Weapons/Rifles/M14/anims/anm/p_M21_offset.anm"
+   Resource "{42463C11793A4866}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_p_MP133_ikoffset.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.IKOffset" {
-   Resource "{8B06E3DBECF117D7}Assets/Weapons/Rifles/M14/anims/anm/p_M21_offset.anm"
+   Resource "{42463C11793A4866}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_p_MP133_ikoffset.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_Off" {
    Resource "{2279CB80950A2001}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_modes_off.anm"

@@ -37,8 +37,11 @@ GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
     m_sAmmoCaliber "#AR-AmmunitionID_762x51mm"
    }
    ItemModel "{7E8AF4473BD7A55B}Assets/Weapons/Magazines/12GA/shell_12G.xob"
-   MaxAmmo 1
+   MaxAmmo 8
    AmmoConfig "{533A763E304771D9}Configs/Weapons/Ammo/Ammo_762x51.conf"
+   AmmoMapping {
+    0 0 0 0 0 0 0 0
+   }
   }
   MeshObject "{CA6BE4D6A23F8EF0}" {
    Object "{7E8AF4473BD7A55B}Assets/Weapons/Magazines/12GA/shell_12G.xob"

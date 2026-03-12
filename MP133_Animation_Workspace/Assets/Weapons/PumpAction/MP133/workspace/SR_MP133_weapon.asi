@@ -1,4 +1,4 @@
-AnimSetInstanceSource {
+AnimSetInstanceSource "{68C95D6ECCB39CAB}" {
  Template "{E92086D7806A86B7}Assets/Weapons/PumpAction/MP133/workspace/SR_MP133.ast"
  Lines {
   AnimSetInstanceSource_Line "Reload.Erc.Fire" {
@@ -23,10 +23,10 @@ AnimSetInstanceSource {
    Resource "{6DFB06D82E84252E}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_pne_rack_bolt.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Trigger" {
-   Resource "{345981E8EE936E5E}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_erc_trigger.anm"
+   Resource "{2BAB7AE618D94E0A}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_w_MP133_trigger.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Trigger" {
-   Resource "{345981E8EE936E5E}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_erc_trigger.anm"
+   Resource "{2BAB7AE618D94E0A}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_w_MP133_trigger.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Fire" {
    Resource "{721C302C4AE797B1}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_erc_fire.anm"
@@ -38,10 +38,10 @@ AnimSetInstanceSource {
    Resource "{6C94ACDDD9E5F444}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_erc_sight.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Safety" {
-   Resource "{DEFF5042ACD8E22F}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_erc_safety.anm"
+   Resource "{708496C485334A28}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_w_MP133_safety.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Safety" {
-   Resource "{DEFF5042ACD8E22F}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_erc_safety.anm"
+   Resource "{708496C485334A28}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_w_MP133_safety.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Sight" {
    Resource "{6C94ACDDD9E5F444}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_erc_sight.anm"
@@ -86,7 +86,7 @@ AnimSetInstanceSource {
    Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.BoltPose" {
-   Resource "{D34243AEBAE272D5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_erc_bolt_pose.anm"
+   Resource "{7A8257DC36F34081}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_w_MP133_bolt_pose.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.ReloadActionBoltOpen" {
    Resource "{BCD2FC5236D5E315}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_erc_rack_bolt_open.anm"

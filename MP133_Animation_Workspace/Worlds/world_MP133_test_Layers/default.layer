@@ -1,0 +1,9 @@
+GameEntity : "{43FDAF3FA0FF2299}Prefabs/Weapons/Attachments/Underbarrel/UGL_M203_long.et" {
+ coords 130.342 1 120.521
+}
+GenericEntity : "{8AC27A0E8F0E0FF2}Prefabs/Weapons/PumpAction/MP133/PumpAction_MP133_base.et" {
+ coords 131.206 1 121.517
+}
+GenericEntity : "{9C3C2E9C094D3920}Prefabs/Weapons/Magazines/12GA/Shell_12g_Base.et" {
+ coords 130.734 1 121.669
+}

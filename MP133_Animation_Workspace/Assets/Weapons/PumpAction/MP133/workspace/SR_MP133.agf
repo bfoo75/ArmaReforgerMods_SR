@@ -3,13 +3,13 @@ AnimSrcGraphFile {
   AnimSrcGraphSheet master {
    Nodes {
     AnimSrcNodeSource FireAnim {
-     EditorPos -7.5 12.8
+     EditorPos -4.421 9.684
      Source "Reload.Erc.Fire"
      Looptype "No Loop"
      Interpolate 0
     }
     AnimSrcNodeSource FireEmptyAnim {
-     EditorPos -6 11.5
+     EditorPos -2.805 8.889
      Source "Reload.Erc.Trigger"
      Looptype "No Loop"
     }
@@ -111,7 +111,7 @@ AnimSrcGraphFile {
        }
        EditorPos 19.1 16.1
        Child "RackBoltAnim"
-       StartCondition "GetCommandI(CMD_Weapon_Reload) == 1 && GetCommandF(CMD_Weapon_Reload) == 0.0"
+       StartCondition "GetCommandI(CMD_Weapon_Reload) == 40"
        TimeStorage "Real Time"
        IsExit 1
       }
@@ -201,7 +201,7 @@ AnimSrcGraphFile {
      Child "Blend 1"
      QueueItems {
       AnimSrcNodeQueueItem "{68C76BCEAB17C3CB}" {
-       Child "Firing_STM"
+       Child "Queue 3"
        StartExpr "true"
        InterruptExpr "HasVariableChanged(State)"
        EnqueueMethod Ignore
@@ -241,7 +241,7 @@ AnimSrcGraphFile {
      EditorPos -20.9 16.2
      states {
       AnimSrcNodeState Idle {
-       EditorPos -23.5 17.9
+       EditorPos -23.579 17.895
        Child "Idle"
        StartCondition "!Low"
        TimeStorage Inherit
@@ -379,7 +379,7 @@ AnimSrcGraphFile {
      }
     }
     AnimSrcNodePose "Pose 1" {
-     EditorPos -30.6 20.4
+     EditorPos -30.526 20.421
      Source "Reload.Safety"
      Time "1.0"
     }
@@ -456,7 +456,7 @@ AnimSrcGraphFile {
      PostEval 1
     }
     AnimSrcNodeQueue "Queue 3" {
-     EditorPos -7.4 10.4
+     EditorPos -4.211 7.789
      Child "SlideClosed"
      QueueItems {
       AnimSrcNodeQueueItem "{68C76BCEAB17C3BF}" {
@@ -474,12 +474,12 @@ AnimSrcGraphFile {
      }
     }
     AnimSrcNodePose BoltOpen {
-     EditorPos -1.4 11.7
+     EditorPos -3.826 16.411
      Source "Reload.Erc.BoltPose"
      Time "0.25"
     }
     AnimSrcNodeQueue "Queue 2" {
-     EditorPos -0.5 10.3
+     EditorPos -2.926 15.011
      Child "BoltOpen"
      QueueItems {
       AnimSrcNodeQueueItem "{68C76BCEAB17C3BB}" {
@@ -490,23 +490,22 @@ AnimSrcGraphFile {
      }
     }
     AnimSrcNodeStateMachine Firing_STM {
-     EditorPos -4.1 7.5
+     EditorPos -6.526 12.211
      states {
       AnimSrcNodeState SlideOpen {
        Tags {
         "TagBoltBack"
        }
-       EditorPos -0.5 8.7
+       EditorPos -2.926 13.411
        Child "Queue 2"
        StartCondition "true && Empty"
       }
       AnimSrcNodeState SlideClosed {
-       EditorPos -7.5 8.7
-       Child "Queue 3"
+       EditorPos -9.926 13.411
        StartCondition "true && !Empty"
       }
       AnimSrcNodeState FireLast {
-       EditorPos -4.1 8.7
+       EditorPos -6.526 13.411
        Child "FireLastAnim_1"
        TimeStorage "Real Time"
       }
@@ -532,19 +531,19 @@ AnimSrcGraphFile {
      }
     }
     AnimSrcNodePose SlideClosed {
-     EditorPos -9.2 11.6
+     EditorPos -6.105 9.053
      Source "Reload.Erc.BoltPose"
      Time "0.0"
     }
     AnimSrcNodeSource FireEmptyOpend {
-     EditorPos 0.7 12.7
+     EditorPos -1.474 16.421
      Source "Reload.Erc.Trigger"
      Looptype "No Loop"
     }
     AnimSrcNodeSource FireLastAnim_1 {
      Tags {
      }
-     EditorPos -4.1 10.4
+     EditorPos -6.526 15.111
      Source "Reload.Erc.FireLast"
      Looptype "No Loop"
     }
@@ -619,8 +618,7 @@ AnimSrcGraphFile {
      states {
       AnimSrcNodeState InspectionInLeft {
        Tags {
-        "TagTransitionADSIn"
-        "TagInspectionTransition"
+        "TagTransitionADSIn" "TagInspectionTransition"
        }
        EditorPos -28 0.9
        Child "Sound_Inspect_In"
@@ -629,8 +627,7 @@ AnimSrcGraphFile {
       }
       AnimSrcNodeState InspectionLoopLeft {
        Tags {
-        "TagInspectionPose"
-        "TagTransitionADS"
+        "TagInspectionPose" "TagTransitionADS"
        }
        EditorPos -25.6 2.2
        Child "InspectionInS 28548"
@@ -640,8 +637,7 @@ AnimSrcGraphFile {
       }
       AnimSrcNodeState InspectionOutLeft {
        Tags {
-        "TagTransitionADSOut"
-        "TagInspectionTransition"
+        "TagTransitionADSOut" "TagInspectionTransition"
        }
        EditorPos -23.5 0.9
        Child "InspectionOut"
@@ -652,8 +648,7 @@ AnimSrcGraphFile {
       }
       AnimSrcNodeState InspectionInRighty {
        Tags {
-        "TagInspectionTransition"
-        "TagInspectionTransition"
+        "TagInspectionTransition" "TagInspectionTransition"
        }
        EditorPos -41.2 0.8
        Child "Sound_Inspect_In 13048"

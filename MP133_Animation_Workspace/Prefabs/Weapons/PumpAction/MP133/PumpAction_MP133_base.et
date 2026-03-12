@@ -31,7 +31,8 @@ GenericEntity : "{F9E6107C47C1B088}Prefabs/Weapons/Core/LongRangeRifle_Base.et" 
      RestingUP Right
     }
     ItemAnimationAttributes ItemAnimationAttributes "{5284960E1D29F45C}" {
-     AnimationIKPose "{54962C18C480702F}Assets/Weapons/Rifles/M14/anims/anm/p_M21_ik.anm"
+     AnimationInstance "{60945F10BF15FC09}anims/workspaces/player/player_main_machinegun.asi"
+     AnimationIKPose "{577AE59C3FFFBABA}Assets/Weapons/PumpAction/MP133/workspace/anims/Base/SR_p_MP133_ik.anm"
     }
     CustomAttributes {
      AimingModifierAttributes "{566C7D15A071B88E}" {
@@ -189,6 +190,11 @@ GenericEntity : "{F9E6107C47C1B088}Prefabs/Weapons/Core/LongRangeRifle_Base.et" 
        ParticleEffect "{8EAE237E5528D237}Particles/Weapon/Muzzle_M21.ptc"
       }
      }
+     FireModes {
+      BaseFireMode "{B80A64F4A8EF8333}" {
+       ManualAction 1
+      }
+     }
      MagazineWell MagazineWellM14 "{68C76BC9A4A10C4F}" {
      }
      DispersionDiameter 0.4
@@ -220,11 +226,11 @@ GenericEntity : "{F9E6107C47C1B088}Prefabs/Weapons/Core/LongRangeRifle_Base.et" 
      MagazineTemplate "{9C3C2E9C094D3920}Prefabs/Weapons/Magazines/12GA/Shell_12g_Base.et"
     }
     WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
-     AnimGraph "{9821CD00A72A31EA}Assets/Weapons/Rifles/workspaces/m21.agr"
-     AnimInstance "{4E858695D2DC5EEC}Assets/Weapons/Rifles/workspaces/m21_weapon.asi"
+     AnimGraph "{FBD2E0D7B7AF5244}Assets/Weapons/PumpAction/MP133/workspace/SR_MP133.agr"
+     AnimInstance "{6CB25008180BBE28}Assets/Weapons/PumpAction/MP133/workspace/SR_MP133_weapon.asi"
      AnimInjection AnimationAttachmentInfo "{532F3A9CB912F2BA}" {
-      AnimGraph "{9821CD00A72A31EA}Assets/Weapons/Rifles/workspaces/m21.agr"
-      AnimInstance "{B5DB17A44ADD3A00}Assets/Weapons/Rifles/workspaces/m21_player.asi"
+      AnimGraph "{FBD2E0D7B7AF5244}Assets/Weapons/PumpAction/MP133/workspace/SR_MP133.agr"
+      AnimInstance "{97ECC139800ADAC4}Assets/Weapons/PumpAction/MP133/workspace/SR_MP133_player.asi"
      }
     }
    }
