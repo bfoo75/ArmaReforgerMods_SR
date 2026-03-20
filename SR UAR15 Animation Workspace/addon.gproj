@@ -1,0 +1,8 @@
+GameProject {
+ ID "SRUAR15AnimationWorkspace"
+ GUID "68E9671D5478E75C"
+ TITLE "SR UAR15 Animation Workspace"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
