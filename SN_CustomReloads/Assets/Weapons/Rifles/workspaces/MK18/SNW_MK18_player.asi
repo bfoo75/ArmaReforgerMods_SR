@@ -14,7 +14,7 @@ AnimSetInstanceSource "{689D79B61EB93C17}" {
    Resource "{9C7FBD3C08B6E86E}Assets/Weapons/Rifles/M16A2/anims/anm/p_rfl_m16_erc_fire_last.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Idle" {
-   Resource "{8C332F3BF1966538}Assets/Weapons/Rifles/MK18/anims/Base/SN_p_mk18_ik.anm"
+   Resource "{8C332F3BF1966538}Assets/Weapons/Rifles/MK18/anims/Base/SN_p_MK18_ik.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Idle" {
    Resource "{5EE025FA1E230B56}Assets/Weapons/Rifles/M16A2/anims/anm/p_rfl_m16_erc_safety.anm"
@@ -44,7 +44,7 @@ AnimSetInstanceSource "{689D79B61EB93C17}" {
    Resource "{E6CA9AA3BD70E139}Assets/Weapons/Rifles/M16A2/anims/anm/p_rfl_m16_pne_remove_mag.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Safety" {
-   Resource "{C53B0E078A97D1EE}Assets/Weapons/Rifles/MK18/anims/Base/SN_p_mk18_safety.anm"
+   Resource "{C53B0E078A97D1EE}Assets/Weapons/Rifles/MK18/anims/Base/SN_p_MK18_safety.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Safety" {
    Resource "{5EE025FA1E230B56}Assets/Weapons/Rifles/M16A2/anims/anm/p_rfl_m16_erc_safety.anm"
@@ -92,10 +92,10 @@ AnimSetInstanceSource "{689D79B61EB93C17}" {
    Resource "{30556660A961502B}Assets/Weapons/Rifles/M16A2/anims/anm/p_rfl_m16_erc_modes_on.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.IKOffset" {
-   Resource "{AF8B4443BB51EB4B}Assets/Weapons/Rifles/MK18/anims/Base/SN_p_mk18_ikoffset.anm"
+   Resource "{AF8B4443BB51EB4B}Assets/Weapons/Rifles/MK18/anims/Base/SN_p_MK18_ikoffset.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.IKOffset" {
-   Resource "{AF8B4443BB51EB4B}Assets/Weapons/Rifles/MK18/anims/Base/SN_p_mk18_ikoffset.anm"
+   Resource "{AF8B4443BB51EB4B}Assets/Weapons/Rifles/MK18/anims/Base/SN_p_MK18_ikoffset.anm"
   }
   AnimSetInstanceSource_Line "Inspection.Cro.LeftInspectionIn" {
    Resource "{E478A1BEA1812096}Assets/Weapons/Rifles/M16A2/anims/anm/p_M16A2_weapon_inspection_cro_left_in_ras.anm"
@@ -254,7 +254,7 @@ AnimSetInstanceSource "{689D79B61EB93C17}" {
    Resource "{385CDF82D1297590}Assets/Weapons/Rifles/M16A2/anims/anm/p_rfl_m16_erc_dep_modes_on.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.SNW_Reload_MonkeyGrip" {
-   Resource "{63D3942BEAE5713B}Assets/Weapons/Rifles/MK18/anims/Base/p_MK18_Reload_L.anm"
+   Resource "{802F998D9229EF68}Assets/Weapons/Rifles/MK18/anims/Reloads/sn_p_erc_mk18_reload_monkeygrip.anm"
   }
  }
  RBF AnimSetInstanceSourceRBFArray "{689D79B2A6C7D442}" {

@@ -1,0 +1,21 @@
+MetaFileClass {
+ Name "{CA7FD3BC5F21332B}Assets/Weapons/Rifles/MK18/anims/Reloads/sn_w_erc_mk18_reload_monkeygrip.anm"
+ Configurations {
+  TXAResourceClass PC {
+   PositionCompressFactor 0
+   RotationCompressFactor 0
+   SourcePath "p_SN_MK18_MonkeyReload_spline3.blend"
+   SourceProfile "MK18"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

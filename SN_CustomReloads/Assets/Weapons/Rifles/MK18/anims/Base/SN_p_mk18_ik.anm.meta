@@ -1,8 +1,8 @@
 MetaFileClass {
- Name "{8C332F3BF1966538}Assets/Weapons/Rifles/MK18/anims/Base/SN_p_mk18_ik.anm"
+ Name "{8C332F3BF1966538}Assets/Weapons/Rifles/MK18/anims/Base/SN_p_MK18_ik.anm"
  Configurations {
   TXAResourceClass PC {
-   SourcePath "p_SN_MK18_MonkeyReload.blend"
+   SourcePath "p_SN_MK18_MonkeyReload_spline3.blend"
    SourceProfile "501_IK"
   }
   TXAResourceClass XBOX_ONE : PC {

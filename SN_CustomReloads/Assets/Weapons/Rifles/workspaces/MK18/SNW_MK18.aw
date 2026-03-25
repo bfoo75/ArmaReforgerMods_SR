@@ -20,11 +20,18 @@ BaseSource {
   }
  }
  ChildPreviewModels {
-  AnimSrcWorkspaceChildPreviewModel "{689D79B2A6C49F67}" {
+  AnimSrcWorkspaceChildPreviewModel "{68E6D5C5AEE1AABF}" {
    Enabled 1
-   Model "{C88615A558BF012C}Assets/Weapons/Rifles/M16A2/M16A2_body.xob"
+   Model "{2373D1AA4C85316E}Assets/Weapons/Rifles/MK18/MK18.xob"
    Bone "RightHandProp"
    Parent "{689D79B2A6C49F6D}"
+  }
+  AnimSrcWorkspaceChildPreviewModel "{68E6D5C5901360CD}" {
+   Enabled 1
+   Model "{657C05C2A5831270}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/magazine_MK18_556x45_Stanag_30rnd.xob"
+   Bone "LeftHandProp"
+   Parent "{689D79B2A6C49F6D}"
+   ChildBone "snap_weapon"
   }
  }
  AudioTesting AnimSrcWorkspaceAudioTesting "{689D79B2A6C49F61}" {

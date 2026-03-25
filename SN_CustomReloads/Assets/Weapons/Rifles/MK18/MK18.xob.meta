@@ -36,7 +36,7 @@ MetaFileClass {
     GeometryParam UCX_MK18_Body {
      LayerPreset "Weapon"
      SurfaceProperties {
-      "{3B2D2687F56BB4EF}Common/Materials/Game/WeaponParts/weapon_metal.gamemat"
+      "{536BF67B2052B869}material/metal.gamemat"
      }
      Mass 0
      Margin 0

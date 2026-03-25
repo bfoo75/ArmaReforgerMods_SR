@@ -2,10 +2,17 @@ $animation "" {
  #version 2
  #fps 30
  #numFrames 1
- $node "w_cartridge" {
+ $node "w_slot_magazine" {
   $keys t q {
    $frame 0 1 {
-    #t 0.0013193 0.0817418 0.1166037
+    #t 0.0000474 0.0123101 0.1053338
+   }
+  }
+  $node "w_cartridge" {
+   $keys t q {
+    $frame 0 1 {
+     #t 0.0013193 0.0817418 0.1166037
+    }
    }
   }
   $node "w_eye_control" {
@@ -18,7 +25,7 @@ $animation "" {
   $node "w_second_mag_control" {
    $keys t q {
     $frame 0 1 {
-     #t 0.0000474 0.0123101 0.1053338
+     #t 0.0000474 0.0123098 0.1053339
     }
    }
   }
@@ -129,6 +136,6 @@ $animation "" {
  }
  $custProps {
   #custProp "profile" "MK18"
-  #custProp "sourceFile" "p_SN_MK18_Base.blend1"
+  #custProp "sourceFile" "p_SN_MK18_MonkeyReload_spline3.blend"
  }
 }

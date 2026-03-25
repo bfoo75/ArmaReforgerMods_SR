@@ -6,6 +6,7 @@ AnimSrcGraphFile {
      EditorPos 8.1 22
      Source "Reload.Reload_InsertMag"
      Looptype "No Loop"
+     Interpolate 0
     }
     AnimSrcNodeStateMachine MagReloadSTM {
      EditorPos 15 20.1
@@ -14,7 +15,6 @@ AnimSrcGraphFile {
        EditorPos 15.4 21.4
        Child "RemoveMagAnim 12735"
        StartCondition "True"
-       TimeStorage "Real Time"
        IsExit 1
       }
      }
@@ -986,14 +986,14 @@ AnimSrcGraphFile {
       AnimSrcNodeTransition "{689D79B2A6F9D560}" {
        FromState "BufferPass5"
        ToState "Reload"
-       Duration "0.3"
+       Duration "0.15"
        Condition "true"
        BlendFn "S"
       }
       AnimSrcNodeTransition "{689D79B2A6F9D562}" {
        FromState "Idle"
        ToState "BufferPass5"
-       Duration "0.3"
+       Duration "0.15"
        Condition "IsCommand(CMD_Weapon_Reload) && !inRange(GetCommandI(CMD_Weapon_Reload), 7, 9) && GetCommandI(CMD_Weapon_Reload) != -2"
        BlendFn "S"
       }

@@ -1,3 +1,29 @@
+$grp GenericEntity {
+ {
+  components {
+   MeshObject "{68E6D5C1CF055900}" {
+    Object "{657C05C2A5831270}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/magazine_MK18_556x45_Stanag_30rnd.xob"
+   }
+  }
+  coords 126.575 1 127.161
+ }
+ {
+  components {
+   MeshObject "{68E6D5C1CDE64487}" {
+    Object "{657C05C2A5831270}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/magazine_MK18_556x45_Stanag_30rnd.xob"
+   }
+  }
+  coords 126.25 1 127.23
+ }
+ {
+  components {
+   MeshObject "{68E6D5C1CA96292B}" {
+    Object "{657C05C2A5831270}Assets/Weapons/Magazines/Magazines_MK18/Magazine_MK18_556x45_Stanag_30rnd/magazine_MK18_556x45_Stanag_30rnd.xob"
+   }
+  }
+  coords 125.865 1 127.397
+ }
+}
 GameEntity : "{27532ED24D0D451E}Prefabs/Weapons/Attachments/Optics/Optic_MK18_NavTech/SN_Collim_MK18_NavTech_base.et" {
  coords 127.13 1 126.749
 }
@@ -21,5 +47,30 @@ GenericEntity : "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et" {
  coords 127.878 1 127.113
 }
 GenericEntity : "{4B03B87ACCFA0936}Prefabs/Weapons/Rifles/MK18/SNW_Rifle_MK18_base.et" {
+ components {
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemAnimationAttributes ItemAnimationAttributes "{5284960E1D29F45C}" {
+     ExcludeBonesBlend {
+     }
+    }
+   }
+  }
+ }
  coords 127.126 1 127.258
+}
+GenericEntity : "{6A2D84A349BDD62A}Prefabs/Weapons/Attachments/Foregrips/Foregrip_MK18_AFG/ForeGrip_MK18_AFG_base.et" {
+ components {
+  InventoryItemComponent "{557E85EEE1B60313}" {
+   Attributes SCR_ItemAttributeCollection "{557E85EEE1B60310}" {
+    ItemAnimationAttributes ItemAnimationAttributes "{68B4E8D93B841C0B}" {
+     AnimationInstance "{0350283642830782}anims/workspaces/player/player_main_rifle.asi"
+    }
+   }
+  }
+ }
+ coords 127.321 1 126.654
+}
+GenericEntity : "{6CD34D6526429EEC}Prefabs/Props/Furniture/BarTable_01.et" {
+ coords 132.863 1 129.16
 }

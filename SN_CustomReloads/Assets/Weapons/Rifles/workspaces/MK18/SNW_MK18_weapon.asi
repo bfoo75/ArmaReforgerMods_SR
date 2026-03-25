@@ -92,7 +92,7 @@ AnimSetInstanceSource "{689D79B61EB91CA8}" {
    Resource "{01B19B02A655DADD}Assets/Weapons/Rifles/M16A2/anims/anm/w_m16_bolt_pose.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.SNW_Reload_MonkeyGrip" {
-   Resource "{8208E71F16B193C7}Assets/Weapons/Rifles/MK18/anims/Base/w_MK18_Reload_L.anm"
+   Resource "{CA7FD3BC5F21332B}Assets/Weapons/Rifles/MK18/anims/Reloads/sn_w_erc_mk18_reload_monkeygrip.anm"
   }
  }
  RBF AnimSetInstanceSourceRBFArray "{689D79B2A6C53E55}" {
