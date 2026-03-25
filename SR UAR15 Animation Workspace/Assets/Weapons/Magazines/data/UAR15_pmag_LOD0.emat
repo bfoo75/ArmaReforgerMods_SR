@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Emissive 0 0 0 1
+ BCRMap "{D67CAD10623C1E5A}Assets/Weapons/Magazines/data/UAR15_pmag_LOD0_BCR.edds"
+ NMOMap "{EEA41682BB4B4CC4}Assets/Weapons/Magazines/data/UAR15_pmag_LOD0_NMO.edds"
+}

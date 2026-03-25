@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F532E65B31F8D918}Assets/Weapons/Magazines/data/UAR15_pmag_LOD0.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8F8BAD37F4CC3194}Assets/Weapons/Rifles/UAR15/data/UAR15_muzzle_LOD0.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{72189176CD6FAFE4}Assets/Weapons/Rifles/UAR15/data/UAR15_dust_cover_LOD0.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

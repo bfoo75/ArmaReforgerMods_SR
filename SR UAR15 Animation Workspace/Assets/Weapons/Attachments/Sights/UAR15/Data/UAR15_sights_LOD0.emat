@@ -1,0 +1,5 @@
+MatPBRBasic "{D4B9320B28680E56}Assets/Weapons/Attachments/Sights/UAR15/Data/UAR15_sights_LOD0.emat" {
+ Emissive 0 0 0 1
+ BCRMap "{44435F536F6EF0B4}Assets/Weapons/Attachments/Sights/UAR15/Data/UAR15_sights_LOD0_BCR.edds"
+ NMOMap "{7C9BE4C1B619A22A}Assets/Weapons/Attachments/Sights/UAR15/Data/UAR15_sights_LOD0_NMO.edds"
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{D4B9320B28680E56}Assets/Weapons/Attachments/Sights/UAR15/Data/UAR15_sights_LOD0.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

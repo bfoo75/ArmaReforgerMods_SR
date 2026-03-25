@@ -1,0 +1,151 @@
+GenericEntity : "{3E15C1C882DBB587}Prefabs/Weapons/Core/WeaponSight_Base.et" {
+ ID "4BA426CBAED42A14"
+ components {
+  InventoryItemComponent "{52627A1F45CD4EB6}" {
+   Attributes SCR_ItemAttributeCollection "{52627A1EBB0698FD}" {
+    ItemDisplayName UIInfo "{68EAB8960C54B57F}" {
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{68EAB8960C5463AC}" {
+     Weight 0.6
+     SizeSetupStrategy Manual
+     ItemVolume 500
+    }
+    CustomAttributes {
+     WeaponAttachmentAttributes "{5284D858FFF9BE66}" {
+      AttachmentType AttachmentOpticsCarryHandle "{68F0C20C2CF26C3B}" {
+      }
+     }
+     PreviewRenderAttributes "{52D69389645B4E4D}" {
+      CameraPreset Right
+      FOV 20
+     }
+     CharacterModifierAttributes "{68EAB8960C5463B8}" {
+     }
+    }
+    m_Size SLOT_1x1
+   }
+  }
+  MeshObject "{68EAB8960C5463BD}" {
+   Object "{DD7C0B56000DF6C6}Assets/Weapons/Attachments/Sights/UAR15/sights_UAR15.xob"
+   InheritSkeleton 1
+   InheritVisibility 1
+  }
+  RigidBody "{68EAB8960C546382}" {
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{5B18D200265FA2CB}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5B18D209080A5D15}" {
+     m_sSoundProject "{92CB09CB84872CB4}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Attachments_LongGeneric.acp"
+    }
+    SCR_AudioSourceConfiguration "{5B18D2091B885AE6}" {
+     m_sSoundProject "{92CB09CB84872CB4}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Attachments_LongGeneric.acp"
+    }
+    SCR_AudioSourceConfiguration "{68EAB8960C546397}" {
+     m_sSoundProject "{92CB09CB84872CB4}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Attachments_LongGeneric.acp"
+     m_sSoundEventName "SOUND_UNEQUIP"
+    }
+    SCR_AudioSourceConfiguration "{68EAB8960C546396}" {
+     m_sSoundProject "{92CB09CB84872CB4}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Attachments_LongGeneric.acp"
+     m_sSoundEventName "SOUND_SWITCH"
+    }
+   }
+  }
+  SightsComponent "{5D0CC83435B55855}" {
+   SightsPosition PointInfo "{68EAB8960C54638F}" {
+    PivotID "eye"
+   }
+   SightsRanges {
+    SightRangeInfo "{68F0C208AE151CCB}" {
+     Range 0.213 200
+     WeaponPosition PointInfo "{68E9671DF23B14CB}" {
+      Offset 0 -0.0012 0
+      Angles 0.11 0 0
+     }
+    }
+    SightRangeInfo "{68F0C208AFDB75BA}" {
+     Range 0.314 300
+     WeaponPosition PointInfo "{68E9671DF23CFB84}" {
+      Offset 0 -0.0019 0
+      Angles 0.18 0 0
+     }
+    }
+    SightRangeInfo "{68F0C208AFBD7E3D}" {
+     Range 0.44 400
+     WeaponPosition PointInfo "{68E9671DF23CF686}" {
+      Offset 0 -0.0026 0
+      Angles 0.24 0 0
+     }
+    }
+    SightRangeInfo "{68F0C208AF8A5F2E}" {
+     Range 0.59 500
+     WeaponPosition PointInfo "{68E9671DF23CF685}" {
+      Offset 0 -0.0035 0
+      Angles 0.33 0 0
+     }
+    }
+    SightRangeInfo "{68F0C208AF633F60}" {
+     Range 0.76 600
+     WeaponPosition PointInfo "{68E9671DF23C6F25}" {
+      Offset 0 -0.0045 0
+      Angles 0.42 0 0
+     }
+    }
+    SightRangeInfo "{68F0C208AF3B7BE9}" {
+     Range 0.927 700
+     WeaponPosition PointInfo "{68E9671DF23C6F27}" {
+      Offset 0 -0.0059 0
+      Angles 0.55 0 0
+     }
+    }
+    SightRangeInfo "{68F0C208AF10AC26}" {
+     Range 0.995 800
+     WeaponPosition PointInfo "{68E9671DF23C79A5}" {
+      Offset 0 -0.0074 0
+      Angles 0.69 0 0
+     }
+    }
+   }
+   SightsRangesDefaultIndex 1
+   SightsPointFront PointInfo "{68F0C20BC6B9059C}" {
+    Offset 0 0.1367 0.371
+   }
+   SightsPointRear PointInfo "{68F0C20BC4D5F474}" {
+    Offset 0 0.139 -0.0307
+   }
+   ADSTime 0.35
+  }
+  ActionsManagerComponent "{5284E0EFF569AD07}" {
+   ActionContexts {
+    UserActionContext "{5284E0EFF4E818E9}" {
+     Position PointInfo "{5284E0EFC526E6F0}" {
+      Offset 0 0.0491 0
+     }
+     Radius 0.1
+    }
+   }
+   additionalActions {
+    SCR_AttachementAction "{68EAB8960C54639D}" {
+     ParentContextList {
+      "user"
+     }
+     UIInfo UIInfo "{68EAB8960C546363}" {
+      Name "#AR-UserAction_Detach"
+     }
+     Duration 0.5
+    }
+    SCR_AttachItemFromInventoryAction "{68EAB8960C546361}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68EAB8960C546360}" {
+      Name "#AR-UserAction_Attach"
+     }
+     Duration 0.5
+     "Inventory action" 1
+    }
+   }
+  }
+ }
+ Flags 0x400003 0
+}

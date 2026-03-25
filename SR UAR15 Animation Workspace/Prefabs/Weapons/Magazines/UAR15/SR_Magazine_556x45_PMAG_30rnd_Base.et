@@ -34,10 +34,11 @@ GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
    MaxAmmo 30
    AmmoConfig "{2689915ED0E00994}Configs/Weapons/Ammo/Ammo_556x45.conf"
    AmmoMapping {
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
    }
   }
   MeshObject "{CA6BE4D6A23F8EF0}" {
-   Object "{4DEA4332E3ED5CE7}Assets/Weapons/Magazines/STANAG/Magazine_30rnd_STANAG.xob"
+   Object "{152FB015C29A8B40}Assets/Weapons/Magazines/magazine_UAR15.xob"
   }
  }
 }

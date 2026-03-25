@@ -1,0 +1,51 @@
+MetaFileClass {
+ Name "{DD7C0B56000DF6C6}Assets/Weapons/Attachments/Sights/UAR15/sights_UAR15.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   GenerateDefaultProfile 1
+   MaterialAssigns {
+    MaterialAssignClass "{68F0C20547C18E17}" {
+     SourceMaterial "UAR15_sights_LOD0"
+     AssignedMaterial "{D4B9320B28680E56}Assets/Weapons/Attachments/Sights/UAR15/Data/UAR15_sights_LOD0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam UAR15_sights {
+    }
+   }
+   GeometryParams {
+    GeometryParam UCX_Sights_UAR15 {
+     LayerPreset "ItemFireView"
+     SurfaceProperties {
+      "{3B2D2687F56BB4EF}Common/Materials/Game/WeaponParts/weapon_metal.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{68EAB89BA1035E65}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{68EAB89BA1035FC7}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{68EAB89BA1035FA0}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{68EAB89BA1035FBD}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{68EAB89BA1035F9A}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{68EAB89BA1035F71}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

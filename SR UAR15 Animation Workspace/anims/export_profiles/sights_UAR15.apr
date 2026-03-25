@@ -1,0 +1,12 @@
+$animExportProfile {
+ $tracks {
+   "Scene_Root"     ""               "TRA"
+   "ArmatureSights" "Scene_Root"     "RA"
+   "w_root"         "ArmatureSights" "RA"
+   "w_sight_front"  "w_root"         "RA"
+   "w_sight_rear"   "w_root"         "RA"
+   "w_sight_range"  "w_sight_rear"   "RA"
+   "eye"            "w_root"         "RA"
+  
+ }
+}

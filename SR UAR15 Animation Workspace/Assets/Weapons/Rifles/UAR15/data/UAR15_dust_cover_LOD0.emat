@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Emissive 0 0 0 1
+ BCRMap "{EFF13CA7FCC52A77}Assets/Weapons/Rifles/UAR15/data/UAR15_dust_cover_LOD0_BCR.edds"
+ NMOMap "{D729873525B278E9}Assets/Weapons/Rifles/UAR15/data/UAR15_dust_cover_LOD0_NMO.edds"
+}

@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{ABAE83B5CA4E6ED8}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Base/SR_p_UAR15_ikoffset.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "anims_SR_UAR15_base.blend"
+   SourceProfile "101_FullBodyABS"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

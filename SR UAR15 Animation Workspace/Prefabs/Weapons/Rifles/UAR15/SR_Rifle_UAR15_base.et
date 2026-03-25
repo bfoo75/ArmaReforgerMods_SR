@@ -6,6 +6,9 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
     "{DB92C647E05B2512}Sounds/Weapons/Rifles/M16A2/Weapons_Rifles_M16A2_Shot.acp" "{A6F3D0955462D8FE}Sounds/Weapons/Rifles/M16A2/Weapons_Rifles_M16A2_Handling.acp" "{D8F675F3468362E2}Sounds/Weapons/_SharedData/Weapons_Sights_Actions.acp" "{68E023371FDD3B12}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Rifle_WoodMetal.acp" "{07E8D425196745F4}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rifle_Plastic.acp" "{332983CC95EE1E1E}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Rifle.acp" "{10C1421961C34D26}Sounds/Weapons/_SharedData/Weapons_Deployment.acp" "{E419B2CF55F4A389}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Bayonett.acp" "{03F532C8D2333B09}Sounds/Weapons/Rifles/M16A2/Weapons_Rifles_M16A2_Shot_Suppressed_SuperSonic.acp" "{F9B575E37280E5D7}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Physical_Rifle_WoodMetal.acp"
    }
   }
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{58D38942FAE40AEE}Assets/Weapons/Rifles/UAR15/weapon_UAR15.xob"
+  }
   RigidBody "{68E9671DF23B1731}" {
    SimState None
    ModelGeometry 1
@@ -28,7 +31,7 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
     }
     ItemAnimationAttributes ItemAnimationAttributes "{5284960E1D29F45C}" {
      AnimationInstance "{0350283642830782}anims/workspaces/player/player_main_rifle.asi"
-     AnimationIKPose "{90219595CD0EB51D}Assets/Weapons/Rifles/M16A2/anims/anm/p_m16_ik.anm"
+     AnimationIKPose "{035B4992978A8738}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Base/SR_p_UAR15_ik.anm"
     }
     CustomAttributes {
      AimingModifierAttributes "{566C7D15A071B88E}" {
@@ -69,12 +72,13 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
   }
   SCR_WeaponStatsManagerComponent "{68E9671DF23B14E3}" {
   }
-  WeaponComponent "{CFBAA4B706BA66E8}" {
+  SN_QuickReloads_WeaponComponent "{CFBAA4B706BA66E8}" {
    components {
     AttachmentSlotComponent "{68E9671DF23B14E1}" {
      AttachmentSlot InventoryStorageSlot optics {
-      PivotID "slot_optic"
+      PivotID "w_root"
       ChildPivotID "snap_weapon"
+      Prefab "{343A683F0065FBD5}Prefabs/Weapons/Attachments/Optics/Sight_UAR15_Base.et"
       InspectionWidgetOffset 0 0.1222 0.0283
      }
      AttachmentType AttachmentOpticsCarryHandle "{68E9671DF23B14E5}" {
@@ -100,6 +104,22 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
      AttachmentType AttachmentBayonetM9 "{68E9671DF23B14ED}" {
      }
      ShowInInspection 1
+    }
+    SN_QuickReloads_AttachmentCurrentMag "{68F2D96E390D8772}" {
+     AttachmentSlot InventoryStorageSlot SlotCurrentMag {
+      PivotID "w_current_mag_control"
+      ChildPivotID "snap_weapon"
+     }
+     AttachmentType MagazineWellStanag556 "{68F2D96E0B040DE9}" {
+     }
+    }
+    SN_QuickReloads_AttachmentSecondMag "{68F2D96E22F6611C}" {
+     AttachmentSlot InventoryStorageSlot SlotSecondMag {
+      PivotID "w_second_mag_control"
+      ChildPivotID "snap_weapon"
+     }
+     AttachmentType MagazineWellStanag556 "{68F2D96EE6084AB7}" {
+     }
     }
     SightsComponent "{BB23A637957CFFF8}" {
      SightsPosition PointInfo "{BB23A63796688E69}" {
@@ -191,10 +211,10 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
       }
      }
      FireModes {
-      BaseFireMode "{B80A64F4A8EF8333}" : "{D5D52E848DBCAA53}Prefabs/Weapons/Core/Configs/FireModes/FireMode_Single.conf" {
+      BaseFireMode "{B80A64F4A8EF8333}" {
        RoundsPerMinute 800
       }
-      BaseFireMode "{619AB45BF76565F3}" : "{B5D823125A678D73}Prefabs/Weapons/Core/Configs/FireModes/FireMode_Burst.conf" {
+      BaseFireMode "{619AB45BF76565F3}" {
        BurstType Interruptable
        RoundsPerMinute 800
       }
@@ -258,7 +278,7 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
       }
      }
      UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
-      m_MagIndicator SCR_MagazineIndicatorConfiguration "{565ECB55D6F6D63D}" : "{1AA788302FE3C53A}Configs/WeaponInfo/MagazineIndicators/ak74_30.conf" {
+      m_MagIndicator SCR_MagazineIndicatorConfiguration "{565ECB55D6F6D63D}" {
       }
      }
      "LEFT HAND TARGET" DeploymentPointInfo lht {
@@ -272,16 +292,18 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
       Offset 0 0.041 -0.3423
      }
      MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      PivotID "slot_magazine"
+      ChildPivotID "snap_weapon"
       InspectionWidgetOffset 0 -0.0431 0.0743
      }
-     MagazineTemplate "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M855_M856_Last_5Tracer.et"
+     MagazineTemplate "{0AB4F91D722A6455}Prefabs/Weapons/Magazines/UAR15/SR_Magazine_556x45_PMAG_30rnd_Base.et"
     }
-    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
-     AnimGraph "{C10E1E127E210526}Assets/Weapons/Rifles/workspaces/m16.agr"
-     AnimInstance "{278604E4583F2647}Assets/Weapons/Rifles/workspaces/m16_weapon.asi"
+    SN_QuickReloads_WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     AnimGraph "{50F44A2857C9F6EB}Assets/Weapons/Rifles/UAR15/Workspace/UAR15.agr"
+     AnimInstance "{ECB6749C29A324A1}Assets/Weapons/Rifles/UAR15/Workspace/UAR15_weapon.asi"
      AnimInjection AnimationAttachmentInfo "{68E9671DF23C79C7}" {
-      AnimGraph "{C10E1E127E210526}Assets/Weapons/Rifles/workspaces/m16.agr"
-      AnimInstance "{DCD895D5C03E42AB}Assets/Weapons/Rifles/workspaces/m16_player.asi"
+      AnimGraph "{50F44A2857C9F6EB}Assets/Weapons/Rifles/UAR15/Workspace/UAR15.agr"
+      AnimInstance "{17E8E5ADB1A2404D}Assets/Weapons/Rifles/UAR15/Workspace/UAR15_player.asi"
       BindingName "Weapon"
      }
      BindWithInjection 1
