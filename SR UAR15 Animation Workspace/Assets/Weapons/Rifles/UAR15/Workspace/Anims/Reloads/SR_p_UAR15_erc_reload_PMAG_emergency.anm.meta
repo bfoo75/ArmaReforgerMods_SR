@@ -4,7 +4,7 @@ MetaFileClass {
   TXAResourceClass PC {
    PositionCompressFactor 0
    RotationCompressFactor 0
-   SourcePath "anims_SR_UAR15_reload_PMAG_emergency_game_test01.blend"
+   SourcePath "anims_SR_UAR15_reload_PMAG_emergency_export.blend"
    SourceProfile "252_UpperbodyADD_ArmsABS"
   }
   TXAResourceClass XBOX_ONE : PC {
