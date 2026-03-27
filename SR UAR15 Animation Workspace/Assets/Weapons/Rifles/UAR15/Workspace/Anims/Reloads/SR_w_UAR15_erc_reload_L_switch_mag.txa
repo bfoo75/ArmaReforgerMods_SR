@@ -801,11 +801,13 @@ $animation "" {
  }
  $events {
   #event 1 "SNQR_SpawnCurrentMag" "AnimSrcEventGeneric {  Name \"SNQR_SpawnCurrentMag\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 2 "SNQR_HideMagMeshes" "AnimSrcEventGeneric {  Name \"SNQR_HideMagMeshes\"  MainPathOnly 0  Frame 2  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 5 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 5  FrameCount 0  UserString \"SOUND_RELOAD_MAG_HANDLING\"  UserInt 2 }" 2 0 "" 1
-  #event 10 "SNQR_SpawnSecondMag" "AnimSrcEventGeneric {  Name \"SNQR_SpawnSecondMag\"  MainPathOnly 0  Frame 10  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 17 "SNQR_SpawnSecondMag" "AnimSrcEventGeneric {  Name \"SNQR_SpawnSecondMag\"  MainPathOnly 0  Frame 17  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 18 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 18  FrameCount 0  UserString \"SOUND_RELOAD_MAG_GRAB\"  UserInt 5 }" 5 0 "" 1
   #event 46 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 46  FrameCount 0  UserString \"SOUND_RELOAD_MAG_REMOVE\"  UserInt 0 }" 0 0 "" 1
   #event 60 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 60  FrameCount 0  UserString \"SOUND_RELOAD_MAG_INSERT\"  UserInt 1 }" 1 0 "" 1
+  #event 88 "SNQR_ShowMagMeshes" "AnimSrcEventGeneric {  Name \"SNQR_ShowMagMeshes\"  MainPathOnly 0  Frame 88  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 89 "SNQR_DestroyMags" "AnimSrcEventGeneric {  Name \"SNQR_DestroyMags\"  MainPathOnly 0  Frame 89  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 112 "BlendOut" "AnimSrcEventGeneric {  Name \"BlendOut\"  MainPathOnly 0  Frame 112  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
  }

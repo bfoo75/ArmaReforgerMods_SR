@@ -1,49 +1,49 @@
 $grp GenericEntity : "{0AB4F91D722A6455}Prefabs/Weapons/Magazines/UAR15/SR_Magazine_556x45_PMAG_30rnd_Base.et" {
  {
-  coords 118.498 1.269 115.48
+  coords 123.54 1.269 123.166
  }
  {
-  coords 118.331 1.288 115.88
+  coords 123.373 1.288 123.566
  }
  {
-  coords 118.324 1.288 115.725
+  coords 123.366 1.288 123.411
  }
  {
-  coords 118.437 1.288 115.536
+  coords 123.479 1.288 123.222
  }
  {
-  coords 118.165 1.309 115.746
+  coords 123.207 1.309 123.432
  }
  {
-  coords 118.041 1.309 115.649
+  coords 123.083 1.309 123.335
  }
  {
-  coords 118.079 1.309 115.468
+  coords 123.121 1.309 123.154
  }
 }
 GenericEntity : "{304664561B760EE0}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/Optic_ARTII_OliveGreen_Sand_Stripes_Wrapped.et" {
- coords 119.621 1.151 115.179
+ coords 124.663 1.151 122.865
 }
 GenericEntity : "{343A683F0065FBD5}Prefabs/Weapons/Attachments/Optics/Sight_UAR15_Base.et" {
- coords 119.389 1.145 115.185
+ coords 124.431 1.145 122.871
 }
 GenericEntity : "{B1482FB64E3D2D45}Prefabs/Weapons/Rifles/M16/Rifle_M16A2_4x20.et" {
- coords 119.823 1 115.456
+ coords 124.865 1 123.142
 }
 GenericEntity : "{BABE309258A0EFBC}Prefabs/Weapons/Rifles/UAR15/SR_Rifle_UAR15_base.et" {
- coords 118.838 1.198 115.556
+ coords 123.88 1.198 123.242
 }
 $grp GenericEntity : "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M855_M856_Last_5Tracer.et" {
  {
-  coords 118.446 1.35 114.303
+  coords 123.488 1.35 121.989
  }
  {
-  coords 118.437 1.299 114.398
+  coords 123.479 1.299 122.084
  }
  {
-  coords 118.136 1.299 114.381
+  coords 123.178 1.299 122.067
  }
  {
-  coords 117.903 1.299 114.38
+  coords 122.945 1.299 122.066
  }
 }

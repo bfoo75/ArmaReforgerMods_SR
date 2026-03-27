@@ -7,6 +7,8 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 	protected AnimationEventID m_SNQR_SpawnCurrentMag;
 	protected AnimationEventID m_SNQR_SpawnSecondMag;
 	protected AnimationEventID m_SNQR_DestroyMags;
+	protected AnimationEventID m_SNQR_HideMagMeshes;
+	protected AnimationEventID m_SNQR_ShowMagMeshes;
 
 	protected AnimationTagID m_TagWeaponReload;
 
@@ -32,6 +34,8 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 		m_SNQR_SpawnCurrentMag = GameAnimationUtils.RegisterAnimationEvent("SNQR_SpawnCurrentMag");
 		m_SNQR_SpawnSecondMag  = GameAnimationUtils.RegisterAnimationEvent("SNQR_SpawnSecondMag");
 		m_SNQR_DestroyMags     = GameAnimationUtils.RegisterAnimationEvent("SNQR_DestroyMags");
+		m_SNQR_HideMagMeshes   = GameAnimationUtils.RegisterAnimationEvent("SNQR_HideMagMeshes");
+		m_SNQR_ShowMagMeshes   = GameAnimationUtils.RegisterAnimationEvent("SNQR_ShowMagMeshes");
 
 		m_TagWeaponReload = GameAnimationUtils.RegisterAnimationTag("TagWeaponReload");
 
@@ -56,14 +60,26 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 	{
 		super.OnAnimationEvent(animEventType, animUserString, intParam, timeFromStart, timeToEnd);
 
-		if (animEventType == m_SNQR_SpawnCurrentMag)
-			SpawnCurrentMag();
-
-		if (animEventType == m_SNQR_SpawnSecondMag)
-			SpawnSecondMag();
-
-		if (animEventType == m_SNQR_DestroyMags)
-			DestroyAllMags();
+		switch (animEventType)
+		{
+			case m_SNQR_SpawnCurrentMag:
+				SpawnCurrentMag();
+				break;
+			case m_SNQR_SpawnSecondMag:
+				SpawnSecondMag();
+				break;
+			case m_SNQR_DestroyMags:
+				DestroyAllMags();
+				break;
+			case m_SNQR_HideMagMeshes:
+				if (m_HiddenMag)
+					HideAllMeshes(m_HiddenMag);
+				break;
+			case m_SNQR_ShowMagMeshes:
+				if (m_HiddenMag)
+					ShowAllMeshes(m_HiddenMag);
+				break;
+		}
 	}
 
 	override protected bool OnProcessAnimOutput(IEntity owner, float ts)
@@ -81,9 +97,6 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 	//───────────────────────────────────────────────
 	void SpawnCurrentMag()
 	{
-		DestroyCurrentMag();
-		m_ReloadActive = true;
-
 		BaseMagazineComponent currentMag = m_WeaponComp.GetCurrentMagazine();
 		if (!currentMag) return;
 
@@ -91,7 +104,14 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 		if (!magEntity) return;
 
 		m_HiddenMag = magEntity;
-		m_HiddenMag.ClearFlags(EntityFlags.VISIBLE, true);
+
+		HideAllMeshes(magEntity);
+
+		if (!Replication.IsServer())
+			return;
+
+		DestroyCurrentMag();
+		m_ReloadActive = true;
 
 		m_CurrentVisualMag = SpawnVisualFromEntity(magEntity);
 		m_CurrentSlot = GetCurrentSlot();
@@ -105,8 +125,6 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 	//───────────────────────────────────────────────
 	void SpawnSecondMag()
 	{
-		DestroySecondMag();
-
 		BaseMagazineComponent currentMag = m_WeaponComp.GetCurrentMagazine();
 		if (!currentMag) return;
 
@@ -114,8 +132,14 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 		if (!magEntity) return;
 
 		m_HiddenMag = magEntity;
-		m_HiddenMag.ClearFlags(EntityFlags.VISIBLE, true);
-		
+
+		HideAllMeshes(magEntity);
+
+		if (!Replication.IsServer())
+			return;
+
+		DestroySecondMag();
+
 		m_SecondVisualMag = SpawnVisualFromEntity(magEntity);
 		m_SecondSlot = GetSecondSlot();
 
@@ -137,6 +161,9 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 
 	void DestroyCurrentMag()
 	{
+		if (!Replication.IsServer())
+			return;
+
 		if (m_CurrentSlot)
 			m_CurrentSlot.SetAttachment(null);
 
@@ -149,6 +176,9 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 
 	void DestroySecondMag()
 	{
+		if (!Replication.IsServer())
+			return;
+
 		if (m_SecondSlot)
 			m_SecondSlot.SetAttachment(null);
 
@@ -157,6 +187,34 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 
 		m_SecondVisualMag = null;
 		m_SecondSlot = null;
+	}
+
+	//───────────────────────────────────────────────
+	// MESH CONTROL (CLIENT SAFE)
+	//───────────────────────────────────────────────
+	void HideAllMeshes(IEntity ent)
+	{
+		if (!ent) return;
+
+		for (int i = 0; i < 32; i++)
+			GameAnimationUtils.ShowMesh(ent, i, false);
+	}
+
+	void ShowAllMeshes(IEntity ent)
+	{
+		if (!ent) return;
+
+		for (int i = 0; i < 32; i++)
+			GameAnimationUtils.ShowMesh(ent, i, true);
+	}
+
+	void RestoreHiddenMag()
+	{
+		if (m_HiddenMag && !m_HiddenMag.IsDeleted())
+		{
+			ShowAllMeshes(m_HiddenMag);
+			m_HiddenMag = null;
+		}
 	}
 
 	//───────────────────────────────────────────────
@@ -203,14 +261,5 @@ class SN_QuickReloads_WeaponAnimationComponent : WeaponAnimationComponent
 			if (s) return s;
 		}
 		return null;
-	}
-
-	void RestoreHiddenMag()
-	{
-		if (m_HiddenMag && !m_HiddenMag.IsDeleted())
-		{
-			m_HiddenMag.SetFlags(EntityFlags.VISIBLE, true);
-			m_HiddenMag = null;
-		}
 	}
 }

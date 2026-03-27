@@ -1,0 +1,25 @@
+$grp GenericEntity : "{0AB4F91D722A6455}Prefabs/Weapons/Magazines/UAR15/SR_Magazine_556x45_PMAG_30rnd_Base.et" {
+ {
+  coords 125.354 1 127.212
+ }
+ {
+  coords 125.3 1 127.329
+ }
+ {
+  coords 124.736 1 127.579
+ }
+}
+$grp GenericEntity : "{7ECA478D7C80ACC0}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M193_M196_Last_5Tracer.et" {
+ {
+  coords 125.544 1 127.141
+ }
+ {
+  coords 125.549 1 127.012
+ }
+ {
+  coords 125.533 1 126.869
+ }
+}
+GenericEntity : "{BABE309258A0EFBC}Prefabs/Weapons/Rifles/UAR15/SR_Rifle_UAR15_base.et" {
+ coords 125.782 1 127.817
+}
