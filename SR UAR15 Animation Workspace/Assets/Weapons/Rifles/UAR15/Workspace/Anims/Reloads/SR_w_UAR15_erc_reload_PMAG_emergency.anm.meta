@@ -1,0 +1,21 @@
+MetaFileClass {
+ Name "{6549F53A2B962A38}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_PMAG_emergency.anm"
+ Configurations {
+  TXAResourceClass PC {
+   PositionCompressFactor 0
+   RotationCompressFactor 0
+   SourcePath "anims_SR_UAR15_reload_PMAG_emergency_game_test01.blend"
+   SourceProfile "weapon_UAR15_emergency_reload_empty"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

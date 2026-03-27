@@ -10,7 +10,7 @@ AnimSrcGraphFile {
     AnimSrcNodeStateMachine MagReloadSTM {
      EditorPos 15 20.1
      states {
-      AnimSrcNodeState ReloadLSwitchMag {
+      AnimSrcNodeState ReloadSwitchMag {
        EditorPos 14.947 21.474
        Child "Source 22119"
        StartCondition "True"
@@ -75,14 +75,14 @@ AnimSrcGraphFile {
       }
       AnimSrcNodeState MagNoBulletsSlideReload {
        EditorPos 15 14.7
-       Child "MagReloadSTM"
+       Child "Source 12970"
        StartCondition "GetCommandI(CMD_Weapon_Reload) == 5 && GetCommandF(CMD_Weapon_Reload) == 1.0"
        TimeStorage Inherit
-       IsExit 0
+       IsExit 1
       }
       AnimSrcNodeState MagReload {
        EditorPos 13.4 17.2
-       Child "MagReloadSTM"
+       Child "Source 22119"
        StartCondition "GetCommandI(CMD_Weapon_Reload) == 4"
        TimeStorage Inherit
        IsExit 1
@@ -116,16 +116,6 @@ AnimSrcGraphFile {
       }
      }
      transitions {
-      AnimSrcNodeTransition "{68EAB8880D59A035}" {
-       FromState "MagNoBulletsSlideReload"
-       ToState "ReloadActionSlideRelease"
-       Duration "0.3"
-       StartTime ""
-       Condition "RemainingTimeLess(0.5)"
-       BlendFn "S"
-       PostEval 1
-       MotionVecBlend 0x33 0
-      }
       AnimSrcNodeTransition "{68EAB8880D59A037}" {
        FromState "NoMagNoBulletSlideReload"
        ToState "ReloadActionSlideRelease"
@@ -1175,7 +1165,11 @@ AnimSrcGraphFile {
     }
     AnimSrcNodeSource "Source 22119" {
      EditorPos 14.947 23.158
-     Source "Reload.ReloadL_SwitchMag"
+     Source "Reload.Reload_SwitchMag"
+    }
+    AnimSrcNodeSource "Source 12970" {
+     EditorPos 12.211 19.789
+     Source "Reload.Reload_EmergencyEmptyPMAG"
     }
    }
   }

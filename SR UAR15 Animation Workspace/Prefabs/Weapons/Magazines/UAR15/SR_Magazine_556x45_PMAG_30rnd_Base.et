@@ -31,7 +31,7 @@ GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
     m_MagIndicator SCR_MagazineIndicatorConfiguration "{5866951DE2665916}" : "{1AA788302FE3C53A}Configs/WeaponInfo/MagazineIndicators/ak74_30.conf" {
     }
    }
-   MaxAmmo 30
+   MaxAmmo 5
    AmmoConfig "{2689915ED0E00994}Configs/Weapons/Ammo/Ammo_556x45.conf"
    AmmoMapping {
     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

@@ -91,8 +91,11 @@ AnimSetInstanceSource "{68F2D51A5ED0E3D0}" {
   AnimSetInstanceSource_Line "Reload.Erc.BoltPose" {
    Resource "{01B19B02A655DADD}Assets/Weapons/Rifles/M16A2/anims/anm/w_m16_bolt_pose.anm"
   }
-  AnimSetInstanceSource_Line "Reload.Erc.ReloadL_SwitchMag" {
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_SwitchMag" {
    Resource "{A9B1FADA64A41954}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_L_switch_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_EmergencyEmptyPMAG" {
+   Resource "{6549F53A2B962A38}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_PMAG_emergency.anm"
   }
  }
  RBF AnimSetInstanceSourceRBFArray "{68EAB8880D5B7613}" {

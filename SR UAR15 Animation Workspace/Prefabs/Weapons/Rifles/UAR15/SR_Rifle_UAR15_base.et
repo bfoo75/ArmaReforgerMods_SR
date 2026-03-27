@@ -72,7 +72,7 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
   }
   SCR_WeaponStatsManagerComponent "{68E9671DF23B14E3}" {
   }
-  SN_QuickReloads_WeaponComponent "{CFBAA4B706BA66E8}" {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
    components {
     AttachmentSlotComponent "{68E9671DF23B14E1}" {
      AttachmentSlot InventoryStorageSlot optics {
@@ -104,22 +104,6 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
      AttachmentType AttachmentBayonetM9 "{68E9671DF23B14ED}" {
      }
      ShowInInspection 1
-    }
-    SN_QuickReloads_AttachmentCurrentMag "{68F2D96E390D8772}" {
-     AttachmentSlot InventoryStorageSlot SlotCurrentMag {
-      PivotID "w_current_mag_control"
-      ChildPivotID "snap_weapon"
-     }
-     AttachmentType MagazineWellStanag556 "{68F2D96E0B040DE9}" {
-     }
-    }
-    SN_QuickReloads_AttachmentSecondMag "{68F2D96E22F6611C}" {
-     AttachmentSlot InventoryStorageSlot SlotSecondMag {
-      PivotID "w_second_mag_control"
-      ChildPivotID "snap_weapon"
-     }
-     AttachmentType MagazineWellStanag556 "{68F2D96EE6084AB7}" {
-     }
     }
     SightsComponent "{BB23A637957CFFF8}" {
      SightsPosition PointInfo "{BB23A63796688E69}" {
@@ -215,8 +199,10 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
        RoundsPerMinute 800
       }
       BaseFireMode "{619AB45BF76565F3}" {
+       MaxBurst -1
        BurstType Interruptable
        RoundsPerMinute 800
+       UIName "Auto"
       }
      }
      MagazineWell MagazineWellStanag556 "{68E9671DF23C79D1}" {
@@ -298,7 +284,7 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
      }
      MagazineTemplate "{0AB4F91D722A6455}Prefabs/Weapons/Magazines/UAR15/SR_Magazine_556x45_PMAG_30rnd_Base.et"
     }
-    SN_QuickReloads_WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+    SR_UAR15WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
      AnimGraph "{50F44A2857C9F6EB}Assets/Weapons/Rifles/UAR15/Workspace/UAR15.agr"
      AnimInstance "{ECB6749C29A324A1}Assets/Weapons/Rifles/UAR15/Workspace/UAR15_weapon.asi"
      AnimInjection AnimationAttachmentInfo "{68E9671DF23C79C7}" {

@@ -1,0 +1,31 @@
+$animExportProfile {
+ $tracks {
+   "Scene_Root"            ""                      ""
+   "ArmatureWeapon"        "Scene_Root"            ""
+   "w_root"                "ArmatureWeapon"        ""
+   "w_bolt_release"        "w_root"                "RA"
+   "w_sight_front"         "w_root"                ""
+   "w_sight_rear"          "w_root"                ""
+   "w_sight_range"         "w_sight_rear"          ""
+   "w_second_mag_control"  "w_root"                "TRA"
+   "w_current_mag_control" "w_root"                "TRA"
+   "w_mag_release"         "w_root"                "TRA"
+   "w_charging_handle"     "w_root"                ""
+   "w_bolt"                "w_root"                "TA"
+   "w_dust_cover"          "w_root"                ""
+   "w_stock"               "w_root"                ""
+   "w_fire_mode"           "w_root"                ""
+   "w_trigger"             "w_root"                ""
+   "snap_hand_right"       "w_root"                ""
+   "snap_hand_left"        "w_root"                ""
+   "slot_optic"            "w_root"                ""
+   "slot_magazine"         "w_root"                ""
+   "slot_hand_guard"       "w_root"                ""
+   "slot_barrel_muzzle"    "w_root"                ""
+   "eye"                   "w_root"                ""
+   "barrel_muzzle"         "w_root"                ""
+   "barrel_chamber"        "w_root"                ""
+   "COM_UAR15_body"        "w_root"                ""
+  
+ }
+}

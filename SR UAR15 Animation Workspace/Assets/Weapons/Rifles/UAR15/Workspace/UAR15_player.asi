@@ -253,8 +253,11 @@ AnimSetInstanceSource "{68EB4D25E3DEDF13}" {
   AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_Dep_On" {
    Resource "{385CDF82D1297590}Assets/Weapons/Rifles/M16A2/anims/anm/p_rfl_m16_erc_dep_modes_on.anm"
   }
-  AnimSetInstanceSource_Line "Reload.Erc.ReloadL_SwitchMag" {
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_SwitchMag" {
    Resource "{99ED4A537255AA25}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_p_UAR15_erc_reload_L_switch_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_EmergencyEmptyPMAG" {
+   Resource "{D823283DC1834112}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_p_UAR15_erc_reload_PMAG_emergency.anm"
   }
  }
  RBF AnimSetInstanceSourceRBFArray "{68EAB8880D5A76FD}" {

@@ -9,9 +9,17 @@ $grp GenericEntity : "{0AB4F91D722A6455}Prefabs/Weapons/Magazines/UAR15/SR_Magaz
   coords 124.736 1 127.579
  }
 }
+GenericEntity : "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et" {
+ coords 125.395 1 128.091
+}
 $grp GenericEntity : "{7ECA478D7C80ACC0}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M193_M196_Last_5Tracer.et" {
  {
-  coords 125.544 1 127.141
+  components {
+   MagazineComponent "{CA6BE4D6B4DAFD69}" {
+    MaxAmmo 5
+   }
+  }
+  coords 125.782 1 128.666
  }
  {
   coords 125.549 1 127.012
@@ -19,7 +27,56 @@ $grp GenericEntity : "{7ECA478D7C80ACC0}Prefabs/Weapons/Magazines/Magazine_556x4
  {
   coords 125.533 1 126.869
  }
+ {
+  components {
+   MagazineComponent "{CA6BE4D6B4DAFD69}" {
+    MaxAmmo 5
+   }
+  }
+  coords 125.863 1 128.818
+ }
+ {
+  components {
+   MagazineComponent "{CA6BE4D6B4DAFD69}" {
+    MaxAmmo 5
+   }
+  }
+  coords 125.906 1 128.69
+ }
+ {
+  components {
+   MagazineComponent "{CA6BE4D6B4DAFD69}" {
+    MaxAmmo 5
+   }
+  }
+  coords 125.889 1 128.525
+ }
+ {
+  components {
+   MagazineComponent "{CA6BE4D6B4DAFD69}" {
+    MaxAmmo 5
+   }
+  }
+  coords 125.785 1 128.75
+ }
 }
 GenericEntity : "{BABE309258A0EFBC}Prefabs/Weapons/Rifles/UAR15/SR_Rifle_UAR15_base.et" {
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     FireModes {
+      BaseFireMode "{619AB45BF76565F3}" {
+       MaxBurst -1
+       UIName "Auto"
+      }
+     }
+    }
+   }
+  }
+ }
  coords 125.782 1 127.817
+}
+GenericEntity : "{EB404DC9E1BCB750}Prefabs/Weapons/Rifles/AK74/Rifle_AK74N_1P29.et" {
+ coords 126.145 1 127.582
 }
