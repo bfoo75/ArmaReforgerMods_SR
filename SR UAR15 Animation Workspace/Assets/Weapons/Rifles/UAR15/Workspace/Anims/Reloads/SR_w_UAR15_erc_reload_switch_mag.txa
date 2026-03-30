@@ -1,0 +1,39 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 101
+ $node "w_second_mag_control" {
+  $keys t q s {
+   $frame 0 101 {
+    #t -0.3655456 -0.3836153 -0.2905118
+    #q 0.91642767 -0.06884205 -0.38510272 -0.0843621
+   }
+  }
+  $node "w_current_mag_control" {
+   $keys t q s {
+    $frame 0 101 {
+     #t 0.0395655 0.1393652 0.2496088
+     #q 0.06740943 -0.11406316 0.16683772 0.97704184
+    }
+   }
+  }
+  $node "w_mag_release" {
+   $keys t q s {
+    $frame 0 101 {
+     #t -0.0145232 0.0438941 0.0481157
+    }
+   }
+  }
+ }
+ $events {
+  #event 6 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 6  FrameCount 0  UserString \"SOUND_RELOAD_MAG_HANDLING\"  UserInt 2 }" 2 0 "" 1
+  #event 14 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 14  FrameCount 0  UserString \"SOUND_RELOAD_MAG_GRAB\"  UserInt 5 }" 5 0 "" 1
+  #event 18 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 18  FrameCount 0  UserString \"SOUND_RELOAD_MAG_REMOVE\"  UserInt 0 }" 0 0 "" 1
+  #event 64 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 64  FrameCount 0  UserString \"SOUND_RELOAD_MAG_HANDLING\"  UserInt 0 }" 0 0 "" 1
+  #event 70 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 70  FrameCount 0  UserString \"SOUND_RELOAD_MAG_INSERT\"  UserInt 1 }" 1 0 "" 1
+ }
+ $custProps {
+  #custProp "profile" "weapon_UAR15_switch_mag"
+  #custProp "sourceFile" "anims_SR_UAR15_reload_switch_mag.blend"
+ }
+}

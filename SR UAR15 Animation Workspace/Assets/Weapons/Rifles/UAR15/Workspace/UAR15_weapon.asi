@@ -20,16 +20,16 @@ AnimSetInstanceSource "{68F2D51A5ED0E3D0}" {
    Resource "{749AD5B2FA13EA52}Assets/Weapons/Rifles/M16A2/anims/anm/w_rfl_erc_idle_ras.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Reload_InsertMag" {
-   Resource "{0B81D6667538E3CC}Assets/Weapons/Rifles/M16A2/anims/anm/w_rfl_m16_erc_insert_mag.anm"
+   Resource "{F8CB1E9696CBBB04}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_insert_mag.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Reload_InsertMag" {
-   Resource "{0B81D6667538E3CC}Assets/Weapons/Rifles/M16A2/anims/anm/w_rfl_m16_erc_insert_mag.anm"
+   Resource "{F8CB1E9696CBBB04}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_insert_mag.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Reload_RemoveMag" {
-   Resource "{C0E5A992B34ED1A6}Assets/Weapons/Rifles/M16A2/anims/anm/w_rfl_m16_erc_remove_mag.anm"
+   Resource "{33AF616250BD896E}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_remove_mag.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Reload_RemoveMag" {
-   Resource "{C0E5A992B34ED1A6}Assets/Weapons/Rifles/M16A2/anims/anm/w_rfl_m16_erc_remove_mag.anm"
+   Resource "{33AF616250BD896E}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_remove_mag.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.ReloadActionBolt" {
    Resource "{D942BCE36A87EE10}Assets/Weapons/Rifles/M16A2/anims/anm/w_rfl_m16_erc_rack_bolt.anm"
@@ -92,9 +92,15 @@ AnimSetInstanceSource "{68F2D51A5ED0E3D0}" {
    Resource "{01B19B02A655DADD}Assets/Weapons/Rifles/M16A2/anims/anm/w_m16_bolt_pose.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Reload_SwitchMag" {
-   Resource "{A9B1FADA64A41954}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_L_switch_mag.anm"
+   Resource "{B44AB1AF1024EE39}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_switch_mag.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_SwitchMag" {
+   Resource "{B44AB1AF1024EE39}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_switch_mag.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Reload_EmergencyEmptyPMAG" {
+   Resource "{6549F53A2B962A38}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_PMAG_emergency.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_EmergencyEmptyPMAG" {
    Resource "{6549F53A2B962A38}Assets/Weapons/Rifles/UAR15/Workspace/Anims/Reloads/SR_w_UAR15_erc_reload_PMAG_emergency.anm"
   }
  }
